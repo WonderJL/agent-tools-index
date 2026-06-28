@@ -1,0 +1,17 @@
+# agent-tools-indexing
+
+> A public, redacted index of a private, machine-agnostic and agent-agnostic agent-tooling
+> monorepo: reusable skills, sub-agents, CLIs, hooks, host integrations, and architecture
+> decisions. Generated from the private source; metadata and narrative only, no code.
+
+## Index
+- [Catalog (human)](CATALOG.md): headline counts, highlights, and full tables of publishable items.
+- [Catalog (machine, JSON)](manifest/catalog.json): the source-of-truth item index.
+- [Catalog (machine, TOON)](manifest/catalog.toon): token-cheap table mirror.
+- [Stats](manifest/stats.json): per-pillar authored/vendored/published/withheld counts.
+- [Changelog](CHANGELOG.md): what changed since the last publish.
+
+## Reading guidance
+- [AGENTS.md](AGENTS.md): how an agent should answer questions about this repo.
+- [Philosophy](PHILOSOPHY.md): the engineering principles behind the system.
+- [Provenance](PROVENANCE.md): how this repo is generated and the redaction policy.

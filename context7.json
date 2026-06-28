@@ -1,0 +1,10 @@
+{
+  "projectTitle": "agent-tools-indexing",
+  "description": "Public, redacted index of a private agent-tooling monorepo: skills, sub-agents, CLIs, hooks, hosts, and architecture decisions.",
+  "folders": ["docs", "manifest"],
+  "excludeFolders": [],
+  "rules": [
+    "manifest/catalog.json is the source of truth for the item index.",
+    "Each item is tagged origin=authored or origin=vendored; vendored items link out and are not authored by the owner."
+  ]
+}

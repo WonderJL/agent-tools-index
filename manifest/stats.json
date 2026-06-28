@@ -1,0 +1,56 @@
+{
+  "adr": {
+    "authored": 52,
+    "published": 52,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "cli": {
+    "authored": 49,
+    "published": 49,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "hook": {
+    "authored": 4,
+    "published": 4,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "host": {
+    "authored": 14,
+    "published": 14,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "integration": {
+    "authored": 10,
+    "published": 10,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "kit": {
+    "authored": 7,
+    "published": 7,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "schema": {
+    "authored": 6,
+    "published": 6,
+    "vendored": 0,
+    "withheld": 0
+  },
+  "skill": {
+    "authored": 146,
+    "published": 179,
+    "vendored": 33,
+    "withheld": 3
+  },
+  "sub-agent": {
+    "authored": 8,
+    "published": 64,
+    "vendored": 56,
+    "withheld": 0
+  }
+}
