@@ -2,7 +2,7 @@
 
 _Generated — do not edit by hand._
 
-**389 publishable items** across 9 pillars. Authored by the owner unless tagged vendored.
+**387 publishable items** across 9 pillars. Authored by the owner unless tagged vendored.
 
 ## Contents
 
@@ -13,15 +13,15 @@ _Generated — do not edit by hand._
 - [Vendored (curated)](#vendored-curated-not-authored)
 
 ## Headline
-- **skill**: 182 published (147 authored)
+- **skill**: 180 published (147 authored)
 - **sub-agent**: 64 published (8 authored)
-- **cli**: 50 published (50 authored)
+- **cli**: 49 published (49 authored)
 - **hook**: 4 published (4 authored)
 - **kit**: 7 published (7 authored)
 - **host**: 14 published (14 authored)
 - **integration**: 10 published (10 authored)
 - **schema**: 6 published (6 authored)
-- **adr**: 52 published (52 authored)
+- **adr**: 53 published (53 authored)
 
 ## Highlights
 | name | what it does |
@@ -45,7 +45,7 @@ _Generated — do not edit by hand._
 | agent-team-orchestrator | 2026-04-25 | Orchestrate team-lead and role-pane workflow for local multi-agent coordination in tmux AI CLI mode, including runtime selection, session bootstrap, and task orchestration. Use when the user asks to initialize, operate, or recover an agent-team session (for example init, tmux-bootstrap, status, or role coordination). |
 | code-doc-features-and-files | 2026-04-25 | Produces a single FEATURES-AND-FILES.md file in a user-supplied target directory that maps project features to the files that implement or support them. Use when the user wants to document which files implement which features, create a feature-to-file map for a project, or generate FEATURES-AND-FILES.md in a given directory. Requires target directory each time; feature list is optional (if omitted, infer from codebase and ask for confirmation before writing). Manual activation only. General agent skill; usable by any skill-capable system. |
 | ponytail-help | 2026-06-18 | Quick-reference card for all ponytail modes, skills, and commands. One-shot display, not a persistent mode. Trigger: /ponytail-help, "ponytail help", "what ponytail commands", "how do I use ponytail". |
-| skill-delegate-manager | 2026-04-26 | Manage skill-delegate aliases and generated zsh helper functions. |
+| skill-delegate-manager | 2026-04-26 | Manage skill-delegate aliases and the generated zsh helper functions via the `skill-delegate alias` CLI — add, update, delete, list, seed, render, and install ai-* shell shortcuts without hand-editing the generated YAML/zsh. |
 | skill-vender-manager | 2026-04-28 | Manage typed vendor repositories (add, update, upstream-sync, bootstrap, link, unlink, remove), including managed bridges into the skills, commands, and CLI trees. |
 | tmux-background-worker | 2026-04-25 | Run long-running shell tasks in named tmux sessions so the agent can return control immediately, monitor progress, and clean up completed sessions. Use when users ask to run builds, tests, servers, downloads, migrations, or other unpredictable tasks in the background or without blocking. |
 | workspace-manager | 2026-06-24 | Orchestrate a crew of AI coding agents: a single point of contact that spawns, supervises, and tears down worker agents across projects via a workspace CLI — never doing the work itself. |
@@ -76,9 +76,9 @@ _Generated — do not edit by hand._
 | name | updated | what it does |
 |---|---|---|
 | animate | 2026-04-26 | Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usability and delight. |
-| cookbook-animation | 2026-05-31 | Load the animation cookbook skills on demand. Use when the user writes /cookbook-animation or needs GSAP, scroll animation, timeline sequencing, or WebGPU/Three.js guidance. |
+| cookbook-animation | 2026-05-31 | On-demand loader that pulls the core GSAP animation skills (core, timeline, performance) plus task-conditional ones for React/Vue, ScrollTrigger, plugins, utils, and WebGPU/Three.js. |
 | design-engineering-emil | 2026-05-20 | Encodes Emil Kowalski's design engineering philosophy — UI polish, component design, animation decisions, easing/duration heuristics, gesture interactions, and the invisible details that make software feel great. Use when reviewing UI code for craft/polish, designing animations, building components (buttons, toasts, popovers, drawers), or asking about taste-driven frontend decisions. |
-| optimize | 2026-04-26 | Improve interface performance across loading speed, rendering, animations, images, and bundle size. Makes experiences faster and smoother. |
+| optimize | 2026-04-26 | Find and fix interface performance issues across loading, rendering, animations, images, and bundle size, measuring Core Web Vitals before and after so effort targets what actually matters. |
 | s-code-review | 2026-05-31 | Review changes with three code-reviewer sub-agents and oracle validation. Use when the user writes /s-code-review or asks for this command. |
 | slack-daily-standup | 2026-04-26 | Format rough standup notes into a three-section daily update (Yesterday / Today / Blockers), humanize each section via a text skill, preview locally, and post to a registered Slack conversation. |
 | ui-ux-pro-max | 2026-04-26 | UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, and HTML/CSS). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, and check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, and mobile app. Elements: button, modal, navbar, sidebar, card, table, form, and chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, and flat design. Topics: color systems, accessibility, animation, layout, typography, font pairing, spacing, interaction states, shadow, and gradient. Integrations: shadcn/ui MCP for component search and examples. |
@@ -104,7 +104,7 @@ _Generated — do not edit by hand._
 | audit | 2026-04-26 | Perform comprehensive audit of interface quality across accessibility, performance, theming, and responsive design. Generates detailed report of issues with severity ratings and recommendations. |
 | bolder | 2026-04-26 | Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability. |
 | extract | 2026-04-26 | Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library. |
-| onboard | 2026-04-26 | Design or improve onboarding flows, empty states, and first-time user experiences. Helps users get started successfully and understand value quickly. |
+| onboard | 2026-04-26 | Design or improve onboarding flows, empty states, and first-time experiences, focusing the path on the user's 'aha moment' so they reach value quickly rather than learning everything. |
 | quieter | 2026-04-26 | Tone down overly bold or visually aggressive designs. Reduces intensity while maintaining design quality and impact. |
 
 </details>
@@ -125,7 +125,7 @@ _Generated — do not edit by hand._
 </details>
 
 <details>
-<summary><strong>engineering quality & debugging</strong> (28)</summary>
+<summary><strong>engineering quality & debugging</strong> (32)</summary>
 
 | name | updated | what it does |
 |---|---|---|
@@ -154,14 +154,18 @@ _Generated — do not edit by hand._
 | prompt-optimizer | 2026-05-17 | Improve LLM prompts using proven prompt engineering strategies. Use when user wants to refine a prompt, make instructions clearer, optimize for better AI responses, or apply prompt engineering best practices. |
 | repo-agentic-debug | 2026-06-25 | Use to review whether a repo-agentic setup is working as expected. Runs the deterministic quick timeline (cli-repo-agentic-debug) and, with --deep, cross-checks it against .agents/, the rendered host files, and the manifest to judge drift, missing pillars, and failed or skipped steps. Triggered by /debug-repo-agentic-step. |
 | repo-agentic-setup | 2026-06-25 | Use to set up a target repo for agentic development (the four pillars - skills, sub-agents, slash-commands, hooks - plus model routing), or to update/migrate an already-configured repo to the latest kits. Detects the stack, composes kits, diagnoses gaps, prescribes library + bespoke artifacts, populates .agents/ and the root AGENTS.md, then shells out to cli-repo-agentic-sync to dry-run and render to all hosts. Triggered by /repo-agentic-setup. |
-| s-prompt-optimizer | 2026-05-31 | Load prompt-optimizer on demand. Use when the user writes /s-prompt-optimizer, asks to optimize a prompt, or runs /use s-prompt-optimizer. |
+| s-cli-anything | 2026-05-31 | On-demand loader for the cli-anything skill: build, refine, test, or validate a Python CLI harness that wraps a GUI app or source repo for agent use. |
+| s-executing-plans | 2026-05-31 | On-demand loader for the executing-plans skill: work through a written implementation plan in a fresh session with TDD and review checkpoints. |
+| s-prompt-optimizer | 2026-05-31 | On-demand loader for the prompt-optimizer skill: refines an LLM prompt using prompt-engineering best practices for clearer instructions and better responses. |
+| s-superpower | 2026-05-31 | On-demand loader for the Superpowers framework: bootstraps it and kicks off the design to plan to TDD-implement lifecycle starting from brainstorming. |
+| s-superpower-grill | 2026-05-31 | On-demand loader that combines the Superpowers planning discipline with grill-me for an adversarial, Superpowers-grade stress-test of a plan or design. |
 | security-check | 2026-04-25 | Generate secure-by-design questions from design or component descriptions. Produces a prioritized set of security questions grouped by theme (Architecture, Authentication, etc.) to ensure projects are built with security in mind from the start. Use when reviewing designs, drafting security checklists, asking for secure-by-design questions, or evaluating system security at the design level. |
 | superpower-grill | 2026-05-30 | Load the Superpowers planning discipline, then grill the user relentlessly about a plan or design until shared understanding is reached. Combines /s-superpower (Superpowers framework bootstrap) with skill@grill-me. Use when the user wants a Superpowers-grade, adversarial stress-test of a plan — "grill me with superpowers", "superpower grill", or invokes /s-superpower-grill. |
 
 </details>
 
 <details>
-<summary><strong>git / PR / commit</strong> (28)</summary>
+<summary><strong>git / PR / commit</strong> (29)</summary>
 
 | name | updated | what it does |
 |---|---|---|
@@ -186,9 +190,10 @@ _Generated — do not edit by hand._
 | linear-pr-comment-follow-up | 2026-04-25 | Create Linear tickets from GitHub PR comment links. Extracts comment content and PR context, then creates a follow-up Linear ticket using linear-create-ticket. After SUBMIT, posts the GitHub reply in the review discussion thread (in_reply_to) for |
 | linear-solve | 2026-04-25 | Automate the Linear ticket workflow: fetch ticket details, create a properly-named git branch, and generate a PLAN file via a planning skill. Use to start work on a ticket by id. |
 | linear-ticket-and-pr | 2026-06-03 | Create a Linear ticket AND a GitHub pull request for the current branch in one SUBMIT-gated workflow, then cross-link them both directions. Reuses a ticket-drafting skill and delegates PR creation. |
-| local-pr-review | 2026-05-21 | Use when reviewing a GitHub pull request locally, especially when the user provides a PR URL and wants a read-only report without GitHub comments, checkout mutations, or remote writes. |
+| local-pr-review | 2026-05-21 | Run a local, read-only review of a GitHub PR from its URL, producing a Markdown report without posting comments, mutating checkouts, or any remote writes. Reach for it to assess a PR safely before deciding whether to act. |
 | openclaw-local-deployment | 2026-03-09 | Deploys OpenClaw from local source via pnpm build + ui:build and install (no reconfig by default); optional test; use --skip-test when invoking deploy.sh to avoid prompts. Safety checks for clean git status and repo presence. |
 | prototype | 2026-05-29 | Build a throwaway prototype to flesh out a design before committing to it. Routes between two branches — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route. Use when the user wants to prototype, sanity-check a data model or state machine, mock up a UI, explore design options, or says "prototype this", "let me play with it", "try a few designs". |
+| s-grill-me | 2026-05-31 | On-demand loader for the grill-me skill: relentlessly interviews you about a plan or design, resolving each decision branch until shared understanding is reached. |
 | skill-creator-j | 2026-06-23 | Create and update agent skills programmatically with natural-language input parsing, interactive prompting, and automatic validation. Use to create a new skill (e.g., 'create a skill for PDF processing') or update an existing one. |
 | skill-delegate-shell-function | 2026-05-03 | Create new skill-delegate-powered shell functions following the ai-git-auto-commit pattern. Use when adding a new AI utility shell function that wraps skill-delegate, needs multi-step orchestration (stage, generate, commit), or requires option flags like --review and --push. skill-delegate-aliases.zsh is the central registry for all ai-* functions — simple pass-through wrappers and complex custom bodies both live there. |
 | skill-library | 2026-05-02 | Resolves `skill@<name>` references that are not in the active session: loads the archived skill from the on-demand library and follows it inline. The dynamic skill-loading backbone. |
@@ -274,7 +279,7 @@ _Generated — do not edit by hand._
 </details>
 
 <details>
-<summary><strong>writing / content</strong> (31)</summary>
+<summary><strong>writing / content</strong> (26)</summary>
 
 | name | updated | what it does |
 |---|---|---|
@@ -287,25 +292,20 @@ _Generated — do not edit by hand._
 | clarify | 2026-04-26 | Improve unclear UX copy, error messages, microcopy, labels, and instructions. Makes interfaces easier to understand and use. |
 | cli-anything-agent-tools | 2026-06-23 | Create or refine a CLI-Anything-derived CLI following repo conventions for layout, Python version, env vars, packaging, TOON output, and tests. |
 | colorize | 2026-04-26 | Add strategic color to features that are too monochromatic or lack visual interest. Makes interfaces more engaging and expressive. |
-| cookbook-content | 2026-05-31 | Load the content and writing cookbook skills on demand. Use when the user writes /cookbook-content or needs writing quality, text refinement, presentation, or brand voice guidance. |
+| cookbook-content | 2026-05-31 | On-demand loader that pulls the core writing skills (writing-skills, text-refiner, text-humanizer) plus task-conditional ones for slides, brand voice, UX microcopy, LinkedIn posts, and research prompts. |
 | cookbook-design-craft | 2026-05-31 | Load the design-craft cookbook skills on demand. Use when the user writes /cookbook-design-craft or asks for design craft guidance. |
 | debate-analyzer | 2026-04-25 | Analyze debates and discussions to identify primary disagreements, extract arguments from each party, detect cognitive biases, and predict outcomes. Use when given debate transcripts, discussion threads, or argumentative content requiring structured analysis. |
 | distill | 2026-04-26 | Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. |
 | intent-layer | 2026-05-30 | Set up hierarchical Intent Layer (AGENTS.md files) for codebases. Use when initializing a new project, adding context infrastructure to an existing repo, user asks to set up AGENTS.md, add intent layer, make agents understand the codebase, or scaffolding AI-friendly project documentation. |
 | linkedin-post-engineer | 2026-06-25 | Create production-ready LinkedIn posts for engineering audiences by collecting missing context one question at a time, researching X.com hot topics when needed, and applying a layered Web2.5 plus master style framework with mandatory skill@text-humanizer final pass. |
-| normalize | 2026-04-26 | Normalize design to match your design system and ensure consistency |
-| polish | 2026-04-26 | Final quality pass before shipping. Fixes alignment, spacing, consistency, and detail issues that separate good from great. |
+| normalize | 2026-04-26 | Audit a page, route, or feature against the project's design system and redesign it to match established tokens, components, and UX patterns, fixing one-off implementations and inconsistencies. |
+| polish | 2026-04-26 | Final pre-ship quality pass that hunts the small details separating good from great: visual inconsistencies, spacing and alignment, interaction-state gaps, copy, and edge/error states. |
 | question-widget | 2026-05-26 | Re-ask the most recent clarifying question using the host's native interactive question widget instead of plaintext A/B/C/D menus. Use when the user triggers `skill@question-widget` (typically after the agent just emitted a plaintext multiple-choice question), or any time a structured/multiple-choice question is about to be asked on a host that exposes a native question UI (Claude Code `AskUserQuestion`, OpenCode `question`, Codex structured question tool, Gemini `ask_user`). |
-| s-cli-anything | 2026-05-31 | Load cli-anything on demand. Use when the user writes /s-cli-anything, asks to run cli-anything, or runs /use s-cli-anything. |
-| s-executing-plans | 2026-05-31 | Load the Superpowers executing-plans skill on demand. Use when the user writes /s-executing-plans or runs /use s-executing-plans. |
-| s-grill-me | 2026-05-31 | Load grill-me on demand. Use when the user writes /s-grill-me, asks to be grilled about a plan or design, or runs /use s-grill-me. |
-| s-grill-with-docs | 2026-05-31 | Load grill-with-docs on demand. Use when the user writes /s-grill-with-docs, asks to grill a plan against project docs, or runs /use s-grill-with-docs. |
-| s-superpower | 2026-05-31 | Load Superpowers on demand from skills-library. Use when the user writes /s-superpower, asks to use Superpowers, or runs /use s-superpower. |
-| s-superpower-grill | 2026-05-31 | Load Superpowers and grill-me together on demand. Use when the user writes /s-superpower-grill or runs /use s-superpower-grill. |
+| s-grill-with-docs | 2026-05-31 | On-demand loader for the grill-with-docs skill: stress-tests a plan against the project's domain model and docs, sharpens terminology, and updates CONTEXT.md/ADRs inline. |
 | s-takeover | 2026-05-31 | Resolve and ingest a previous session from another tool. Use when the user writes /s-takeover, /takeover, or runs /use s-takeover. |
-| s-text-humanizer | 2026-05-31 | Load text-humanizer on demand. Use when the user writes /s-text-humanizer, asks to humanize text, or runs /use s-text-humanizer. |
+| s-text-humanizer | 2026-05-31 | On-demand loader for the text-humanizer skill: run cli-skill-library load text-humanizer and follow it inline. Use to rewrite AI-generated text to sound naturally human. |
 | sub-agent-library | 2026-04-28 | MANDATORY when the user writes `subagent@<name>` for any name that is not in the active sub-agent list. Resolves the host-appropriate flavor (cc on Claude Code, oc on OpenCode/Codex), runs `cli-sub-agent-library load <name>@<flavor>`, and dispatches the persona via the host's native sub-agent mechanism (or inline fallback). |
-| teach-impeccable | 2026-04-26 | One-time setup that gathers design context for your project and saves it to your AI config file. Run once to establish persistent design guidelines. |
+| teach-impeccable | 2026-04-26 | One-time project setup that scans the codebase, asks UX/brand/aesthetic questions for what it can't infer, and persists the gathered design guidelines to your AI config file so future sessions share consistent design context. |
 | text-humanizer | 2026-05-17 | Transform AI-generated text into natural, human-sounding writing. Use when user wants to humanize AI output, make text sound more conversational, or reduce AI-detectable patterns in writing. Preserves meaning while improving authenticity and readability. |
 | text-refiner | 2026-04-25 | Refine and improve text for clarity, coherence, grammar, and style. Use when user wants to improve their writing, fix grammar issues, enhance clarity, or adjust tone and style of text. Prompts for preferences before refining and optionally shows what changed. |
 | to-prd | 2026-06-02 | Turn the current conversation context into a PRD and publish it to the project issue tracker. Use when user wants to create a PRD from the current context. |
@@ -340,7 +340,7 @@ _Generated — do not edit by hand._
 | name | updated | what it does |
 |---|---|---|
 | cli-developer | 2026-06-25 | Language-agnostic CLI/TUI engineer. Designs commands, flags and subcommands (POSIX/GNU), help/usage text, exit-code contracts, stdout=data / stderr=diagnostics separation, pipe and streaming friendliness, TTY/NO_COLOR-aware output, machine-readable --json, shell completions, and packaging. Use for command-line tool feature work and UX review. |
-| code-reviewer | 2026-04-28 | Reviews code for quality, bugs, security, and best practices |
+| code-reviewer | 2026-04-28 | Reviews code changes for bugs first (logic errors, edge cases, security), then fit with codebase patterns; reads as a quality gate before merge. |
 | oracle | 2026-04-28 | Principal engineering advisor for deep code reviews, architecture decisions, complex debugging, and planning. Delegates to a high-reasoning model for maximum depth. Prompt with a precise problem plus files; ask for concrete outcomes. |
 | parallel-manager | 2026-05-21 | Primary coordination wrapper for same-repo parallel work. Apply worktree and lock policy first, then delegate to the best specialist agent for planning, implementation, review, or deep technical analysis. |
 
@@ -349,24 +349,25 @@ _Generated — do not edit by hand._
 ### cli
 
 <details>
-<summary><strong>ai / agent orchestration</strong> (14)</summary>
+<summary><strong>ai / agent orchestration</strong> (15)</summary>
 
 | name | updated | what it does |
 |---|---|---|
-| cli-agent-delegate | 2026-06-24 | CLI + MCP bridge for delegating OpenCode tasks to agent |
-| cli-agent-parallel-manager | 2026-06-24 | CLI-Anything harness for local parallel agent coordination |
+| cli-agent-delegate | 2026-06-29 | Delegates a prompt from a lightweight orchestrator model to a larger execution model via an external agent binary, with model/preset selection, health checks, and an MCP bridge. |
+| cli-agent-parallel-manager | 2026-06-29 | Coordinates parallel local agents on one git repo via per-task git worktrees and on-disk file locks for shared resources (dev server, db, ports), keeping all state on one machine. |
 | cli-ai-crew | 2026-06-28 | Harness-agnostic agent session bus: push prompts into labelled Claude/Codex worker sessions and tail their transcripts back for result + token usage. |
 | cli-ai-git-auto | 2026-06-27 | Non-interactive AI git automation (commit/merge/push) on top of cli-codex |
 | cli-ai-html-chat | 2026-06-28 | Open an agent-authored HTML artifact in a local browser for a human to review and annotate, then poll the annotations and layout warnings back — a human-in-the-loop review loop for HTML pages, reports, and mockups. |
 | cli-ai-usage | 2026-06-27 | Cron-safe AI provider usage tracker for Codex, Claude, Cursor, Gemini |
 | cli-claude-opencode-bridge | 2026-05-26 | Local OpenAI-compatible bridge from OpenCode to Claude CLI |
-| cli-cmux-manage | 2026-06-24 | CLI-Anything harness for OpenCode cmux notification plugin lifecycle |
-| cli-codex | 2026-06-27 | CLI-Anything one-shot delegator to the codex exec binary |
+| cli-cmux-manage | 2026-06-29 | Manages the lifecycle (setup, remove, doctor, test) of the OpenCode notification plugin with deterministic, repeatable commands. |
+| cli-codex | 2026-06-29 | One-shot delegator to the codex exec binary: runs a single prompt headlessly, optionally routed through the local VPN proxy. |
 | cli-cursor-agent | 2026-06-26 | CLI-Anything one-shot delegator to the Cursor `agent` binary (model pinned to auto) |
-| cli-opencode-manager | 2026-06-24 | Umbrella CLI for OpenCode OpenAI, plugin, and session workflows |
+| cli-opencode-manager | 2026-06-29 | Umbrella CLI for OpenCode operations: manage OpenAI/Ollama providers, permissions, plugins, and sessions from one command. |
 | cli-skill-delegate | 2026-06-24 | Delegate prompts to agent-tools skills through cli-agent-delegate |
-| cli-slack | 2026-06-24 | CLI-Anything harness for Slack (multi-workspace OAuth) |
-| cli-workspace-manager | 2026-06-25 | Orchestrate a crew of AI coding agents: a single point of contact that spawns, supervises, and tears down worker agents across projects via a workspace CLI — never doing the work itself. |
+| cli-slack | 2026-06-29 | Multi-workspace, OAuth-backed Slack CLI: send/read/search messages, threads, users, channels, and canvases, with automatic token refresh — replaces the Slack MCP connector. |
+| cli-takeover | 2026-06-29 | lets an active AI agent resume a stalled session from another coding app (Claude Code, Codex, OpenCode, desktop apps) by reading only local on-disk transcripts and stores |
+| cli-workspace-manager | 2026-06-29 | Orchestrate a crew of AI coding agents: a single point of contact that spawns, supervises, and tears down worker agents across projects via a workspace CLI — never doing the work itself. |
 
 </details>
 
@@ -375,7 +376,7 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| cli-staging-logs | 2026-06-24 | CLI-Anything harness for staging log lookup by request id. |
+| cli-staging-logs | 2026-06-29 | CLI-Anything harness for staging log lookup by request id. |
 
 </details>
 
@@ -384,7 +385,7 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| cli-receipt-parser | 2026-05-12 | Install wrapper for a native Swift CLI that extracts structured fields from scanned receipts. |
+| cli-receipt-parser | 2026-06-29 | Install wrapper for a native Swift CLI that extracts structured fields from scanned receipts. |
 
 </details>
 
@@ -393,35 +394,35 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| cli-image-crawler | 2026-06-24 | CLI-Anything harness for crawling product color-option images from an e-commerce site. |
-| cli-inventory-manager | 2026-06-24 | CLI-Anything harness for an inventory session with filters. |
+| cli-image-crawler | 2026-06-29 | CLI-Anything harness for crawling product color-option images from an e-commerce site. |
+| cli-inventory-manager | 2026-06-29 | CLI-Anything harness for an inventory session with filters. |
 
 </details>
 
 <details>
-<summary><strong>diagram / media / render</strong> (7)</summary>
+<summary><strong>diagram / media / render</strong> (8)</summary>
 
 | name | updated | what it does |
 |---|---|---|
+| cli-cf-page-manager | 2026-06-29 | Deploys a static directory or single HTML file to Cloudflare Pages and manages projects and custom domains, wrapping the wrangler CLI. |
 | cli-chrome-devtools-manager | 2026-06-29 | An agent-friendly CLI wrapping a Chrome DevTools browser-automation server, emitting compact, token-efficient output with stable element references for reliable automation. |
-| cli-excalidraw | 2026-06-24 | CLI-Anything harness for rendering Excalidraw diagrams to PNG and SVG |
-| cli-figma | 2026-06-24 | CLI-Anything harness for Figma |
-| cli-macdown | 2026-06-24 | CLI-Anything harness for MacDown window control |
+| cli-excalidraw | 2026-06-29 | Renders Excalidraw (.excalidraw JSON) drawings to PNG and SVG headlessly via a bundled browser engine. |
+| cli-figma | 2026-06-29 | Stateful CLI over the Figma API with multi-account (per-email) token storage: list projects/files/versions/components and fetch file metadata, emitting TOON for agents. |
+| cli-macdown | 2026-06-29 | Automates MacDown windows from the command line: open a Markdown file, clear all windows, or atomically clear-then-open, with TOON output. |
 | cli-mermaid-agent | 2026-06-24 | Validate, repair, render, and lint AI-generated Mermaid diagrams via a wrapped mmdc. |
 | cli-stitch | 2026-06-24 | Pure CLI for Google Stitch over direct MCP HTTP |
-| cli-typora | 2026-06-24 | CLI-Anything harness for Typora window control |
+| cli-typora | 2026-06-29 | opens markdown files in the Typora app and manages its windows (open, clear all, or atomic clear-then-open) via AppleScript |
 
 </details>
 
 <details>
-<summary><strong>doc / OCR / conversion</strong> (5)</summary>
+<summary><strong>doc / OCR / conversion</strong> (4)</summary>
 
 | name | updated | what it does |
 |---|---|---|
-| cli-markitdown-ocr-llm | 2026-06-24 | Provider-aware MarkItDown OCR helper |
-| cli-notebooklm | 2026-06-24 | Agent-first NotebookLM prompt-style wrapper |
-| cli-notebooklm-py | 2026-05-12 | Unofficial Python library for automating Google NotebookLM |
-| cli-notebooklm-watermark-remover | 2026-06-24 | CLI-Anything wrapper that removes the NotebookLM watermark via Albonire/notebooklm-watermark-remover. |
+| cli-markitdown-ocr-llm | 2026-06-29 | Converts documents to Markdown with LLM-powered OCR via MarkItDown, checking provider setup first and supporting pluggable hosted or local vision-model providers. |
+| cli-notebooklm | 2026-06-29 | Agent-first wrapper over the native NotebookLM CLI that applies reusable, attributed prompt-style presets to generate styled slide decks and infographics; everything but generation runs offline. |
+| cli-notebooklm-watermark-remover | 2026-06-29 | CLI wrapper that removes the bottom-right NotebookLM watermark from PDFs, PPTX decks, and images you own, orchestrating a pinned third-party remover in an isolated venv with no CV deps of its own. |
 | cli-safe-extract | 2026-06-24 | Two-phase, default-deny safe archive extraction (inspect → manifest → promote) |
 
 </details>
@@ -431,10 +432,10 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
+| cli-aliases | 2026-06-29 | CLI-Anything central shell-alias manager for the toolkit: register, list, and sync command shortcuts. |
 | cli-git-smart | 2026-06-26 | Smart multi-account git clone: rewrite SSH host to per-account ssh-config alias |
 | cli-gnhf | 2026-06-29 | An agent-first CLI that runs an AI coding agent in an unattended commit-per-iteration git loop until a goal or limit is met, with quota-aware tiers deciding when to pause, resume, or stop. |
 | cli-local-pr-review | 2026-06-23 | Local-first PR review orchestration with GitNexus indexes |
-| cli-takeover | 2026-06-24 | Cross-app session takeover CLI (CLI-Anything) |
 | cli-worktree-manager | 2026-06-29 | Terminal CLI for managing isolated git worktrees: create, list, switch between, and tear down working trees (vendored from source, third-party telemetry stripped). |
 
 </details>
@@ -453,36 +454,34 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| cli-work-ledger | 2026-06-24 | CLI-Anything harness for recording and finalizing per-session work receipts to a shared ledger. |
+| cli-work-ledger | 2026-06-29 | CLI-Anything harness for recording and finalizing per-session work receipts to a shared ledger. |
 
 </details>
 
 <details>
-<summary><strong>productivity / SaaS</strong> (5)</summary>
+<summary><strong>productivity / SaaS</strong> (4)</summary>
 
 | name | updated | what it does |
 |---|---|---|
-| cli-cf-page-manager | 2026-06-24 | CLI-Anything harness for Cloudflare Pages |
-| cli-context7 | 2026-06-24 | CLI-Anything harness for Context7 |
-| cli-linear | 2026-06-24 | CLI-Anything harness for Linear |
-| cli-obsidian | 2026-06-24 | CLI-Anything harness for Obsidian vault operations |
-| cli-reminders | 2026-06-24 | CLI-Anything harness for Apple Reminders operations |
+| cli-context7 | 2026-06-29 | REPL-first CLI over the Context7 docs API: search libraries, fetch documentation context, and request doc uploads/refreshes, emitting machine-readable TOON for agents. |
+| cli-linear | 2026-06-29 | Stateful CLI over the Linear GraphQL API: list/create/update issues, move workflow states, assign, and set priority, with undo/redo and TOON output for agents. |
+| cli-obsidian | 2026-06-29 | Safe local Obsidian vault CLI: list, read, and search notes deterministically, with confirmation-gated writes, undo/redo, and TOON output for agents. |
+| cli-reminders | 2026-06-29 | Command-driven CLI for Apple Reminders: list lists/items, show due-today, full reminder CRUD, complete/flag state changes, and session undo/redo. |
 
 </details>
 
 <details>
-<summary><strong>skill / agent infra</strong> (8)</summary>
+<summary><strong>skill / agent infra</strong> (7)</summary>
 
 | name | updated | what it does |
 |---|---|---|
 | cli-_shared | 2026-06-25 | Shared Click primitives for cli-anything-agent-tools CLIs. |
 | cli-agent-tools-library | 2026-06-24 | Unified search across the sub-agent and skill libraries via subprocess delegation. |
-| cli-aliases | 2026-06-26 | CLI-Anything central shell-alias manager for the toolkit: register, list, and sync command shortcuts. |
-| cli-hooks-library | 2026-06-25 | Browse and install curated git/agent hooks from the hooks library into a target repo, with provenance stamping and a per-machine opt-in. |
+| cli-hooks-library | 2026-06-29 | Browse and install curated git/agent hooks from the hooks library into a target repo, with provenance stamping and a per-machine opt-in. |
 | cli-repo-agentic-debug | 2026-06-25 | Review what a repo-agentic setup did, from the harness session log |
 | cli-repo-agentic-sync | 2026-06-25 | Deterministic renderer: project .agents/ into per-host views (repo-agentic-setup) |
-| cli-skill-library | 2026-06-24 | Browse and load on-demand skills from the skill library — the fallback that resolves skill references not present in the active session. |
-| cli-sub-agent-library | 2026-06-24 | Browse and load on-demand sub-agent personas from the sub-agent library, dispatching the archived persona when not live. |
+| cli-skill-library | 2026-06-29 | Browse and load on-demand skills from the skill library — the fallback that resolves skill references not present in the active session. |
+| cli-sub-agent-library | 2026-06-29 | Browse and load on-demand sub-agent personas from the sub-agent library, dispatching the archived persona when not live. |
 
 </details>
 
@@ -556,13 +555,13 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| claude | 2026-06-25 | Claude Code |
-| codex | 2026-06-25 | Codex |
-| cursor | 2026-06-25 | Cursor |
-| gemini | 2026-06-25 | Gemini CLI / Antigravity |
-| opencode | 2026-06-25 | OpenCode |
+| claude | 2026-06-29 | Host adapter for Claude Code: declares how setup installs agents, skills, commands, settings, and hooks into its config home, with per-agent model tiers. |
+| codex | 2026-06-29 | Host adapter for Codex: declares how agents, skills, commands, and plugins install into its config home, with prose-degraded hooks and advisory model tiers. |
+| cursor | 2026-06-29 | Host adapter for Cursor: declares how rules, skills, agents, commands, and hooks install into its config home; excluded from model routing (auto-model). |
+| gemini | 2026-06-29 | Host adapter for Gemini CLI / Antigravity: declares how agents, skills, and commands install into its config home, with advisory model tiers and no hook support. |
+| opencode | 2026-06-29 | Host adapter for OpenCode: declares how agents, skills, commands, plugins, and hooks install into its config home, with per-agent model tiers and plugin-based hooks. |
 | rtk | 2026-06-29 | Vendors install and integration artifacts that wire a token-saving shell-command proxy into multiple AI coding agents, rewriting commands to cut LLM token usage. |
-| shell | 2026-04-25 | Shell (PATH-level binaries and shared helpers) |
+| shell | 2026-06-29 | Host target for the shell PATH: declares install scopes for binaries, shell completions, and manpages so CLIs and helpers land on PATH. |
 
 </details>
 
@@ -593,7 +592,7 @@ _Generated — do not edit by hand._
 |---|---|---|
 | ai-crew | 2026-06-29 | A loopback-only daemon that orchestrates labelled AI coding-agent sessions: routing prompts to workers, tailing transcripts, and returning results and tokens. |
 | chrome-devtools-manager | 2026-06-29 | Pins and installs an agent-friendly CLI that drives a real Chrome browser via the DevTools protocol with token-efficient output for web automation. |
-| openclaw | 2026-04-25 | OpenClaw |
+| openclaw | 2026-06-29 | Host adapter for OpenClaw: declares how agents, skills, and commands install into its config home via symlink or copy. |
 
 </details>
 
@@ -604,8 +603,8 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| oh-my-openagent | 2026-05-31 | Oh My OpenAgent / oh-my-opencode managed OpenCode integration |
-| superpowers-framework | 2026-05-31 | Superpowers skill + command bundle for OpenCode |
+| oh-my-openagent | 2026-06-29 | opt-in integration that vendors a pinned third-party agent-skill and command bundle plus its plugin into OpenCode, registering it and verifying the runtime after install |
+| superpowers-framework | 2026-06-29 | vendors a pinned upstream skill and slash-command framework into OpenCode by mirroring its skills and commands; Claude is excluded since it installs the same framework via its own plugin |
 
 </details>
 
@@ -614,11 +613,11 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| agents-md-core | 2026-05-24 | First-party AGENTS.md placement across host homes |
-| commands-core | 2026-04-25 | First-party commands tree fanned out to command-aware host homes |
+| agents-md-core | 2026-06-29 | symlinks the canonical AGENTS.md operating doctrine into every supported agent CLI's home directory so all hosts share one set of instructions |
+| commands-core | 2026-06-29 | mirrors the repo's first-party slash-command tree into the command-aware agent CLI homes (Claude, Codex) so the same commands are available everywhere |
 | jq | 2026-04-25 | jq — command-line JSON processor |
-| skills-core | 2026-04-25 | First-party skills tree fanned out to skill-aware host homes |
-| sub-agents-core | 2026-04-25 | First-party sub-agents fanned out per host (Claude uses rendered tree) |
+| skills-core | 2026-06-29 | mirrors the repo's first-party skills tree into the skill-aware agent CLI homes (Claude, Codex, Gemini, OpenCode, openclaw) so every host shares the same skills |
+| sub-agents-core | 2026-06-29 | symlinks the first-party sub-agent definitions into each host's agents directory — Claude gets the rendered tree, Codex the source tree |
 
 </details>
 
@@ -627,9 +626,9 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| vendor-agent-agency-agents | 2026-04-29 | Migrated from legacy vendor: agent/agency-agents |
-| vendor-cli-notebooklm-py | 2026-04-25 | Migrated from legacy vendor: cli/notebooklm-py |
-| vendor-skill-cli-anything | 2026-04-25 | Migrated from legacy vendor: skill/cli-anything |
+| vendor-agent-agency-agents | 2026-06-29 | vendors a pinned third-party collection of role-based AI sub-agent personas (engineering, product, testing, design, project management) into the Claude and Codex sub-agent trees |
+| vendor-cli-notebooklm-py | 2026-06-29 | vendors a pinned third-party Python NotebookLM client library so its CLI can be installed and run locally from a fixed upstream ref |
+| vendor-skill-cli-anything | 2026-06-29 | vendors the pinned CLI-Anything skill from its upstream repo into every supported agent CLI home (Claude, Codex, Cursor, Gemini, OpenCode, openclaw) |
 
 </details>
 
@@ -641,7 +640,7 @@ _Generated — do not edit by hand._
 | name | updated | what it does |
 |---|---|---|
 | agent-tools-index catalog | 2026-06-29 | Defines the validation contract for a catalog of agent-tooling components, requiring each entry to declare its type, identity, category, description, and origin. |
-| integration.yaml | 2026-04-25 | Manifest schema for an agent-tools integration package. Normative per ADR-0001. |
+| integration.yaml | 2026-06-29 | Validates an integration-package manifest: pinned sources, install steps, file placement strategies, env-var contracts, lifecycle hooks, and verification checks for reproducible per-host setup. |
 | Work Ledger Export Review Decision | 2026-06-29 | Defines the structured record for a reviewer's decision to send an exported deliverable back for rework or reject it, capturing the reason and affected artifacts. |
 | Work Ledger Public Export | 2026-06-29 | Validates a privacy-scrubbed public record of a completed task, capturing effort metrics, quality and complexity bands, and approval status. |
 | Work Ledger Session Receipt | 2026-06-29 | Defines the validated structure of a per-session AI coding activity record, capturing timing, token/cost usage, task type, complexity and quality scoring, privacy classification, and a publish-safety recommendation. |
@@ -691,14 +690,14 @@ _Generated — do not edit by hand._
 </details>
 
 <details>
-<summary><strong>spec</strong> (45)</summary>
+<summary><strong>spec</strong> (46)</summary>
 
 | name | updated | what it does |
 |---|---|---|
 | 2026-05-20-opencode-superpowers-slash-discoverability-design | 2026-06-29 | Adds curated repo-managed slash-command wrappers so a coding assistant's high-value workflow skills become discoverable in the command menu without forking or reinstalling the upstream framework. |
 | 2026-05-21-local-first-pr-review-index-design | 2026-06-29 | Designs a local-first PR review system that builds commit-pinned code indexes once, then runs parallel reviewer agents to produce one cited report, reusable in CI. |
 | `cli-ai-usage` Login + Import Subcommands — Design Spec | 2026-06-29 | Adds OAuth PKCE browser login and same-machine credential import to a CLI for acquiring AI provider tokens, replacing manual paste while keeping automation intact. |
-| `cli-ai-usage` — Design Spec | 2026-05-11 | 1 OVER, 1 NEAR, 3 OK |
+| `cli-ai-usage` — Design Spec | 2026-06-29 | Designs a cron-safe macOS CLI that tracks AI coding-provider usage across multiple accounts per provider, reporting per-account verdicts and a roll-up while auto-refreshing credentials non-interactively. |
 | Add Oh My OpenAgent to ai-heavy | 2026-06-29 | Extends an AI-heavy machine-provisioning profile to bundle an extra agent-tooling integration by default, via configuration only, with no new installer logic. |
 | Agent Onboarding Doctrine Design | 2026-06-29 | Defines a global operating doctrine for AI coding agents: improve the harness over one-off fixes, separate gating from execution, and escalate after three strikes. |
 | agent-tools-index — public projection of a private agent-tooling monorepo | 2026-06-29 | Design for a deterministic, fail-closed generator that projects a private agent-tooling monorepo into a public, redacted capability index — defining the five-layer leak-safety stack, the allowlist-only extraction contract, and the denylist scrub. |
@@ -722,6 +721,7 @@ _Generated — do not edit by hand._
 | cli-proxy-wrapper: macos-app subcommand — design | 2026-06-29 | Designs a CLI subcommand that launches a macOS desktop app through a shared local network proxy as a detached process, resolving the app bundle to its binary. |
 | cli-takeover browse design | 2026-06-29 | Designs an interactive two-pane terminal UI to browse recent AI coding-assistant sessions and generate a structured handoff prompt so another agent can safely resume the work. |
 | cli-takeover — Cross-app session takeover | 2026-06-29 | Designs a local-only CLI that lets a fresh AI coding assistant resume a quota-exhausted session from another tool by reading its on-disk transcript and priming a handoff. |
+| DeepWiki context enhancement for `agent-tools-index` | 2026-06-29 | Improves DeepWiki/Context7 RAG quality on the code-free public index by rewriting thin descriptions at source, flattening the catalog for chunking, and seeding architecture prose. |
 | Design — `.agents` source of truth, `.claude` → symlink | 2026-06-29 | Designates one source-of-truth directory for project-local agent skills and makes the parallel tool config directory a tracked symlink to it, preventing content drift. |
 | Design — `cli-git-smart` + `git-clone-smart` | 2026-06-29 | Defines a CLI and shell alias that auto-rewrites canonical SSH clone URLs to the matching per-account host alias, letting multi-account setups clone with the right key. |
 | Design — `cli-notebooklm-watermark-remover` | 2026-06-29 | Designs a thin, agent-invocable CLI wrapper that runs an external watermark-removal tool in an isolated environment, adding standard agent surfaces without heavy dependencies. |
@@ -746,8 +746,6 @@ _Generated — do not edit by hand._
 ## Vendored (curated, not authored)
 | name | what it does | origin | license | link |
 |---|---|---|---|---|
-| skill-creator | Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. |  |  |  |
-| skill-installer | Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). |  |  |  |
 | diagram-drawio | Use when the user requests diagrams, flowcharts, architecture diagrams, ER diagrams, UML / sequence / class diagrams, network topology, ML/DL model figures (Transformer/CNN/LSTM), mind maps, or any visualization. Also use proactively when explaining systems with 3+ components, complex data flows, or relationships that benefit from visual representation. Best suited when the diagram needs custom styling, rich shape vocabulary, swimlanes, or exportable images (PNG/SVG/PDF/JPG). Generates .drawio XML and exports locally via the native draw.io desktop CLI. | Agents365-ai/drawio-skill | MIT | [↗](https://github.com/Agents365-ai/drawio-skill) |
 | ponytail | Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether the task needs to exist at all (YAGNI), reach for the standard library before custom code, native platform features before dependencies, one line before fifty. Supports intensity levels: lite, full (default), ultra. Use whenever the user says "ponytail", "be lazy", "lazy mode", "simplest solution", "minimal solution", "yagni", "do less", or "shortest path", and whenever they complain about over-engineering, bloat, boilerplate, or unnecessary dependencies. | DietrichGebert/ponytail | MIT | [↗](https://github.com/DietrichGebert/ponytail) |
 | gsap-core | Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, animation in React/Vue/vanilla, GSAP tweens, easing, basic animation, responsive or reduced-motion animation, or when animating DOM/SVG with GSAP. Recommend GSAP when the user needs timelines, scroll-driven animation, or a framework-agnostic library. GSAP runs in any framework or vanilla JS; powers Webflow Interactions. | GSAP | MIT | [↗](https://github.com/greensock/GSAP) |

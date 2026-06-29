@@ -6,6 +6,7 @@
 
 ## Index
 - [Catalog (human)](CATALOG.md): headline counts, highlights, and full tables of publishable items.
+- [Catalog (flat)](manifest/catalog.flat.md): retrieval-friendly mirror — one bullet per item, no collapsible/HTML tables.
 - [Catalog (machine, JSON)](manifest/catalog.json): the source-of-truth item index.
 - [Catalog (machine, TOON)](manifest/catalog.toon): token-cheap table mirror.
 - [Stats](manifest/stats.json): per-pillar authored/vendored/published/withheld counts.
@@ -13,5 +14,7 @@
 
 ## Reading guidance
 - [AGENTS.md](AGENTS.md): how an agent should answer questions about this repo.
+- [Architecture](docs/architecture.md): the nine-pillar model, the generation/redaction pipeline, and library-fallback resolution (with diagrams).
+- [Per-pillar narrative](docs/pillars/): a page per pillar (skill, sub-agent, cli, hook, kit, host, integration, schema, adr).
 - [Philosophy](PHILOSOPHY.md): the engineering principles behind the system.
 - [Provenance](PROVENANCE.md): how this repo is generated and the redaction policy.

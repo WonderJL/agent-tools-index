@@ -19,12 +19,12 @@
   },
   {
     "category": "spec",
-    "description": "1 OVER, 1 NEAR, 3 OK",
+    "description": "Designs a cron-safe macOS CLI that tracks AI coding-provider usage across multiple accounts per provider, reporting per-account verdicts and a roll-up while auto-refreshing credentials non-interactively.",
     "id": "2026-05-11-cli-ai-usage-design",
     "name": "`cli-ai-usage` \u2014 Design Spec",
     "origin": "authored",
     "pillar": "adr",
-    "updated": "2026-05-11"
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
@@ -405,6 +405,15 @@
     "updated": "2026-06-29"
   },
   {
+    "category": "spec",
+    "description": "Improves DeepWiki/Context7 RAG quality on the code-free public index by rewriting thin descriptions at source, flattening the catalog for chunking, and seeding architecture prose.",
+    "id": "2026-06-29-deepwiki-context-enhancement-design",
+    "name": "DeepWiki context enhancement for `agent-tools-index`",
+    "origin": "authored",
+    "pillar": "adr",
+    "updated": "2026-06-29"
+  },
+  {
     "category": "foundational / architecture",
     "description": "Proposes a declarative, manifest-driven integration-package architecture with a phased lifecycle, receipts, and profiles for reproducible workstation setup across machines.",
     "id": "ADR-0001-integration-architecture",
@@ -484,21 +493,21 @@
   },
   {
     "category": "ai / agent orchestration",
-    "description": "CLI + MCP bridge for delegating OpenCode tasks to agent",
+    "description": "Delegates a prompt from a lightweight orchestrator model to a larger execution model via an external agent binary, with model/preset selection, health checks, and an MCP bridge.",
     "id": "agent-delegate",
     "name": "cli-agent-delegate",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
-    "description": "CLI-Anything harness for local parallel agent coordination",
+    "description": "Coordinates parallel local agents on one git repo via per-task git worktrees and on-disk file locks for shared resources (dev server, db, ports), keeping all state on one machine.",
     "id": "agent-parallel-manager",
     "name": "cli-agent-parallel-manager",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
@@ -537,22 +546,22 @@
     "updated": "2026-06-27"
   },
   {
-    "category": "skill / agent infra",
+    "category": "git / dev workflow",
     "description": "CLI-Anything central shell-alias manager for the toolkit: register, list, and sync command shortcuts.",
     "id": "aliases",
     "name": "cli-aliases",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-26"
+    "updated": "2026-06-29"
   },
   {
-    "category": "productivity / SaaS",
-    "description": "CLI-Anything harness for Cloudflare Pages",
+    "category": "diagram / media / render",
+    "description": "Deploys a static directory or single HTML file to Cloudflare Pages and manages projects and custom domains, wrapping the wrangler CLI.",
     "id": "cf-page-manager",
     "name": "cli-cf-page-manager",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "diagram / media / render",
@@ -588,7 +597,7 @@
     "name": "cli-hooks-library",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "data / scraping",
@@ -597,7 +606,7 @@
     "name": "cli-image-crawler",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "data / scraping",
@@ -606,7 +615,7 @@
     "name": "cli-inventory-manager",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "data / extraction",
@@ -615,7 +624,7 @@
     "name": "cli-receipt-parser",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-05-12"
+    "updated": "2026-06-29"
   },
   {
     "category": "skill / agent infra",
@@ -642,16 +651,16 @@
     "name": "cli-skill-library",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
-    "description": "CLI-Anything harness for Slack (multi-workspace OAuth)",
+    "description": "Multi-workspace, OAuth-backed Slack CLI: send/read/search messages, threads, users, channels, and canvases, with automatic token refresh \u2014 replaces the Slack MCP connector.",
     "id": "cli-slack",
     "name": "cli-slack",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ci / devops",
@@ -660,7 +669,7 @@
     "name": "cli-staging-logs",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "skill / agent infra",
@@ -669,7 +678,7 @@
     "name": "cli-sub-agent-library",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "productivity",
@@ -678,7 +687,7 @@
     "name": "cli-work-ledger",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "git / dev workflow",
@@ -691,30 +700,30 @@
   },
   {
     "category": "ai / agent orchestration",
-    "description": "CLI-Anything harness for OpenCode cmux notification plugin lifecycle",
+    "description": "Manages the lifecycle (setup, remove, doctor, test) of the OpenCode notification plugin with deterministic, repeatable commands.",
     "id": "cmux-manage",
     "name": "cli-cmux-manage",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
-    "description": "CLI-Anything one-shot delegator to the codex exec binary",
+    "description": "One-shot delegator to the codex exec binary: runs a single prompt headlessly, optionally routed through the local VPN proxy.",
     "id": "codex",
     "name": "cli-codex",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-27"
+    "updated": "2026-06-29"
   },
   {
     "category": "productivity / SaaS",
-    "description": "CLI-Anything harness for Context7",
+    "description": "REPL-first CLI over the Context7 docs API: search libraries, fetch documentation context, and request doc uploads/refreshes, emitting machine-readable TOON for agents.",
     "id": "context7",
     "name": "cli-context7",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
@@ -727,21 +736,21 @@
   },
   {
     "category": "diagram / media / render",
-    "description": "CLI-Anything harness for rendering Excalidraw diagrams to PNG and SVG",
+    "description": "Renders Excalidraw (.excalidraw JSON) drawings to PNG and SVG headlessly via a bundled browser engine.",
     "id": "excalidraw",
     "name": "cli-excalidraw",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "diagram / media / render",
-    "description": "CLI-Anything harness for Figma",
+    "description": "Stateful CLI over the Figma API with multi-account (per-email) token storage: list projects/files/versions/components and fetch file metadata, emitting TOON for agents.",
     "id": "figma",
     "name": "cli-figma",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "network / vpn",
@@ -772,12 +781,12 @@
   },
   {
     "category": "productivity / SaaS",
-    "description": "CLI-Anything harness for Linear",
+    "description": "Stateful CLI over the Linear GraphQL API: list/create/update issues, move workflow states, assign, and set priority, with undo/redo and TOON output for agents.",
     "id": "linear",
     "name": "cli-linear",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "git / dev workflow",
@@ -790,21 +799,21 @@
   },
   {
     "category": "diagram / media / render",
-    "description": "CLI-Anything harness for MacDown window control",
+    "description": "Automates MacDown windows from the command line: open a Markdown file, clear all windows, or atomically clear-then-open, with TOON output.",
     "id": "macdown",
     "name": "cli-macdown",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "doc / OCR / conversion",
-    "description": "Provider-aware MarkItDown OCR helper",
+    "description": "Converts documents to Markdown with LLM-powered OCR via MarkItDown, checking provider setup first and supporting pluggable hosted or local vision-model providers.",
     "id": "markitdown-ocr-llm",
     "name": "cli-markitdown-ocr-llm",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "diagram / media / render",
@@ -817,57 +826,48 @@
   },
   {
     "category": "doc / OCR / conversion",
-    "description": "Agent-first NotebookLM prompt-style wrapper",
+    "description": "Agent-first wrapper over the native NotebookLM CLI that applies reusable, attributed prompt-style presets to generate styled slide decks and infographics; everything but generation runs offline.",
     "id": "notebooklm",
     "name": "cli-notebooklm",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "doc / OCR / conversion",
-    "description": "Unofficial Python library for automating Google NotebookLM",
-    "id": "notebooklm-py",
-    "name": "cli-notebooklm-py",
-    "origin": "authored",
-    "pillar": "cli",
-    "updated": "2026-05-12"
-  },
-  {
-    "category": "doc / OCR / conversion",
-    "description": "CLI-Anything wrapper that removes the NotebookLM watermark via Albonire/notebooklm-watermark-remover.",
+    "description": "CLI wrapper that removes the bottom-right NotebookLM watermark from PDFs, PPTX decks, and images you own, orchestrating a pinned third-party remover in an isolated venv with no CV deps of its own.",
     "id": "notebooklm-watermark-remover",
     "name": "cli-notebooklm-watermark-remover",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "productivity / SaaS",
-    "description": "CLI-Anything harness for Obsidian vault operations",
+    "description": "Safe local Obsidian vault CLI: list, read, and search notes deterministically, with confirmation-gated writes, undo/redo, and TOON output for agents.",
     "id": "obsidian",
     "name": "cli-obsidian",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
-    "description": "Umbrella CLI for OpenCode OpenAI, plugin, and session workflows",
+    "description": "Umbrella CLI for OpenCode operations: manage OpenAI/Ollama providers, permissions, plugins, and sessions from one command.",
     "id": "opencode-manager",
     "name": "cli-opencode-manager",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "productivity / SaaS",
-    "description": "CLI-Anything harness for Apple Reminders operations",
+    "description": "Command-driven CLI for Apple Reminders: list lists/items, show due-today, full reminder CRUD, complete/flag state changes, and session undo/redo.",
     "id": "reminders",
     "name": "cli-reminders",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "doc / OCR / conversion",
@@ -897,22 +897,22 @@
     "updated": "2026-06-24"
   },
   {
-    "category": "git / dev workflow",
-    "description": "Cross-app session takeover CLI (CLI-Anything)",
+    "category": "ai / agent orchestration",
+    "description": "lets an active AI agent resume a stalled session from another coding app (Claude Code, Codex, OpenCode, desktop apps) by reading only local on-disk transcripts and stores",
     "id": "takeover",
     "name": "cli-takeover",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "diagram / media / render",
-    "description": "CLI-Anything harness for Typora window control",
+    "description": "opens markdown files in the Typora app and manages its windows (open, clear all, or atomic clear-then-open) via AppleScript",
     "id": "typora",
     "name": "cli-typora",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
@@ -921,7 +921,7 @@
     "name": "cli-workspace-manager",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "secrets (blocking)",
@@ -988,39 +988,39 @@
   },
   {
     "category": "agent CLI drivers",
-    "description": "Claude Code",
+    "description": "Host adapter for Claude Code: declares how setup installs agents, skills, commands, settings, and hooks into its config home, with per-agent model tiers.",
     "id": "claude",
     "name": "claude",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
-    "description": "Codex",
+    "description": "Host adapter for Codex: declares how agents, skills, commands, and plugins install into its config home, with prose-degraded hooks and advisory model tiers.",
     "id": "codex",
     "name": "codex",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
-    "description": "Cursor",
+    "description": "Host adapter for Cursor: declares how rules, skills, agents, commands, and hooks install into its config home; excluded from model routing (auto-model).",
     "id": "cursor",
     "name": "cursor",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
-    "description": "Gemini CLI / Antigravity",
+    "description": "Host adapter for Gemini CLI / Antigravity: declares how agents, skills, and commands install into its config home, with advisory model tiers and no hook support.",
     "id": "gemini",
     "name": "gemini",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "cross-cutting (routing / gate)",
@@ -1042,21 +1042,21 @@
   },
   {
     "category": "integration / tool pin",
-    "description": "OpenClaw",
+    "description": "Host adapter for OpenClaw: declares how agents, skills, and commands install into its config home via symlink or copy.",
     "id": "openclaw",
     "name": "openclaw",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
-    "description": "OpenCode",
+    "description": "Host adapter for OpenCode: declares how agents, skills, commands, plugins, and hooks install into its config home, with per-agent model tiers and plugin-based hooks.",
     "id": "opencode",
     "name": "opencode",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-06-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
@@ -1069,12 +1069,12 @@
   },
   {
     "category": "agent CLI drivers",
-    "description": "Shell (PATH-level binaries and shared helpers)",
+    "description": "Host target for the shell PATH: declares install scopes for binaries, shell completions, and manpages so CLIs and helpers land on PATH.",
     "id": "shell",
     "name": "shell",
     "origin": "authored",
     "pillar": "host",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "host",
@@ -1087,21 +1087,21 @@
   },
   {
     "category": "first-party core",
-    "description": "First-party AGENTS.md placement across host homes",
+    "description": "symlinks the canonical AGENTS.md operating doctrine into every supported agent CLI's home directory so all hosts share one set of instructions",
     "id": "agents-md-core",
     "name": "agents-md-core",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-05-24"
+    "updated": "2026-06-29"
   },
   {
     "category": "first-party core",
-    "description": "First-party commands tree fanned out to command-aware host homes",
+    "description": "mirrors the repo's first-party slash-command tree into the command-aware agent CLI homes (Claude, Codex) so the same commands are available everywhere",
     "id": "commands-core",
     "name": "commands-core",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "first-party core",
@@ -1114,66 +1114,66 @@
   },
   {
     "category": "agent frameworks (vendored)",
-    "description": "Oh My OpenAgent / oh-my-opencode managed OpenCode integration",
+    "description": "opt-in integration that vendors a pinned third-party agent-skill and command bundle plus its plugin into OpenCode, registering it and verifying the runtime after install",
     "id": "oh-my-openagent",
     "name": "oh-my-openagent",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-05-31"
+    "updated": "2026-06-29"
   },
   {
     "category": "first-party core",
-    "description": "First-party skills tree fanned out to skill-aware host homes",
+    "description": "mirrors the repo's first-party skills tree into the skill-aware agent CLI homes (Claude, Codex, Gemini, OpenCode, openclaw) so every host shares the same skills",
     "id": "skills-core",
     "name": "skills-core",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "first-party core",
-    "description": "First-party sub-agents fanned out per host (Claude uses rendered tree)",
+    "description": "symlinks the first-party sub-agent definitions into each host's agents directory \u2014 Claude gets the rendered tree, Codex the source tree",
     "id": "sub-agents-core",
     "name": "sub-agents-core",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "agent frameworks (vendored)",
-    "description": "Superpowers skill + command bundle for OpenCode",
+    "description": "vendors a pinned upstream skill and slash-command framework into OpenCode by mirroring its skills and commands; Claude is excluded since it installs the same framework via its own plugin",
     "id": "superpowers-framework",
     "name": "superpowers-framework",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-05-31"
+    "updated": "2026-06-29"
   },
   {
     "category": "migrated vendor packages",
-    "description": "Migrated from legacy vendor: agent/agency-agents",
+    "description": "vendors a pinned third-party collection of role-based AI sub-agent personas (engineering, product, testing, design, project management) into the Claude and Codex sub-agent trees",
     "id": "vendor-agent-agency-agents",
     "name": "vendor-agent-agency-agents",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-04-29"
+    "updated": "2026-06-29"
   },
   {
     "category": "migrated vendor packages",
-    "description": "Migrated from legacy vendor: cli/notebooklm-py",
+    "description": "vendors a pinned third-party Python NotebookLM client library so its CLI can be installed and run locally from a fixed upstream ref",
     "id": "vendor-cli-notebooklm-py",
     "name": "vendor-cli-notebooklm-py",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "migrated vendor packages",
-    "description": "Migrated from legacy vendor: skill/cli-anything",
+    "description": "vendors the pinned CLI-Anything skill from its upstream repo into every supported agent CLI home (Claude, Codex, Cursor, Gemini, OpenCode, openclaw)",
     "id": "vendor-skill-cli-anything",
     "name": "vendor-skill-cli-anything",
     "origin": "authored",
     "pillar": "integration",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "overlay",
@@ -1249,12 +1249,12 @@
   },
   {
     "category": "schema",
-    "description": "Manifest schema for an agent-tools integration package. Normative per ADR-0001.",
+    "description": "Validates an integration-package manifest: pinned sources, install steps, file placement strategies, env-var contracts, lifecycle hooks, and verification checks for reproducible per-host setup.",
     "id": "integration.schema.json",
     "name": "integration.yaml",
     "origin": "authored",
     "pillar": "schema",
-    "updated": "2026-04-25"
+    "updated": "2026-06-29"
   },
   {
     "category": "schema",
@@ -1681,7 +1681,7 @@
   },
   {
     "category": "animation",
-    "description": "Load the animation cookbook skills on demand. Use when the user writes /cookbook-animation or needs GSAP, scroll animation, timeline sequencing, or WebGPU/Three.js guidance.",
+    "description": "On-demand loader that pulls the core GSAP animation skills (core, timeline, performance) plus task-conditional ones for React/Vue, ScrollTrigger, plugins, utils, and WebGPU/Three.js.",
     "id": "cookbook-animation",
     "name": "cookbook-animation",
     "origin": "authored",
@@ -1690,7 +1690,7 @@
   },
   {
     "category": "writing / content",
-    "description": "Load the content and writing cookbook skills on demand. Use when the user writes /cookbook-content or needs writing quality, text refinement, presentation, or brand voice guidance.",
+    "description": "On-demand loader that pulls the core writing skills (writing-skills, text-refiner, text-humanizer) plus task-conditional ones for slides, brand voice, UX microcopy, LinkedIn posts, and research prompts.",
     "id": "cookbook-content",
     "name": "cookbook-content",
     "origin": "authored",
@@ -2257,7 +2257,7 @@
   },
   {
     "category": "git / PR / commit",
-    "description": "Use when reviewing a GitHub pull request locally, especially when the user provides a PR URL and wants a read-only report without GitHub comments, checkout mutations, or remote writes.",
+    "description": "Run a local, read-only review of a GitHub PR from its URL, producing a Markdown report without posting comments, mutating checkouts, or any remote writes. Reach for it to assess a PR safely before deciding whether to act.",
     "id": "local-pr-review",
     "name": "local-pr-review",
     "origin": "authored",
@@ -2275,7 +2275,7 @@
   },
   {
     "category": "writing / content",
-    "description": "Normalize design to match your design system and ensure consistency",
+    "description": "Audit a page, route, or feature against the project's design system and redesign it to match established tokens, components, and UX patterns, fixing one-off implementations and inconsistencies.",
     "id": "normalize",
     "name": "normalize",
     "origin": "authored",
@@ -2293,7 +2293,7 @@
   },
   {
     "category": "design & UI/UX",
-    "description": "Design or improve onboarding flows, empty states, and first-time user experiences. Helps users get started successfully and understand value quickly.",
+    "description": "Design or improve onboarding flows, empty states, and first-time experiences, focusing the path on the user's 'aha moment' so they reach value quickly rather than learning everything.",
     "id": "onboard",
     "name": "onboard",
     "origin": "authored",
@@ -2329,7 +2329,7 @@
   },
   {
     "category": "animation",
-    "description": "Improve interface performance across loading speed, rendering, animations, images, and bundle size. Makes experiences faster and smoother.",
+    "description": "Find and fix interface performance issues across loading, rendering, animations, images, and bundle size, measuring Core Web Vitals before and after so effort targets what actually matters.",
     "id": "optimize",
     "name": "optimize",
     "origin": "authored",
@@ -2356,7 +2356,7 @@
   },
   {
     "category": "writing / content",
-    "description": "Final quality pass before shipping. Fixes alignment, spacing, consistency, and detail issues that separate good from great.",
+    "description": "Final pre-ship quality pass that hunts the small details separating good from great: visual inconsistencies, spacing and alignment, interaction-state gaps, copy, and edge/error states.",
     "id": "polish",
     "name": "polish",
     "origin": "authored",
@@ -2568,8 +2568,8 @@
     "updated": "2026-04-25"
   },
   {
-    "category": "writing / content",
-    "description": "Load cli-anything on demand. Use when the user writes /s-cli-anything, asks to run cli-anything, or runs /use s-cli-anything.",
+    "category": "engineering quality & debugging",
+    "description": "On-demand loader for the cli-anything skill: build, refine, test, or validate a Python CLI harness that wraps a GUI app or source repo for agent use.",
     "id": "s-cli-anything",
     "name": "s-cli-anything",
     "origin": "authored",
@@ -2586,8 +2586,8 @@
     "updated": "2026-05-31"
   },
   {
-    "category": "writing / content",
-    "description": "Load the Superpowers executing-plans skill on demand. Use when the user writes /s-executing-plans or runs /use s-executing-plans.",
+    "category": "engineering quality & debugging",
+    "description": "On-demand loader for the executing-plans skill: work through a written implementation plan in a fresh session with TDD and review checkpoints.",
     "id": "s-executing-plans",
     "name": "s-executing-plans",
     "origin": "authored",
@@ -2595,8 +2595,8 @@
     "updated": "2026-05-31"
   },
   {
-    "category": "writing / content",
-    "description": "Load grill-me on demand. Use when the user writes /s-grill-me, asks to be grilled about a plan or design, or runs /use s-grill-me.",
+    "category": "git / PR / commit",
+    "description": "On-demand loader for the grill-me skill: relentlessly interviews you about a plan or design, resolving each decision branch until shared understanding is reached.",
     "id": "s-grill-me",
     "name": "s-grill-me",
     "origin": "authored",
@@ -2605,7 +2605,7 @@
   },
   {
     "category": "writing / content",
-    "description": "Load grill-with-docs on demand. Use when the user writes /s-grill-with-docs, asks to grill a plan against project docs, or runs /use s-grill-with-docs.",
+    "description": "On-demand loader for the grill-with-docs skill: stress-tests a plan against the project's domain model and docs, sharpens terminology, and updates CONTEXT.md/ADRs inline.",
     "id": "s-grill-with-docs",
     "name": "s-grill-with-docs",
     "origin": "authored",
@@ -2614,7 +2614,7 @@
   },
   {
     "category": "engineering quality & debugging",
-    "description": "Load prompt-optimizer on demand. Use when the user writes /s-prompt-optimizer, asks to optimize a prompt, or runs /use s-prompt-optimizer.",
+    "description": "On-demand loader for the prompt-optimizer skill: refines an LLM prompt using prompt-engineering best practices for clearer instructions and better responses.",
     "id": "s-prompt-optimizer",
     "name": "s-prompt-optimizer",
     "origin": "authored",
@@ -2631,8 +2631,8 @@
     "updated": "2026-05-31"
   },
   {
-    "category": "writing / content",
-    "description": "Load Superpowers on demand from skills-library. Use when the user writes /s-superpower, asks to use Superpowers, or runs /use s-superpower.",
+    "category": "engineering quality & debugging",
+    "description": "On-demand loader for the Superpowers framework: bootstraps it and kicks off the design to plan to TDD-implement lifecycle starting from brainstorming.",
     "id": "s-superpower",
     "name": "s-superpower",
     "origin": "authored",
@@ -2640,8 +2640,8 @@
     "updated": "2026-05-31"
   },
   {
-    "category": "writing / content",
-    "description": "Load Superpowers and grill-me together on demand. Use when the user writes /s-superpower-grill or runs /use s-superpower-grill.",
+    "category": "engineering quality & debugging",
+    "description": "On-demand loader that combines the Superpowers planning discipline with grill-me for an adversarial, Superpowers-grade stress-test of a plan or design.",
     "id": "s-superpower-grill",
     "name": "s-superpower-grill",
     "origin": "authored",
@@ -2659,7 +2659,7 @@
   },
   {
     "category": "writing / content",
-    "description": "Load text-humanizer on demand. Use when the user writes /s-text-humanizer, asks to humanize text, or runs /use s-text-humanizer.",
+    "description": "On-demand loader for the text-humanizer skill: run cli-skill-library load text-humanizer and follow it inline. Use to rewrite AI-generated text to sound naturally human.",
     "id": "s-text-humanizer",
     "name": "s-text-humanizer",
     "origin": "authored",
@@ -2685,14 +2685,6 @@
     "updated": "2026-04-25"
   },
   {
-    "category": "agent & skill meta-tooling",
-    "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
-    "id": "skill-creator",
-    "name": "skill-creator",
-    "origin": "vendored",
-    "pillar": "skill"
-  },
-  {
     "category": "git / PR / commit",
     "description": "Create and update agent skills programmatically with natural-language input parsing, interactive prompting, and automatic validation. Use to create a new skill (e.g., 'create a skill for PDF processing') or update an existing one.",
     "id": "skill-creator-j",
@@ -2712,7 +2704,7 @@
   },
   {
     "category": "agent & skill meta-tooling",
-    "description": "Manage skill-delegate aliases and generated zsh helper functions.",
+    "description": "Manage skill-delegate aliases and the generated zsh helper functions via the `skill-delegate alias` CLI \u2014 add, update, delete, list, seed, render, and install ai-* shell shortcuts without hand-editing the generated YAML/zsh.",
     "id": "skill-delegate-manager",
     "name": "skill-delegate-manager",
     "origin": "authored",
@@ -2727,14 +2719,6 @@
     "origin": "authored",
     "pillar": "skill",
     "updated": "2026-05-03"
-  },
-  {
-    "category": "agent & skill meta-tooling",
-    "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
-    "id": "skill-installer",
-    "name": "skill-installer",
-    "origin": "vendored",
-    "pillar": "skill"
   },
   {
     "category": "git / PR / commit",
@@ -2855,7 +2839,7 @@
   },
   {
     "category": "writing / content",
-    "description": "One-time setup that gathers design context for your project and saves it to your AI config file. Run once to establish persistent design guidelines.",
+    "description": "One-time project setup that scans the codebase, asks UX/brand/aesthetic questions for what it can't infer, and persists the gathered design guidelines to your AI config file so future sessions share consistent design context.",
     "id": "teach-impeccable",
     "name": "teach-impeccable",
     "origin": "authored",
@@ -3721,7 +3705,7 @@
   },
   {
     "category": "review / quality / security",
-    "description": "Reviews code for quality, bugs, security, and best practices",
+    "description": "Reviews code changes for bugs first (logic errors, edge cases, security), then fit with codebase patterns; reads as a quality gate before merge.",
     "id": "code-reviewer",
     "name": "code-reviewer",
     "origin": "authored",

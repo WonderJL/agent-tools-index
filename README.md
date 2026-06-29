@@ -9,12 +9,12 @@
 
 # agent-tools-index
 
-> **One private monorepo. Six AI coding agents. 389 reusable capabilities — one source of truth.**
+> **One private monorepo. Six AI coding agents. 387 reusable capabilities — one source of truth.**
 >
 > _Multi-agent orchestration, token-efficient tooling, and a fail-closed public projection of a private system._
 
 <p align="center">
-<img src="https://img.shields.io/badge/capabilities-389-1f6feb" alt="capabilities: 389"> <img src="https://img.shields.io/badge/skills-182-1f6feb" alt="skills: 182"> <img src="https://img.shields.io/badge/sub_agents-64-1f6feb" alt="sub_agents: 64"> <img src="https://img.shields.io/badge/CLIs-50-1f6feb" alt="CLIs: 50"> <img src="https://img.shields.io/badge/ADRs-52-1f6feb" alt="ADRs: 52"> <img src="https://img.shields.io/badge/hosts-14-1f6feb" alt="hosts: 14"> <img src="https://img.shields.io/badge/integrations-10-1f6feb" alt="integrations: 10"> <img src="https://img.shields.io/badge/kits-7-1f6feb" alt="kits: 7"> <img src="https://img.shields.io/badge/schemas-6-1f6feb" alt="schemas: 6"> <img src="https://img.shields.io/badge/hooks-4-1f6feb" alt="hooks: 4">
+<img src="https://img.shields.io/badge/capabilities-387-1f6feb" alt="capabilities: 387"> <img src="https://img.shields.io/badge/skills-180-1f6feb" alt="skills: 180"> <img src="https://img.shields.io/badge/sub_agents-64-1f6feb" alt="sub_agents: 64"> <img src="https://img.shields.io/badge/CLIs-49-1f6feb" alt="CLIs: 49"> <img src="https://img.shields.io/badge/ADRs-53-1f6feb" alt="ADRs: 53"> <img src="https://img.shields.io/badge/hosts-14-1f6feb" alt="hosts: 14"> <img src="https://img.shields.io/badge/integrations-10-1f6feb" alt="integrations: 10"> <img src="https://img.shields.io/badge/kits-7-1f6feb" alt="kits: 7"> <img src="https://img.shields.io/badge/schemas-6-1f6feb" alt="schemas: 6"> <img src="https://img.shields.io/badge/hooks-4-1f6feb" alt="hooks: 4">
 </p>
 
 <p align="center">
@@ -50,7 +50,7 @@ human-in-the-loop review, token efficiency, context architecture, and turnkey re
 | **`skill-library`** | Resolves on-demand skills that aren't loaded in the active session, fetching the archived definition the first time one is referenced. | A large, growing skill set against a fixed context budget — keep the long tail one hop away, and never refuse a capability that exists. |
 | **`repo-agentic-setup`** | Makes any repository agent-ready in a single pass across the four pillars: skills, hooks, sub-agents, and routing. | Consistent, re-runnable setup across every host without hand-wiring each one as the repo evolves. |
 
-→ Browse all 389 items in **[CATALOG.md](CATALOG.md)**.
+→ Browse all 387 items in **[CATALOG.md](CATALOG.md)**.
 
 ## Flagship case studies
 
@@ -73,6 +73,10 @@ flowchart LR
   REND --> PUB[("Public index<br/>fail-closed pipeline")]
 ```
 
+→ **[docs/architecture.md](docs/architecture.md)** — the nine-pillar model, the generation/redaction
+pipeline, the leak-safe projection layers, and library-fallback resolution, each with a diagram.
+Per-pillar narrative lives in **[docs/pillars/](docs/pillars/)**.
+
 ## What makes this interesting
 
 - **Allowlist, not denylist, at the trust boundary** — this public repo is *generated* from the
@@ -91,15 +95,19 @@ flowchart LR
 
 ## By the numbers
 
-**389 published capabilities** — 182 skills (147 authored), 64
-sub-agents, 50 CLIs, 52 architecture decision records, 14 host adapters,
+**387 published capabilities** — 180 skills (147 authored), 64
+sub-agents, 49 CLIs, 53 architecture decision records, 14 host adapters,
 10 integrations, 7 kits, 6 schemas, and 4 hooks.
 
 ## Explore
 
-- **[Interactive catalog](https://WonderJL.github.io/agent-tools-index)** — a filterable, searchable view of all 389 capabilities (GitHub Pages).
+- **[Interactive catalog](https://WonderJL.github.io/agent-tools-index)** — a filterable, searchable view of all 387 capabilities (GitHub Pages).
 - **[CATALOG.md](CATALOG.md)** — the full human catalog: headline counts, highlights, and collapsible
   per-category tables, plus a link-out section for vendored tools.
+- **[manifest/catalog.flat.md](manifest/catalog.flat.md)** — a flat, retrieval-friendly mirror of the
+  catalog (one bullet per item, no collapsibles/HTML) for tools that read this repo.
+- **[docs/architecture.md](docs/architecture.md)** / **[docs/pillars/](docs/pillars/)** — architecture
+  diagrams and a narrative page per pillar.
 - **[PHILOSOPHY.md](PHILOSOPHY.md)** — the engineering principles behind the system.
 - **[manifest/catalog.json](manifest/catalog.json)** / **[catalog.toon](manifest/catalog.toon)** — the
   machine-readable index.

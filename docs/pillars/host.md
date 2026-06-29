@@ -1,0 +1,9 @@
+# Host pillar
+
+The host pillar is where the system meets each agent tool. The portable capabilities — skills, sub-agent personas, commands, hooks — are authored once in the host-agnostic core; a host adapter is the thin layer that declares how those capabilities land in a specific agent's home and how its format-divergent concerns (model tiers, hooks) are lowered. Adding support for a new agent means writing one adapter, not re-authoring the capabilities. The pillar holds 14 items, all first-party.
+
+The backbone of an adapter is a small capabilities manifest. It declares the host's identity and config-home location, the install `strategies` it supports (symlink or copy), the `file_kinds` it accepts (for example agent, skill, command, hook), whether multiple instances can run per machine, and a per-host `hook` strategy — `settings-merge`, `hooks-json-merge`, or `prose-degrade` for hosts without native hook support. Hosts that route models declare `model_tiers` (deep/build/cheap); others opt out (Cursor runs auto-model). Optional `transforms` adapt a capability to the host's schema, such as stripping non-native frontmatter from an agent definition.
+
+The 14 items split into four groups: **agent CLI drivers** (7) — adapters for the coding assistants themselves, e.g. `claude`, `codex`, `cursor`, `gemini`; **cross-cutting** (2) — `global`, which carries shared cross-tool governance (install policy, push/PR consent gates), plus a routing layer; **integration / tool pins** (3) — adapters that pin and install an external tool (e.g. `chrome-devtools-manager`) rather than re-hosting it; and **host** (2), including `agent-multiplexer`, a terminal-based agent multiplexer. Each adapter records receipt path-scopes so installs stay auditable and reversible.
+
+**See also:** [Catalog](../../CATALOG.md#host) · [Flat catalog](../../manifest/catalog.flat.md) · [Architecture](../architecture.md) · [Philosophy](../../PHILOSOPHY.md)
