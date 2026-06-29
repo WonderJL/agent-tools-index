@@ -29,7 +29,7 @@ This is the **public, redacted index** of a private agent-tooling monorepo — o
 
 Three pillars carry the system. Each is a card below.
 
-## Highlights
+## At a glance
 
 | 🤖 **Multi-agent orchestration** | ⚡ **Token-efficient tooling** | 🔒 **Fail-closed projection** |
 |---|---|---|
