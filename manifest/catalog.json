@@ -272,8 +272,8 @@
   {
     "category": "spec",
     "description": "Designs a layered adoption of an agent-ergonomic browser-automation CLI: one sync command installs and pins it, an on-demand skill makes it discoverable, and the underlying browser MCP stays router-owned.",
-    "id": "2026-06-24-chrome-devtools-axi-adoption-design",
-    "name": "chrome-devtools-axi Adoption \u2014 Design",
+    "id": "2026-06-24-chrome-devtools-manager-adoption-design",
+    "name": "chrome-devtools-manager Adoption \u2014 Design",
     "origin": "authored",
     "pillar": "adr",
     "updated": "2026-06-29"
@@ -557,8 +557,8 @@
   {
     "category": "diagram / media / render",
     "description": "An agent-friendly CLI wrapping a Chrome DevTools browser-automation server, emitting compact, token-efficient output with stable element references for reliable automation.",
-    "id": "chrome-devtools-axi",
-    "name": "cli-chrome-devtools-axi",
+    "id": "chrome-devtools-manager",
+    "name": "cli-chrome-devtools-manager",
     "origin": "authored",
     "pillar": "cli",
     "updated": "2026-06-29"
@@ -980,8 +980,8 @@
   {
     "category": "integration / tool pin",
     "description": "Pins and installs an agent-friendly CLI that drives a real Chrome browser via the DevTools protocol with token-efficient output for web automation.",
-    "id": "chrome-devtools-axi",
-    "name": "chrome-devtools-axi",
+    "id": "chrome-devtools-manager",
+    "name": "chrome-devtools-manager",
     "origin": "authored",
     "pillar": "host",
     "updated": "2026-06-29"
@@ -1555,9 +1555,9 @@
   },
   {
     "category": "engineering quality & debugging",
-    "description": "Control a Chrome browser session through the chrome-devtools-axi CLI - navigate, snapshot, click, fill forms, run JavaScript, inspect console and network, take screenshots, audit performance. Use whenever a task needs a real browser: opening or testing a web page, clicking through a flow, extracting page content, or debugging a website.",
-    "id": "chrome-devtools-axi",
-    "name": "chrome-devtools-axi",
+    "description": "Control a Chrome browser session through the chrome-devtools-manager CLI \u2014 navigate, snapshot, click, fill forms, run JavaScript, inspect console and network, take screenshots, audit performance. Use whenever a task needs a real browser: opening or testing a web page, clicking through a flow, extracting page content, or debugging a website.",
+    "id": "chrome-devtools-manager",
+    "name": "chrome-devtools-manager",
     "origin": "authored",
     "pillar": "skill",
     "updated": "2026-06-24"

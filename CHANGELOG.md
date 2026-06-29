@@ -31,7 +31,7 @@
 - adr: `2026-06-23-axi-toon-fleet-migration-design`
 - adr: `2026-06-23-power-machine-sync-tier-design`
 - adr: `2026-06-24-agents-claude-symlink-consolidation-design`
-- adr: `2026-06-24-chrome-devtools-axi-adoption-design`
+- adr: `2026-06-24-chrome-devtools-manager-adoption-design`
 - adr: `2026-06-24-self-host-html-render-design`
 - adr: `2026-06-24-workspace-manager-design`
 - adr: `2026-06-25-ai-crew-hardening-design`
@@ -62,7 +62,7 @@
 - cli: `ai-usage`
 - cli: `aliases`
 - cli: `cf-page-manager`
-- cli: `chrome-devtools-axi`
+- cli: `chrome-devtools-manager`
 - cli: `claude-opencode-bridge`
 - cli: `cli-agent-tools-library`
 - cli: `cli-hooks-library`
@@ -109,7 +109,7 @@
 - hook: `typecheck-on-stop`
 - host: `agent-multiplexer`
 - host: `ai-crew`
-- host: `chrome-devtools-axi`
+- host: `chrome-devtools-manager`
 - host: `claude`
 - host: `codex`
 - host: `cursor`
@@ -172,7 +172,7 @@
 - skill: `brainstorming`
 - skill: `brand`
 - skill: `caveman`
-- skill: `chrome-devtools-axi`
+- skill: `chrome-devtools-manager`
 - skill: `clarify`
 - skill: `cli-anything`
 - skill: `cli-anything-agent-tools`

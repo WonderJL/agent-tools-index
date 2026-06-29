@@ -26,15 +26,12 @@ _Generated — do not edit by hand._
 ## Highlights
 | name | what it does |
 |---|---|
-| **cli-anything** | Use when the user wants Codex to build, refine, test, or validate a CLI-Anything harness for a GUI application or source repository. Adapts the CLI-Anything methodology to Codex without changing the generated Python harness format. |
-| **deep-research** | Generate domain- and topic-specific deep-research prompt markdown files. Uses token-efficient lite template. Use when user wants a structured research prompt for architecture, strategy, policy, AI systems, security, economics, or any complex domain. Prompt is saved to output directory for copy/paste into an LLM. If result > 4900 chars, offers a trimmed version. |
-| **diagnose** | Disciplined diagnosis loop for hard bugs and performance regressions. Reproduce → minimise → hypothesise → instrument → fix → regression-test. Use when user says "diagnose this" / "debug this", reports a bug, says something is broken/throwing/failing, or describes a performance regression. |
+| **ai-crew** | A loopback-only daemon that orchestrates labelled AI coding-agent sessions: routing prompts to workers, tailing transcripts, and returning results and tokens. |
+| **ai-html-chat** | Open an agent-authored HTML artifact in a local browser for a human to review and annotate, then poll the annotations and layout warnings back — a human-in-the-loop review loop for HTML pages, reports, and mockups. |
+| **chrome-devtools-manager** | Control a Chrome browser session through the chrome-devtools-manager CLI — navigate, snapshot, click, fill forms, run JavaScript, inspect console and network, take screenshots, audit performance. Use whenever a task needs a real browser: opening or testing a web page, clicking through a flow, extracting page content, or debugging a website. |
 | **no-mistakes** | Centrally version-controlled config for an AI-agent-driven validation gate that runs review, tests, lint, docs, and CI before code reaches its push target. |
-| **plan-master** | Transform user task descriptions into comprehensive engineering plans following a structured PLAN-<slug>.md format. Use when user wants to create a detailed engineering plan from a task description, needs to break down complex tasks into actionable steps, or requires a production-grade plan document. |
-| **plan-master** | Engineering planning agent. Creates structured PLAN-<slug>.md implementation plans using the plan-master skill. Always runs on Opus to guarantee maximum planning quality and codebase reasoning. |
 | **repo-agentic-setup** | Use to set up a target repo for agentic development (the four pillars - skills, sub-agents, slash-commands, hooks - plus model routing), or to update/migrate an already-configured repo to the latest kits. Detects the stack, composes kits, diagnoses gaps, prescribes library + bespoke artifacts, populates .agents/ and the root AGENTS.md, then shells out to cli-repo-agentic-sync to dry-run and render to all hosts. Triggered by /repo-agentic-setup. |
 | **skill-library** | Resolves `skill@<name>` references that are not in the active session: loads the archived skill from the on-demand library and follows it inline. The dynamic skill-loading backbone. |
-| **sub-agent-library** | MANDATORY when the user writes `subagent@<name>` for any name that is not in the active sub-agent list. Resolves the host-appropriate flavor (cc on Claude Code, oc on OpenCode/Codex), runs `cli-sub-agent-library load <name>@<flavor>`, and dispatches the persona via the host's native sub-agent mechanism (or inline fallback). |
 
 ## Authored capabilities
 
@@ -137,7 +134,7 @@ _Generated — do not edit by hand._
 | ai-html-chat | 2026-06-25 | Open an agent-authored HTML artifact in a local browser for a human to review and annotate, then poll the annotations and layout warnings back — a human-in-the-loop review loop for HTML pages, reports, and mockups. |
 | ai-repo-eval | 2026-06-23 | Evaluate a public AI-focused GitHub repo — security + architecture + adoption — and emit a single combined REPORT.md. Use when the user wants to decide whether (and how) to adopt a repo. Invoke as `skill@ai-repo-eval <github-url>`. |
 | analyze-logs | 2026-04-25 | Analyze log files to identify patterns, anomalies, and potential issues. Use when user shares log content, mentions "logs", "log file", "analyze logs", or asks to debug application output. Provides reliability insights and actionable recommendations for general developers. |
-| chrome-devtools-axi | 2026-06-24 | Control a Chrome browser session through the chrome-devtools-axi CLI - navigate, snapshot, click, fill forms, run JavaScript, inspect console and network, take screenshots, audit performance. Use whenever a task needs a real browser: opening or testing a web page, clicking through a flow, extracting page content, or debugging a website. |
+| chrome-devtools-manager | 2026-06-24 | Control a Chrome browser session through the chrome-devtools-manager CLI — navigate, snapshot, click, fill forms, run JavaScript, inspect console and network, take screenshots, audit performance. Use whenever a task needs a real browser: opening or testing a web page, clicking through a flow, extracting page content, or debugging a website. |
 | cli-anything | 2026-04-25 | Use when the user wants Codex to build, refine, test, or validate a CLI-Anything harness for a GUI application or source repository. Adapts the CLI-Anything methodology to Codex without changing the generated Python harness format. |
 | code-refactor-backend-rust | 2026-04-25 | Refactor backend Rust files to team style using required file inputs, per-file pre-change summaries, confirmation-gated edits, and strict cargo check/clippy/test gates. |
 | code-refactor-backend-ts | 2026-04-25 | Refactor backend TypeScript files to team style using required file inputs, per-file pre-change summaries, confirmation-gated edits, and strict zero lint/type issues. |
@@ -406,7 +403,7 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| cli-chrome-devtools-axi | 2026-06-29 | An agent-friendly CLI wrapping a Chrome DevTools browser-automation server, emitting compact, token-efficient output with stable element references for reliable automation. |
+| cli-chrome-devtools-manager | 2026-06-29 | An agent-friendly CLI wrapping a Chrome DevTools browser-automation server, emitting compact, token-efficient output with stable element references for reliable automation. |
 | cli-excalidraw | 2026-06-24 | CLI-Anything harness for rendering Excalidraw diagrams to PNG and SVG |
 | cli-figma | 2026-06-24 | CLI-Anything harness for Figma |
 | cli-macdown | 2026-06-24 | CLI-Anything harness for MacDown window control |
@@ -595,7 +592,7 @@ _Generated — do not edit by hand._
 | name | updated | what it does |
 |---|---|---|
 | ai-crew | 2026-06-29 | A loopback-only daemon that orchestrates labelled AI coding-agent sessions: routing prompts to workers, tailing transcripts, and returning results and tokens. |
-| chrome-devtools-axi | 2026-06-29 | Pins and installs an agent-friendly CLI that drives a real Chrome browser via the DevTools protocol with token-efficient output for web automation. |
+| chrome-devtools-manager | 2026-06-29 | Pins and installs an agent-friendly CLI that drives a real Chrome browser via the DevTools protocol with token-efficient output for web automation. |
 | openclaw | 2026-04-25 | OpenClaw |
 
 </details>
@@ -712,7 +709,7 @@ _Generated — do not edit by hand._
 | ai-git-auto crew escalation ladder — design | 2026-06-29 | Designs a token-aware, two-axis escalation ladder that routes automated git tasks across model tiers and providers by difficulty, falling back to human-in-the-loop merge resolution. |
 | AXI/TOON Fleet Migration — Design | 2026-06-29 | Standardizes ~37 agent-facing command-line tools on one token-efficient structured-output format, retiring legacy JSON flags via a shared vendored encoder. |
 | cf-page-manager — Design | 2026-06-29 | Designs a thin command-line tool that deploys static sites or single HTML files to a managed edge hosting platform, wrapping the official CLI to handle projects, custom domains, and auth. |
-| chrome-devtools-axi Adoption — Design | 2026-06-29 | Designs a layered adoption of an agent-ergonomic browser-automation CLI: one sync command installs and pins it, an on-demand skill makes it discoverable, and the underlying browser MCP stays router-owned. |
+| chrome-devtools-manager Adoption — Design | 2026-06-29 | Designs a layered adoption of an agent-ergonomic browser-automation CLI: one sync command installs and pins it, an on-demand skill makes it discoverable, and the underlying browser MCP stays router-owned. |
 | Claude Interactive Delegate PRD | 2026-06-29 | An experimental sidecar provider that bridges an agentic coding CLI into an editor via terminal automation and transcript tailing, beside a reliable provider. |
 | Claude OpenCode Bridge Reliability Design | 2026-06-29 | Reliability-focused hardening design for a local HTTP bridge that proxies one AI chat agent to another harness, clarifying module ownership and turning malformed requests and corrupted local state into clean errors while preserving streaming behavior. |
 | Claude OpenCode Interactive Bridge Design | 2026-06-29 | Designs a stateful session bridge that carries one AI assistant's live interactive prompts (questions, choices, permissions) across an OpenAI-compatible boundary into another agent host. |

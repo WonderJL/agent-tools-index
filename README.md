@@ -10,6 +10,8 @@
 # agent-tools-index
 
 > **One private monorepo. Six AI coding agents. 389 reusable capabilities — one source of truth.**
+>
+> _Multi-agent orchestration, token-efficient tooling, and a fail-closed public projection of a private system._
 
 <p align="center">
 <img src="https://img.shields.io/badge/capabilities-389-1f6feb" alt="capabilities: 389"> <img src="https://img.shields.io/badge/skills-182-1f6feb" alt="skills: 182"> <img src="https://img.shields.io/badge/sub_agents-64-1f6feb" alt="sub_agents: 64"> <img src="https://img.shields.io/badge/CLIs-50-1f6feb" alt="CLIs: 50"> <img src="https://img.shields.io/badge/ADRs-52-1f6feb" alt="ADRs: 52"> <img src="https://img.shields.io/badge/hosts-14-1f6feb" alt="hosts: 14"> <img src="https://img.shields.io/badge/integrations-10-1f6feb" alt="integrations: 10"> <img src="https://img.shields.io/badge/kits-7-1f6feb" alt="kits: 7"> <img src="https://img.shields.io/badge/schemas-6-1f6feb" alt="schemas: 6"> <img src="https://img.shields.io/badge/hooks-4-1f6feb" alt="hooks: 4">
@@ -17,13 +19,47 @@
 
 <p align="center">
   <strong><a href="https://WonderJL.github.io/agent-tools-index">🔎 Explore the interactive catalog →</a></strong>
+  &nbsp;·&nbsp;
+  <a href="CATALOG.md">Full catalog</a>
+  &nbsp;·&nbsp;
+  <a href="#architecture">Architecture</a>
 </p>
 
-A machine-agnostic, agent-agnostic system of **skills, sub-agents, CLIs, hooks, host adapters, and
-architecture decisions** — authored once and rendered into every coding agent's native format, kept
-in sync across machines by git. This repository is the **public, redacted index** of that private
-system: only metadata and hand-written narrative, produced by a fail-closed publisher — never
-source, prompts, configs, or secrets.
+This is the **public, redacted index** of a private agent-tooling monorepo — only metadata and hand-written narrative, produced by a fail-closed publisher that never emits source, prompts, configs, or secrets.
+
+Three pillars carry the system. Each is a card below.
+
+## Highlights
+
+| 🤖 **Multi-agent orchestration** | ⚡ **Token-efficient tooling** | 🔒 **Fail-closed projection** |
+|---|---|---|
+| One source, rendered into six hosts — and `ai-crew` drives Claude **and** Codex workers from a single orchestration bus. | ~37 agent-facing CLIs emit a compact structured format (TOON) instead of verbose JSON — fewer tokens spent reading tool output. | An allowlist at the trust boundary, not a denylist. This repo is the proof: generated from a private source, leaking nothing. |
+| [Read the case study →](docs/case-studies/host-agnostic-renderer.md) | [See the catalog →](https://WonderJL.github.io/agent-tools-index) | [How it's projected →](docs/case-studies/leak-safe-projection.md) |
+
+## Featured capabilities
+
+Six capabilities, each a different kind of hard — orchestration, autonomous quality gating,
+human-in-the-loop review, token efficiency, context architecture, and turnkey reuse.
+
+| capability | what it does | why it's hard |
+|---|---|---|
+| **`ai-crew`** | Pushes prompts into labelled Claude *and* Codex worker sessions from one bus, then tails each transcript back with its result and token usage. | One uniform interface over two different agent harnesses — correlating asynchronous worker transcripts back to the prompt that spawned them. |
+| **`no-mistakes`** | An autonomous ship-gate: review, tests, lint, docs, PR, and CI must all pass before code reaches its push target. | Gating an autonomous agent's output with no human in the loop means every stage has to be machine-checkable and fail-closed. |
+| **`ai-html-chat`** | Opens an agent-built HTML artifact in a browser for a human to annotate, then polls the annotations and layout warnings back to the agent. | A human-in-the-loop channel for visual artifacts an agent can't see — the same tool used to design this repo's interactive catalog. |
+| **`chrome-devtools-manager`** | An agent-ergonomic CLI that drives a real Chrome over the DevTools protocol, emitting token-efficient output with stable element references. | Live browser state is huge and noisy; emitting it compactly with references that survive re-renders is what makes multi-step automation reliable. |
+| **`skill-library`** | Resolves on-demand skills that aren't loaded in the active session, fetching the archived definition the first time one is referenced. | A large, growing skill set against a fixed context budget — keep the long tail one hop away, and never refuse a capability that exists. |
+| **`repo-agentic-setup`** | Makes any repository agent-ready in a single pass across the four pillars: skills, hooks, sub-agents, and routing. | Consistent, re-runnable setup across every host without hand-wiring each one as the repo evolves. |
+
+→ Browse all 389 items in **[CATALOG.md](CATALOG.md)**.
+
+## Flagship case studies
+
+| Case study | The hard part |
+|---|---|
+| [One source, many agent hosts](docs/case-studies/host-agnostic-renderer.md) | Keeping the same capability consistent across six host schemas without per-host copies. |
+| [A two-tier skill system that feels like one](docs/case-studies/skill-library-fallback.md) | A large, growing skill set against a fixed context budget. |
+| [Hooks as a dormant-by-default library](docs/case-studies/hooks-as-library.md) | Powerful lifecycle automation that must never surprise-block a session. |
+| [This index, safely projected](docs/case-studies/leak-safe-projection.md) | Publishing a portfolio from a private monorepo without leaking a single private token. |
 
 ## Architecture
 
@@ -47,34 +83,17 @@ flowchart LR
   that loads only when referenced keeps the agent's context budget small.
 - **Authored vs vendored, always** — third-party tools are vendored with license + upstream
   provenance, so the system never overclaims.
-
-## Flagship case studies
-
-| Case study | The hard part |
-|---|---|
-| [One source, many agent hosts](docs/case-studies/host-agnostic-renderer.md) | Keeping the same capability consistent across six host schemas without per-host copies. |
-| [A two-tier skill system that feels like one](docs/case-studies/skill-library-fallback.md) | A large, growing skill set against a fixed context budget. |
-| [Hooks as a dormant-by-default library](docs/case-studies/hooks-as-library.md) | Powerful lifecycle automation that must never surprise-block a session. |
-| [This index, safely projected](docs/case-studies/leak-safe-projection.md) | Publishing a portfolio from a private monorepo without leaking a single private token. |
+- **Token-efficient by default** — ~37 agent-facing CLIs emit a compact structured format (TOON)
+  rather than verbose JSON, so an agent spends fewer tokens reading tool output.
+- **Code intelligence behind one router** — the repo's code-intelligence index (call graph +
+  impact analysis) is fronted by a single MCP router, so agents reach it through one routed entry
+  point instead of a sprawl of servers.
 
 ## By the numbers
 
 **389 published capabilities** — 182 skills (147 authored), 64
 sub-agents, 50 CLIs, 52 architecture decision records, 14 host adapters,
 10 integrations, 7 kits, 6 schemas, and 4 hooks.
-
-## A few featured capabilities
-
-| id | what it does |
-|---|---|
-| `plan-master` | Turns a task description into a structured engineering plan document. |
-| `no-mistakes` | Ship-gate: review, test, lint, docs, PR, CI before anything merges. |
-| `skill-library` | Resolves on-demand skills that are not loaded in the active session. |
-| `repo-agentic-setup` | Sets up a target repo for agentic development across the four pillars. |
-| `deep-research` | Generates structured, domain-specific deep-research prompts. |
-| `diagnose` | Disciplined reproduce → minimise → fix loop for hard bugs and regressions. |
-
-→ Browse all 389 items in **[CATALOG.md](CATALOG.md)**.
 
 ## Explore
 
