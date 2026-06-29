@@ -1,425 +1,477 @@
 [
   {
     "category": "spec",
-    "description": "Zsh alias loader \u2014 design",
+    "description": "Consolidates shell alias and function loading into a single git-tracked entrypoint, so updates propagate across machines via git pull.",
     "id": "2026-05-04-zsh-alias-loader-design",
     "name": "Zsh alias loader \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "CLI-Anything Agent-First Help & Version Contract \u2014 Design",
+    "description": "Defines a contract making agent-built command-line tools expose a standard version flag and emit compact machine-oriented help by default, with human help one flag away.",
     "id": "2026-05-09-cli-anything-agent-first-help-design",
     "name": "CLI-Anything Agent-First Help & Version Contract \u2014 Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "`cli-ai-usage` \u2014 Design Spec",
+    "description": "1 OVER, 1 NEAR, 3 OK",
     "id": "2026-05-11-cli-ai-usage-design",
     "name": "`cli-ai-usage` \u2014 Design Spec",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-05-11"
   },
   {
     "category": "spec",
-    "description": "`cli-ai-usage` Login + Import Subcommands \u2014 Design Spec",
+    "description": "Adds OAuth PKCE browser login and same-machine credential import to a CLI for acquiring AI provider tokens, replacing manual paste while keeping automation intact.",
     "id": "2026-05-12-cli-ai-usage-login-import-design",
     "name": "`cli-ai-usage` Login + Import Subcommands \u2014 Design Spec",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-proxy-wrapper \u2014 design",
+    "description": "Adds a CLI wrapper that routes AI coding agents through a local encrypted proxy, configured from a QR-code link, with the prior backend kept as a fallback.",
     "id": "2026-05-16-cli-proxy-wrapper-design",
     "name": "cli-proxy-wrapper \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-takeover \u2014 Cross-app session takeover",
+    "description": "Designs a local-only CLI that lets a fresh AI coding assistant resume a quota-exhausted session from another tool by reading its on-disk transcript and priming a handoff.",
     "id": "2026-05-17-cli-takeover-design",
     "name": "cli-takeover \u2014 Cross-app session takeover",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "OpenCode Claude Delegate Provider Design",
+    "description": "Designs a local bridge that exposes a CLI-authenticated assistant as a native-feeling provider inside another agent tool, with per-conversation session continuity and inline streaming.",
     "id": "2026-05-18-opencode-claude-delegate-provider-design",
     "name": "OpenCode Claude Delegate Provider Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cf-page-manager \u2014 Design",
+    "description": "Designs a thin command-line tool that deploys static sites or single HTML files to a managed edge hosting platform, wrapping the official CLI to handle projects, custom domains, and auth.",
     "id": "2026-05-20-cf-page-manager-design",
     "name": "cf-page-manager \u2014 Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "2026-05-20-opencode-superpowers-slash-discoverability-design",
+    "description": "Adds curated repo-managed slash-command wrappers so a coding assistant's high-value workflow skills become discoverable in the command menu without forking or reinstalling the upstream framework.",
     "id": "2026-05-20-opencode-superpowers-slash-discoverability-design",
     "name": "2026-05-20-opencode-superpowers-slash-discoverability-design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Add Oh My OpenAgent to ai-heavy",
+    "description": "Extends an AI-heavy machine-provisioning profile to bundle an extra agent-tooling integration by default, via configuration only, with no new installer logic.",
     "id": "2026-05-21-add-omo-to-ai-heavy-design",
     "name": "Add Oh My OpenAgent to ai-heavy",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Agent Onboarding Doctrine Design",
+    "description": "Defines a global operating doctrine for AI coding agents: improve the harness over one-off fixes, separate gating from execution, and escalate after three strikes.",
     "id": "2026-05-21-agent-onboarding-doctrine-design",
     "name": "Agent Onboarding Doctrine Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Claude OpenCode Bridge Reliability Design",
+    "description": "Reliability-focused hardening design for a local HTTP bridge that proxies one AI chat agent to another harness, clarifying module ownership and turning malformed requests and corrupted local state into clean errors while preserving streaming behavior.",
     "id": "2026-05-21-claude-opencode-bridge-reliability-design",
     "name": "Claude OpenCode Bridge Reliability Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Claude OpenCode Interactive Bridge Design",
+    "description": "Designs a stateful session bridge that carries one AI assistant's live interactive prompts (questions, choices, permissions) across an OpenAI-compatible boundary into another agent host.",
     "id": "2026-05-21-claude-opencode-interactive-bridge-design",
     "name": "Claude OpenCode Interactive Bridge Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "2026-05-21-local-first-pr-review-index-design",
+    "description": "Designs a local-first PR review system that builds commit-pinned code indexes once, then runs parallel reviewer agents to produce one cited report, reusable in CI.",
     "id": "2026-05-21-local-first-pr-review-index-design",
     "name": "2026-05-21-local-first-pr-review-index-design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Oh My OpenAgent Integration Design",
+    "description": "Decides how to reproducibly vendor an external agent-skill bundle into a CLI coding tool: pinned versions, managed asset mirroring, opt-in profiles, and clean rollback.",
     "id": "2026-05-21-oh-my-openagent-integration-design",
     "name": "Oh My OpenAgent Integration Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "sync-all Applies ai-heavy Integrations",
+    "description": "Fixes a multi-machine sync command to install every integration in the selected \"heavy\" profile instead of a single hardcoded one, honoring the profile contract.",
     "id": "2026-05-21-sync-all-apply-ai-heavy-design",
     "name": "sync-all Applies ai-heavy Integrations",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-takeover browse design",
+    "description": "Designs an interactive two-pane terminal UI to browse recent AI coding-assistant sessions and generate a structured handoff prompt so another agent can safely resume the work.",
     "id": "2026-05-23-cli-takeover-browse-design",
     "name": "cli-takeover browse design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-proxy-wrapper: macos-app subcommand \u2014 design",
+    "description": "Designs a CLI subcommand that launches a macOS desktop app through a shared local network proxy as a detached process, resolving the app bundle to its binary.",
     "id": "2026-05-23-macos-app-proxy-wrapper-design",
     "name": "cli-proxy-wrapper: macos-app subcommand \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "OMO Opt-Out From sync-all and Manual Uninstall Design",
+    "description": "Makes an optional AI agent bundle no longer install by default in the standard sync flow, keeping it opt-in via a dedicated profile and adding a surgical manual uninstall path.",
     "id": "2026-05-23-omo-opt-out-and-uninstall-design",
     "name": "OMO Opt-Out From sync-all and Manual Uninstall Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "setup.sh decomposition into characterization-tested `lib/` modules",
+    "description": "Decomposes a 5,800-line setup script monolith into domain-grouped modules behind a thin dispatcher, guarded by characterization tests proving byte-identical behavior.",
     "id": "2026-05-29-setup-sh-decomposition-design",
     "name": "setup.sh decomposition into characterization-tested `lib/` modules",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Design: proxy support in cli-codex and cli-cursor-agent",
+    "description": "Routes CLI subprocesses through a shared local HTTP proxy via inherited env vars, with an opt-out flag and graceful degradation when the proxy is absent.",
     "id": "2026-05-31-proxy-cli-codex-cursor-design",
     "name": "Design: proxy support in cli-codex and cli-cursor-agent",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Claude Interactive Delegate PRD",
+    "description": "An experimental sidecar provider that bridges an agentic coding CLI into an editor via terminal automation and transcript tailing, beside a reliable provider.",
     "id": "2026-06-04-claude-interactive-delegate-prd",
     "name": "Claude Interactive Delegate PRD",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Design \u2014 `cli-notebooklm-watermark-remover`",
+    "description": "Designs a thin, agent-invocable CLI wrapper that runs an external watermark-removal tool in an isolated environment, adding standard agent surfaces without heavy dependencies.",
     "id": "2026-06-11-notebooklm-watermark-remover-cli-design",
     "name": "Design \u2014 `cli-notebooklm-watermark-remover`",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Design \u2014 Integrate `cli-notebooklm-watermark-remover` into the NotebookLM infographic flow",
+    "description": "Wires an optional watermark-removal CLI into an AI-generated infographic pipeline so owned visual assets ship clean, degrading gracefully and noting status when the tool is unavailable.",
     "id": "2026-06-12-notebooklm-watermark-removal-skill-integration",
     "name": "Design \u2014 Integrate `cli-notebooklm-watermark-remover` into the NotebookLM infographic flow",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "MarkItDown OCR LLM Design",
+    "description": "Adds a CLI wrapper and installer extension that converts documents to Markdown with LLM-powered OCR, supporting pluggable hosted and local vision-model providers via an OpenAI-compatible client.",
     "id": "2026-06-17-markitdown-ocr-llm-design",
     "name": "MarkItDown OCR LLM Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "AI repo-eval integration design",
+    "description": "Adds a third-party LLM-assisted security scanner as a mandatory gate in an automated repo-evaluation pipeline, with preflight checks for tooling and credentials.",
     "id": "2026-06-18-ai-repo-eval-integration-design",
     "name": "AI repo-eval integration design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-notebooklm Style Wrapper Design",
+    "description": "Designs a CLI wrapper adding reusable, attributed visual-style presets atop an AI document tool, letting an LLM pick styles from metadata to generate styled slide decks and infographics.",
     "id": "2026-06-22-cli-notebooklm-style-wrapper-design",
     "name": "cli-notebooklm Style Wrapper Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "AXI/TOON Fleet Migration \u2014 Design",
+    "description": "Standardizes ~37 agent-facing command-line tools on one token-efficient structured-output format, retiring legacy JSON flags via a shared vendored encoder.",
     "id": "2026-06-23-axi-toon-fleet-migration-design",
     "name": "AXI/TOON Fleet Migration \u2014 Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Power-machine sync tier \u2014 design",
+    "description": "Designs an opt-in \"power machine\" tier for a one-command machine-sync tool, layering workstation-only installs on top of the portable default run while staying idempotent and gracefully skipping unsupported platforms.",
     "id": "2026-06-23-power-machine-sync-tier-design",
     "name": "Power-machine sync tier \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Design \u2014 `.agents` source of truth, `.claude` \u2192 symlink",
+    "description": "Designates one source-of-truth directory for project-local agent skills and makes the parallel tool config directory a tracked symlink to it, preventing content drift.",
     "id": "2026-06-24-agents-claude-symlink-consolidation-design",
     "name": "Design \u2014 `.agents` source of truth, `.claude` \u2192 symlink",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "chrome-devtools-axi Adoption \u2014 Design",
+    "description": "Designs a layered adoption of an agent-ergonomic browser-automation CLI: one sync command installs and pins it, an on-demand skill makes it discoverable, and the underlying browser MCP stays router-owned.",
     "id": "2026-06-24-chrome-devtools-axi-adoption-design",
     "name": "chrome-devtools-axi Adoption \u2014 Design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Self-host the HTML-review render \u2014 kill runtime npx",
+    "description": "Hardens a browser-based HTML-review tool against supply-chain attacks by vendoring its render engine and installing locked, integrity-verified deps once, eliminating runtime fetches.",
     "id": "2026-06-24-self-host-html-render-design",
     "name": "Self-host the HTML-review render \u2014 kill runtime npx",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Workspace Manager \u2014 design",
+    "description": "Designs an orchestrator that spawns and supervises a crew of autonomous AI coding agents in isolated git worktrees, governing review, merge, and teardown.",
     "id": "2026-06-24-workspace-manager-design",
     "name": "Workspace Manager \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "ai-crew hardening round \u2014 design spec",
+    "description": "Hardens a multi-agent CLI orchestrator: loopback-only binding with opt-in remote, wait-for-idle before driving TUIs, bounded retries, and timeout process kills.",
     "id": "2026-06-25-ai-crew-hardening-design",
     "name": "ai-crew hardening round \u2014 design spec",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "ai-crew multi-mode \u2014 `run` (one-shot exec) + Codex bus auto-completion",
+    "description": "Design for an AI-agent orchestration toolkit adding a stateless one-shot execution mode for headless batch fan-out plus session correlation so spawned workers auto-complete on a shared bus.",
     "id": "2026-06-25-ai-crew-multi-mode-design",
     "name": "ai-crew multi-mode \u2014 `run` (one-shot exec) + Codex bus auto-completion",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Step 6 - Routing resolution + mechanical-tier offload (design)",
+    "description": "Defines how task model-tier policies become per-host pins or advisory guidance files when generating AI coding-agent configs, routing mechanical work to deterministic CLIs.",
     "id": "2026-06-25-repo-agentic-routing-resolution-design",
     "name": "Step 6 - Routing resolution + mechanical-tier offload (design)",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Repo Agentic-Setup - Step 4: `cli` + `data-ml` role overlays",
+    "description": "Adds CLI-tooling and data/ML role overlays to an agentic repo-setup system: role-specific agents, commands, routing, and diagnostics from stack signals.",
     "id": "2026-06-25-repo-agentic-step4-overlays-design",
     "name": "Repo Agentic-Setup - Step 4: `cli` + `data-ml` role overlays",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "ai-crew spawn supervisor \u2014 design spec",
+    "description": "Redesigns a multi-agent orchestration system to drive each worker via a dedicated deterministic supervisor process, replacing a fragile loop that depended on agent cooperation.",
     "id": "2026-06-26-ai-crew-spawn-supervisor-design",
     "name": "ai-crew spawn supervisor \u2014 design spec",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "ai-git-auto crew escalation ladder \u2014 design",
+    "description": "Designs a token-aware, two-axis escalation ladder that routes automated git tasks across model tiers and providers by difficulty, falling back to human-in-the-loop merge resolution.",
     "id": "2026-06-26-ai-git-auto-crew-escalation-ladder-design",
     "name": "ai-git-auto crew escalation ladder \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-full-vpn-wrapper \u2014 design",
+    "description": "Consolidates several proxy-protocol wrappers into one tool that routes a CLI through a per-process local proxy to a personal server, with named profiles.",
     "id": "2026-06-26-cli-full-vpn-wrapper-design",
     "name": "cli-full-vpn-wrapper \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-full-vpn-wrapper `doctor` \u2014 connectivity probe design",
+    "description": "Designs a read-only diagnostic command that sends real traffic through a local VPN proxy and compares tunneled versus direct egress IPs to verify true connectivity.",
     "id": "2026-06-26-cli-full-vpn-wrapper-doctor-design",
     "name": "cli-full-vpn-wrapper `doctor` \u2014 connectivity probe design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Design \u2014 `cli-git-smart` + `git-clone-smart`",
+    "description": "Defines a CLI and shell alias that auto-rewrites canonical SSH clone URLs to the matching per-account host alias, letting multi-account setups clone with the right key.",
     "id": "2026-06-26-git-smart-multi-account-clone-design",
     "name": "Design \u2014 `cli-git-smart` + `git-clone-smart`",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "cli-full-vpn-wrapper `reset` + interactive profile selection \u2014 design",
+    "description": "Adds one-command teardown plus interactive numbered-menu profile selection to a VPN proxy CLI, with confirmations and safe non-interactive automation fallback.",
     "id": "2026-06-27-cli-full-vpn-wrapper-reset-interactive-design",
     "name": "cli-full-vpn-wrapper `reset` + interactive profile selection \u2014 design",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "agent-tools-indexing \u2014 public projection of the private agent-tools monorepo",
-    "id": "2026-06-28-agent-tools-indexing-public-projection-design",
-    "name": "agent-tools-indexing \u2014 public projection of the private agent-tools monorepo",
+    "description": "Design for a deterministic, fail-closed generator that projects a private agent-tooling monorepo into a public, redacted capability index \u2014 defining the five-layer leak-safety stack, the allowlist-only extraction contract, and the denylist scrub.",
+    "id": "2026-06-28-agent-tools-index-public-projection-design",
+    "name": "agent-tools-index \u2014 public projection of a private agent-tooling monorepo",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "spec",
-    "description": "Truly-vendor a worktree manager from source and strip its analytics telemetry",
+    "description": "Vendors third-party CLI tools from source for offline, registry-free builds and physically removes their usage-telemetry code instead of env opt-outs.",
     "id": "2026-06-28-vendor-worktree-manager-and-strip-telemetry-design",
     "name": "Truly-vendor a worktree manager from source and strip its analytics telemetry",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "foundational / architecture",
-    "description": "ADR-0001: Integration Architecture for `agent-tools`",
+    "description": "Proposes a declarative, manifest-driven integration-package architecture with a phased lifecycle, receipts, and profiles for reproducible workstation setup across machines.",
     "id": "ADR-0001-integration-architecture",
     "name": "ADR-0001: Integration Architecture for `agent-tools`",
     "origin": "authored",
-    "pillar": "adr"
+    "pillar": "adr",
+    "updated": "2026-06-29"
   },
   {
     "category": "repo-agentic setup",
-    "description": "ADR-0002: Repo agentic-setup writes into the target repo, with `.agents/` as a localized source of truth",
+    "description": "Decides that agentic-development setup is committed into each target repo, with a portable source-of-truth folder rendering host-specific tool views, so config travels on clone.",
     "id": "ADR-0002-repo-agentic-setup-storage-model",
     "name": "ADR-0002: Repo agentic-setup writes into the target repo, with `.agents/` as a localized source of truth",
     "origin": "authored",
     "pillar": "adr",
-    "status": "accepted"
+    "status": "accepted",
+    "updated": "2026-06-29"
   },
   {
-    "category": "foundational / architecture",
-    "description": "ADR-0003: Canonical intent + per-host adapters for format-divergent concerns",
+    "category": "repo-agentic setup",
+    "description": "Keeps one provider-neutral source of truth for tool-divergent concerns (hooks, model routing), lowered to each platform via thin capability-gated adapters.",
     "id": "ADR-0003-canonical-intent-per-host-adapter",
     "name": "ADR-0003: Canonical intent + per-host adapters for format-divergent concerns",
     "origin": "authored",
     "pillar": "adr",
-    "status": "accepted"
+    "status": "accepted",
+    "updated": "2026-06-29"
   },
   {
     "category": "CLI tool design",
-    "description": "ADR-0004: Recommender (LLM skill) and Render (deterministic CLI) are split",
+    "description": "Splits repo setup into an LLM skill that decides what to install and a deterministic CLI that renders it, ensuring idempotent, re-runnable config merges.",
     "id": "ADR-0004-recommender-skill-render-cli-split",
     "name": "ADR-0004: Recommender (LLM skill) and Render (deterministic CLI) are split",
     "origin": "authored",
     "pillar": "adr",
-    "status": "accepted"
+    "status": "accepted",
+    "updated": "2026-06-29"
   },
   {
     "category": "foundational / architecture",
-    "description": "ADR-0005: Observability and debug via harness-transcript review, not a logging hook",
+    "description": "Decides to provide observability and debugging by reviewing each AI tool's existing local session log on demand at two depths, instead of a standing always-on logging hook.",
     "id": "ADR-0005-observability-debug-layer",
     "name": "ADR-0005: Observability and debug via harness-transcript review, not a logging hook",
     "origin": "authored",
     "pillar": "adr",
-    "status": "accepted"
+    "status": "accepted",
+    "updated": "2026-06-29"
   },
   {
     "category": "multi-agent orchestration",
-    "description": "ADR-0006: ai-crew \u2014 a harness-agnostic agent session bus",
+    "description": "Decides on a harness-agnostic, loopback-only session bus that delegates prompts to labelled AI coding-agent workers and returns each result, reasoning, and token usage.",
     "id": "ADR-0006-ai-crew-session-bus",
     "name": "ADR-0006: ai-crew \u2014 a harness-agnostic agent session bus",
     "origin": "authored",
     "pillar": "adr",
-    "status": "accepted \u2014 design only, not yet implemented (v1 = Claude + Codex). Amended 2026-06-25 (see \"Amendment\" below) after the implementation-planning workflow; build plan at `docs/superpowers/plans/PLAN-ai-crew.md`."
+    "status": "accepted \u2014 design only, not yet implemented (v1 = Claude + Codex). Amended 2026-06-25 (see \"Amendment\" below) after the implementation-planning workflow; build plan at `docs/superpowers/plans/PLAN-ai-crew.md`.",
+    "updated": "2026-06-29"
   },
   {
     "category": "repo-agentic setup",
-    "description": "ADR-0007: Monorepo composition, precedence, routing merge, and hook path-scoping",
+    "description": "Defines how an agentic-setup tool handles monorepos: discovers per-package stacks, merges them with most-specific-wins precedence, and flattens routing and path-scoped hooks into repo-global host config.",
     "id": "ADR-0007-monorepo-composition",
     "name": "ADR-0007: Monorepo composition, precedence, routing merge, and hook path-scoping",
     "origin": "authored",
     "pillar": "adr",
-    "status": "accepted"
+    "status": "accepted",
+    "updated": "2026-06-29"
   },
   {
     "category": "skill / agent infra",
@@ -427,7 +479,8 @@
     "id": "_shared",
     "name": "cli-_shared",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-25"
   },
   {
     "category": "ai / agent orchestration",
@@ -435,7 +488,8 @@
     "id": "agent-delegate",
     "name": "cli-agent-delegate",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -443,15 +497,17 @@
     "id": "agent-parallel-manager",
     "name": "cli-agent-parallel-manager",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
-    "description": "",
+    "description": "Harness-agnostic agent session bus: push prompts into labelled Claude/Codex worker sessions and tail their transcripts back for result + token usage.",
     "id": "ai-crew",
     "name": "cli-ai-crew",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-28"
   },
   {
     "category": "ai / agent orchestration",
@@ -459,7 +515,8 @@
     "id": "ai-git-auto",
     "name": "cli-ai-git-auto",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-27"
   },
   {
     "category": "ai / agent orchestration",
@@ -467,7 +524,8 @@
     "id": "ai-html-chat",
     "name": "cli-ai-html-chat",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-28"
   },
   {
     "category": "ai / agent orchestration",
@@ -475,7 +533,8 @@
     "id": "ai-usage",
     "name": "cli-ai-usage",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-27"
   },
   {
     "category": "skill / agent infra",
@@ -483,7 +542,8 @@
     "id": "aliases",
     "name": "cli-aliases",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-26"
   },
   {
     "category": "productivity / SaaS",
@@ -491,15 +551,17 @@
     "id": "cf-page-manager",
     "name": "cli-cf-page-manager",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "diagram / media / render",
-    "description": "Chrome DevTools driver host pin.",
+    "description": "An agent-friendly CLI wrapping a Chrome DevTools browser-automation server, emitting compact, token-efficient output with stable element references for reliable automation.",
     "id": "chrome-devtools-axi",
     "name": "cli-chrome-devtools-axi",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
@@ -507,7 +569,8 @@
     "id": "claude-opencode-bridge",
     "name": "cli-claude-opencode-bridge",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-05-26"
   },
   {
     "category": "skill / agent infra",
@@ -515,7 +578,8 @@
     "id": "cli-agent-tools-library",
     "name": "cli-agent-tools-library",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "skill / agent infra",
@@ -523,7 +587,8 @@
     "id": "cli-hooks-library",
     "name": "cli-hooks-library",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-25"
   },
   {
     "category": "data / scraping",
@@ -531,7 +596,8 @@
     "id": "cli-image-crawler",
     "name": "cli-image-crawler",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "data / scraping",
@@ -539,7 +605,8 @@
     "id": "cli-inventory-manager",
     "name": "cli-inventory-manager",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "data / extraction",
@@ -547,7 +614,8 @@
     "id": "cli-receipt-parser",
     "name": "cli-receipt-parser",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-05-12"
   },
   {
     "category": "skill / agent infra",
@@ -555,7 +623,8 @@
     "id": "cli-repo-agentic-debug",
     "name": "cli-repo-agentic-debug",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-25"
   },
   {
     "category": "skill / agent infra",
@@ -563,7 +632,8 @@
     "id": "cli-repo-agentic-sync",
     "name": "cli-repo-agentic-sync",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-25"
   },
   {
     "category": "skill / agent infra",
@@ -571,7 +641,8 @@
     "id": "cli-skill-library",
     "name": "cli-skill-library",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -579,7 +650,8 @@
     "id": "cli-slack",
     "name": "cli-slack",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ci / devops",
@@ -587,7 +659,8 @@
     "id": "cli-staging-logs",
     "name": "cli-staging-logs",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "skill / agent infra",
@@ -595,7 +668,8 @@
     "id": "cli-sub-agent-library",
     "name": "cli-sub-agent-library",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "productivity",
@@ -603,7 +677,8 @@
     "id": "cli-work-ledger",
     "name": "cli-work-ledger",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "git / dev workflow",
@@ -611,7 +686,8 @@
     "id": "cli-worktree-manager",
     "name": "cli-worktree-manager",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-29"
   },
   {
     "category": "ai / agent orchestration",
@@ -619,7 +695,8 @@
     "id": "cmux-manage",
     "name": "cli-cmux-manage",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -627,7 +704,8 @@
     "id": "codex",
     "name": "cli-codex",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-27"
   },
   {
     "category": "productivity / SaaS",
@@ -635,7 +713,8 @@
     "id": "context7",
     "name": "cli-context7",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -643,7 +722,8 @@
     "id": "cursor-agent",
     "name": "cli-cursor-agent",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-26"
   },
   {
     "category": "diagram / media / render",
@@ -651,7 +731,8 @@
     "id": "excalidraw",
     "name": "cli-excalidraw",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "diagram / media / render",
@@ -659,7 +740,8 @@
     "id": "figma",
     "name": "cli-figma",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "network / vpn",
@@ -667,7 +749,8 @@
     "id": "full-vpn-wrapper",
     "name": "cli-full-vpn-wrapper",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-27"
   },
   {
     "category": "git / dev workflow",
@@ -675,15 +758,17 @@
     "id": "git-smart",
     "name": "cli-git-smart",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-26"
   },
   {
     "category": "git / dev workflow",
-    "description": "Git helper utility CLI.",
+    "description": "An agent-first CLI that runs an AI coding agent in an unattended commit-per-iteration git loop until a goal or limit is met, with quota-aware tiers deciding when to pause, resume, or stop.",
     "id": "gnhf",
     "name": "cli-gnhf",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-29"
   },
   {
     "category": "productivity / SaaS",
@@ -691,7 +776,8 @@
     "id": "linear",
     "name": "cli-linear",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "git / dev workflow",
@@ -699,7 +785,8 @@
     "id": "local-pr-review",
     "name": "cli-local-pr-review",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-23"
   },
   {
     "category": "diagram / media / render",
@@ -707,7 +794,8 @@
     "id": "macdown",
     "name": "cli-macdown",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "doc / OCR / conversion",
@@ -715,7 +803,8 @@
     "id": "markitdown-ocr-llm",
     "name": "cli-markitdown-ocr-llm",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "diagram / media / render",
@@ -723,7 +812,8 @@
     "id": "mermaid-agent",
     "name": "cli-mermaid-agent",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "doc / OCR / conversion",
@@ -731,7 +821,17 @@
     "id": "notebooklm",
     "name": "cli-notebooklm",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
+  },
+  {
+    "category": "doc / OCR / conversion",
+    "description": "Unofficial Python library for automating Google NotebookLM",
+    "id": "notebooklm-py",
+    "name": "cli-notebooklm-py",
+    "origin": "authored",
+    "pillar": "cli",
+    "updated": "2026-05-12"
   },
   {
     "category": "doc / OCR / conversion",
@@ -739,7 +839,8 @@
     "id": "notebooklm-watermark-remover",
     "name": "cli-notebooklm-watermark-remover",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "productivity / SaaS",
@@ -747,7 +848,8 @@
     "id": "obsidian",
     "name": "cli-obsidian",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -755,7 +857,8 @@
     "id": "opencode-manager",
     "name": "cli-opencode-manager",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "productivity / SaaS",
@@ -763,7 +866,8 @@
     "id": "reminders",
     "name": "cli-reminders",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "doc / OCR / conversion",
@@ -771,7 +875,8 @@
     "id": "safe-extract",
     "name": "cli-safe-extract",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -779,7 +884,8 @@
     "id": "skill-delegate",
     "name": "cli-skill-delegate",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "diagram / media / render",
@@ -787,7 +893,8 @@
     "id": "stitch",
     "name": "cli-stitch",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "git / dev workflow",
@@ -795,7 +902,8 @@
     "id": "takeover",
     "name": "cli-takeover",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "diagram / media / render",
@@ -803,7 +911,8 @@
     "id": "typora",
     "name": "cli-typora",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-24"
   },
   {
     "category": "ai / agent orchestration",
@@ -811,7 +920,8 @@
     "id": "workspace-manager",
     "name": "cli-workspace-manager",
     "origin": "authored",
-    "pillar": "cli"
+    "pillar": "cli",
+    "updated": "2026-06-25"
   },
   {
     "category": "secrets (blocking)",
@@ -819,7 +929,8 @@
     "id": "block-secrets",
     "name": "block-secrets",
     "origin": "authored",
-    "pillar": "hook"
+    "pillar": "hook",
+    "updated": "2026-06-25"
   },
   {
     "category": "build check",
@@ -827,7 +938,8 @@
     "id": "build-check-on-stop",
     "name": "build-check-on-stop",
     "origin": "authored",
-    "pillar": "hook"
+    "pillar": "hook",
+    "updated": "2026-06-25"
   },
   {
     "category": "format / lint",
@@ -835,7 +947,8 @@
     "id": "format-on-edit",
     "name": "format-on-edit",
     "origin": "authored",
-    "pillar": "hook"
+    "pillar": "hook",
+    "updated": "2026-06-25"
   },
   {
     "category": "typecheck",
@@ -843,7 +956,8 @@
     "id": "typecheck-on-stop",
     "name": "typecheck-on-stop",
     "origin": "authored",
-    "pillar": "hook"
+    "pillar": "hook",
+    "updated": "2026-06-25"
   },
   {
     "category": "host",
@@ -851,23 +965,26 @@
     "id": "agent-multiplexer",
     "name": "agent-multiplexer",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "integration / tool pin",
-    "description": "",
+    "description": "A loopback-only daemon that orchestrates labelled AI coding-agent sessions: routing prompts to workers, tailing transcripts, and returning results and tokens.",
     "id": "ai-crew",
     "name": "ai-crew",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "integration / tool pin",
-    "description": "Chrome DevTools driver host pin.",
+    "description": "Pins and installs an agent-friendly CLI that drives a real Chrome browser via the DevTools protocol with token-efficient output for web automation.",
     "id": "chrome-devtools-axi",
     "name": "chrome-devtools-axi",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
@@ -875,7 +992,8 @@
     "id": "claude",
     "name": "claude",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-25"
   },
   {
     "category": "agent CLI drivers",
@@ -883,7 +1001,8 @@
     "id": "codex",
     "name": "codex",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-25"
   },
   {
     "category": "agent CLI drivers",
@@ -891,7 +1010,8 @@
     "id": "cursor",
     "name": "cursor",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-25"
   },
   {
     "category": "agent CLI drivers",
@@ -899,23 +1019,26 @@
     "id": "gemini",
     "name": "gemini",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-25"
   },
   {
     "category": "cross-cutting (routing / gate)",
-    "description": "Cross-cutting global routing host.",
+    "description": "Defines shared, cross-tool governance and default behaviors for AI coding agents: install policy, push/PR consent gates, delegation, coding standards, and prompt rules.",
     "id": "global",
     "name": "global",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "cross-cutting (routing / gate)",
-    "description": "Ship-gate host: review, test, lint, docs, PR, CI.",
+    "description": "Centrally version-controlled config for an AI-agent-driven validation gate that runs review, tests, lint, docs, and CI before code reaches its push target.",
     "id": "no-mistakes",
     "name": "no-mistakes",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "integration / tool pin",
@@ -923,7 +1046,8 @@
     "id": "openclaw",
     "name": "openclaw",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-04-25"
   },
   {
     "category": "agent CLI drivers",
@@ -931,15 +1055,17 @@
     "id": "opencode",
     "name": "opencode",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-25"
   },
   {
-    "category": "integration / tool pin",
-    "description": "",
+    "category": "agent CLI drivers",
+    "description": "Vendors install and integration artifacts that wire a token-saving shell-command proxy into multiple AI coding agents, rewriting commands to cut LLM token usage.",
     "id": "rtk",
     "name": "rtk",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "agent CLI drivers",
@@ -947,7 +1073,8 @@
     "id": "shell",
     "name": "shell",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-04-25"
   },
   {
     "category": "host",
@@ -955,7 +1082,8 @@
     "id": "worktree-manager",
     "name": "worktree-manager",
     "origin": "authored",
-    "pillar": "host"
+    "pillar": "host",
+    "updated": "2026-06-29"
   },
   {
     "category": "first-party core",
@@ -963,7 +1091,8 @@
     "id": "agents-md-core",
     "name": "agents-md-core",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-05-24"
   },
   {
     "category": "first-party core",
@@ -971,7 +1100,8 @@
     "id": "commands-core",
     "name": "commands-core",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-25"
   },
   {
     "category": "first-party core",
@@ -979,7 +1109,8 @@
     "id": "jq",
     "name": "jq",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-25"
   },
   {
     "category": "agent frameworks (vendored)",
@@ -987,7 +1118,8 @@
     "id": "oh-my-openagent",
     "name": "oh-my-openagent",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-05-31"
   },
   {
     "category": "first-party core",
@@ -995,7 +1127,8 @@
     "id": "skills-core",
     "name": "skills-core",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-25"
   },
   {
     "category": "first-party core",
@@ -1003,7 +1136,8 @@
     "id": "sub-agents-core",
     "name": "sub-agents-core",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-25"
   },
   {
     "category": "agent frameworks (vendored)",
@@ -1011,7 +1145,8 @@
     "id": "superpowers-framework",
     "name": "superpowers-framework",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-05-31"
   },
   {
     "category": "migrated vendor packages",
@@ -1019,7 +1154,8 @@
     "id": "vendor-agent-agency-agents",
     "name": "vendor-agent-agency-agents",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-29"
   },
   {
     "category": "migrated vendor packages",
@@ -1027,7 +1163,8 @@
     "id": "vendor-cli-notebooklm-py",
     "name": "vendor-cli-notebooklm-py",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-25"
   },
   {
     "category": "migrated vendor packages",
@@ -1035,71 +1172,80 @@
     "id": "vendor-skill-cli-anything",
     "name": "vendor-skill-cli-anything",
     "origin": "authored",
-    "pillar": "integration"
+    "pillar": "integration",
+    "updated": "2026-04-25"
   },
   {
     "category": "overlay",
-    "description": "CLI tool",
+    "description": "Detects command-line tools and layers in CLI craftsmanship: a UX specialist agent, help-text and exit-code contracts, pipeable stdout/stderr, shell completions, and golden smoke tests.",
     "id": "cli",
     "name": "CLI tool",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "overlay",
-    "description": "Data / ML",
+    "description": "Detects data/ML projects and adds specialized agents, commands, and guardrails for reproducibility, leakage prevention, experiment tracking, schema validation, and pipeline design.",
     "id": "data-ml",
     "name": "Data / ML",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "overlay",
-    "description": "Frontend \u2014 React / Next.js",
+    "description": "A composable frontend overlay layering React/Next.js skills, UI-design tooling, browser-based human review, and stack-aware diagnostics onto any base setup.",
     "id": "frontend-react-nextjs",
     "name": "Frontend \u2014 React / Next.js",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "base",
-    "description": "Go (backend)",
+    "description": "Configures an AI-assisted Go backend development profile: TDD and debugging skills, architecture and review agents, format/lint/build hooks, and stack diagnostics.",
     "id": "go",
     "name": "Go (backend)",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "base",
-    "description": "Node / TypeScript (backend)",
+    "description": "Detects backend Node/TypeScript projects and provisions a tailored agent toolkit: refactor/TDD/debug skills, architect and reviewer agents, format/secret/typecheck hooks, slash commands, and gap diagnostics.",
     "id": "node-typescript",
     "name": "Node / TypeScript (backend)",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "base",
-    "description": "Python (backend)",
+    "description": "Detects Python backend projects and provisions a tailored agentic toolchain: TDD/debug skills, architecture and review agents, lint/typecheck/secret hooks, and gap diagnostics.",
     "id": "python",
     "name": "Python (backend)",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "base",
-    "description": "Rust (backend)",
+    "description": "A configuration profile that auto-detects a Rust backend project and provisions matching AI coding agents, skills, commands, format/build hooks, and task-routing rules.",
     "id": "rust",
     "name": "Rust (backend)",
     "origin": "authored",
-    "pillar": "kit"
+    "pillar": "kit",
+    "updated": "2026-06-29"
   },
   {
     "category": "schema",
-    "description": "",
+    "description": "Defines the validation contract for a catalog of agent-tooling components, requiring each entry to declare its type, identity, category, description, and origin.",
     "id": "agent-tools-catalog.schema.json",
-    "name": "agent-tools-indexing catalog",
+    "name": "agent-tools-index catalog",
     "origin": "authored",
-    "pillar": "schema"
+    "pillar": "schema",
+    "updated": "2026-06-29"
   },
   {
     "category": "schema",
@@ -1107,39 +1253,44 @@
     "id": "integration.schema.json",
     "name": "integration.yaml",
     "origin": "authored",
-    "pillar": "schema"
+    "pillar": "schema",
+    "updated": "2026-04-25"
   },
   {
     "category": "schema",
-    "description": "",
+    "description": "Defines the structured record for a reviewer's decision to send an exported deliverable back for rework or reject it, capturing the reason and affected artifacts.",
     "id": "work-ledger/export-review.schema.json",
     "name": "Work Ledger Export Review Decision",
     "origin": "authored",
-    "pillar": "schema"
+    "pillar": "schema",
+    "updated": "2026-06-29"
   },
   {
     "category": "schema",
-    "description": "",
+    "description": "Validates a privacy-scrubbed public record of a completed task, capturing effort metrics, quality and complexity bands, and approval status.",
     "id": "work-ledger/public-export.schema.json",
     "name": "Work Ledger Public Export",
     "origin": "authored",
-    "pillar": "schema"
+    "pillar": "schema",
+    "updated": "2026-06-29"
   },
   {
     "category": "schema",
-    "description": "",
+    "description": "Defines the validated structure of a per-session AI coding activity record, capturing timing, token/cost usage, task type, complexity and quality scoring, privacy classification, and a publish-safety recommendation.",
     "id": "work-ledger/session-receipt.schema.json",
     "name": "Work Ledger Session Receipt",
     "origin": "authored",
-    "pillar": "schema"
+    "pillar": "schema",
+    "updated": "2026-06-29"
   },
   {
     "category": "schema",
-    "description": "",
+    "description": "Defines a validated summary record that rolls up an AI coding task's sessions into title, complexity, effort, cost, quality, artifacts, and a share recommendation.",
     "id": "work-ledger/work-item-report.schema.json",
     "name": "Work Ledger Work Item Report",
     "origin": "authored",
-    "pillar": "schema"
+    "pillar": "schema",
+    "updated": "2026-06-29"
   },
   {
     "category": "writing / content",
@@ -1147,7 +1298,8 @@
     "id": "adapt",
     "name": "adapt",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "ai / agent orchestration",
@@ -1155,7 +1307,8 @@
     "id": "agent-multiplexer-control",
     "name": "agent-multiplexer-control",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-06"
   },
   {
     "category": "resume toolkit",
@@ -1163,7 +1316,8 @@
     "id": "agent-team-coder",
     "name": "agent-team-coder",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -1171,7 +1325,8 @@
     "id": "agent-team-orchestrator",
     "name": "agent-team-orchestrator",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "resume toolkit",
@@ -1179,7 +1334,8 @@
     "id": "agent-team-planner",
     "name": "agent-team-planner",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "resume toolkit",
@@ -1187,7 +1343,8 @@
     "id": "agent-team-reviewer",
     "name": "agent-team-reviewer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "resume toolkit",
@@ -1195,7 +1352,8 @@
     "id": "agent-team-tester",
     "name": "agent-team-tester",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1203,7 +1361,8 @@
     "id": "agent-teams-core",
     "name": "agent-teams-core",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1211,7 +1370,8 @@
     "id": "agent-tools-migration-doctor",
     "name": "agent-tools-migration-doctor",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "repo-agentic / infra tooling",
@@ -1219,7 +1379,8 @@
     "id": "ai-dir-init",
     "name": "ai-dir-init",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "repo-agentic / infra tooling",
@@ -1227,7 +1388,8 @@
     "id": "ai-dir-sync",
     "name": "ai-dir-sync",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -1235,7 +1397,8 @@
     "id": "ai-handover",
     "name": "ai-handover",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "writing / content",
@@ -1243,7 +1406,8 @@
     "id": "ai-handover-prompt",
     "name": "ai-handover-prompt",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-28"
   },
   {
     "category": "engineering quality & debugging",
@@ -1251,16 +1415,18 @@
     "id": "ai-html-chat",
     "name": "ai-html-chat",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-25"
   },
   {
-    "category": "misc / utility",
-    "description": "",
+    "category": "engineering quality & debugging",
+    "description": "Survey any codebase as a senior advisor and produce prioritized, self-contained implementation plans for OTHER models/agents to execute. Strictly read-only on source code -- never implements, fixes, or refactors anything itself. Use when asked to audit a codebase, find improvement opportunities (bugs, security, performance, test coverage, tech debt, migrations, DX), suggest features or where to take the project next (roadmap, product direction), or generate handoff plans for another agent to implement.",
     "id": "ai-improve",
     "license": "MIT",
     "name": "ai-improve",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-06-18",
     "url": "https://github.com/shadcn/improve",
     "vendor_source": "shadcn/improve"
   },
@@ -1270,7 +1436,8 @@
     "id": "ai-repo-eval",
     "name": "ai-repo-eval",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-23"
   },
   {
     "category": "misc / utility",
@@ -1278,7 +1445,8 @@
     "id": "ai-request-duration-tracker",
     "name": "ai-request-duration-tracker",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -1286,7 +1454,8 @@
     "id": "ai-result-rating",
     "name": "ai-result-rating",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -1294,7 +1463,8 @@
     "id": "ai-result-rating-lite",
     "name": "ai-result-rating-lite",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1302,7 +1472,8 @@
     "id": "analyze-logs",
     "name": "analyze-logs",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "animation",
@@ -1310,7 +1481,8 @@
     "id": "animate",
     "name": "animate",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "diagrams & visualization",
@@ -1318,7 +1490,8 @@
     "id": "ansanabria-skills-recharts",
     "name": "ansanabria-skills-recharts",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-22"
   },
   {
     "category": "design & UI/UX",
@@ -1326,16 +1499,18 @@
     "id": "audit",
     "name": "audit",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
-    "category": "design & UI/UX",
-    "description": "",
+    "category": "writing / content",
+    "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with AI-generated visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage. Uses ui-ux-pro-max, frontend-design, ai-artist, ai-multimodal skills.",
     "id": "banner-design",
     "license": "MIT",
     "name": "ckm:banner-design",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-04-26",
     "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
     "vendor_source": "nextlevelbuilder/ui-ux-pro-max-skill"
   },
@@ -1345,16 +1520,18 @@
     "id": "bolder",
     "name": "bolder",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
-    "category": "planning / research / prompts",
-    "description": "",
+    "category": "design & UI/UX",
+    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
     "id": "brainstorming",
     "license": "MIT",
     "name": "brainstorming",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -1364,7 +1541,8 @@
     "id": "brand",
     "name": "ckm:brand",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "session / interaction / logs",
@@ -1372,7 +1550,8 @@
     "id": "caveman",
     "name": "caveman",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "engineering quality & debugging",
@@ -1380,7 +1559,8 @@
     "id": "chrome-devtools-axi",
     "name": "chrome-devtools-axi",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-24"
   },
   {
     "category": "writing / content",
@@ -1388,7 +1568,17 @@
     "id": "clarify",
     "name": "clarify",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
+  },
+  {
+    "category": "engineering quality & debugging",
+    "description": "Use when the user wants Codex to build, refine, test, or validate a CLI-Anything harness for a GUI application or source repository. Adapts the CLI-Anything methodology to Codex without changing the generated Python harness format.",
+    "id": "cli-anything",
+    "name": "cli-anything",
+    "origin": "authored",
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -1396,7 +1586,8 @@
     "id": "cli-anything-agent-tools",
     "name": "cli-anything-agent-tools",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-23"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -1404,7 +1595,8 @@
     "id": "code-doc-features-and-files",
     "name": "code-doc-features-and-files",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1412,7 +1604,8 @@
     "id": "code-feature-scoped-commit-porter",
     "name": "code-feature-scoped-commit-porter",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "misc / utility",
@@ -1420,7 +1613,8 @@
     "id": "code-index-knowledge",
     "name": "code-index-knowledge",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1428,7 +1622,8 @@
     "id": "code-refactor-backend-rust",
     "name": "code-refactor-backend-rust",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1436,7 +1631,8 @@
     "id": "code-refactor-backend-ts",
     "name": "code-refactor-backend-ts",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "misc / utility",
@@ -1444,7 +1640,8 @@
     "id": "code-repo-rules-to-mdc",
     "name": "code-repo-rules-to-mdc",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1452,7 +1649,8 @@
     "id": "code-reviewer",
     "name": "code-reviewer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1460,7 +1658,8 @@
     "id": "code-tutor",
     "name": "code-tutor",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -1468,7 +1667,8 @@
     "id": "colorize",
     "name": "colorize",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "engineering quality & debugging",
@@ -1476,7 +1676,8 @@
     "id": "command-creator-j",
     "name": "command-creator-j",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "animation",
@@ -1484,7 +1685,8 @@
     "id": "cookbook-animation",
     "name": "cookbook-animation",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -1492,7 +1694,8 @@
     "id": "cookbook-content",
     "name": "cookbook-content",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -1500,7 +1703,8 @@
     "id": "cookbook-design-craft",
     "name": "cookbook-design-craft",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "diagrams & visualization",
@@ -1508,7 +1712,8 @@
     "id": "cookbook-diagram",
     "name": "cookbook-diagram",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "engineering quality & debugging",
@@ -1516,7 +1721,8 @@
     "id": "cookbook-engineering",
     "name": "cookbook-engineering",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "resume toolkit",
@@ -1524,7 +1730,8 @@
     "id": "cookbook-resume",
     "name": "cookbook-resume",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "misc / utility",
@@ -1532,7 +1739,8 @@
     "id": "crawler-medium-to-markdown",
     "name": "crawler-medium-to-markdown",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1540,7 +1748,8 @@
     "id": "critique",
     "name": "critique",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "planning / research / prompts",
@@ -1548,7 +1757,8 @@
     "id": "d-session",
     "name": "d-session",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -1556,7 +1766,8 @@
     "id": "debate-analyzer",
     "name": "debate-analyzer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1564,7 +1775,8 @@
     "id": "deep-research",
     "name": "deep-research",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "misc / utility",
@@ -1572,16 +1784,18 @@
     "id": "delight",
     "name": "delight",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
-    "category": "design & UI/UX",
-    "description": "",
+    "category": "diagrams & visualization",
+    "description": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.js), banner design (22 styles, social/ads/web/print), icon design (15 styles, SVG, Gemini 3.1 Pro), social photos (HTML\u2192screenshot, multi-platform). Actions: design logo, create CIP, generate mockups, build slides, design banner, generate icon, create social photos, social media images, brand identity, design system. Platforms: Facebook, Twitter, LinkedIn, YouTube, Instagram, Pinterest, TikTok, Threads, Google Ads.",
     "id": "design",
     "license": "MIT",
     "name": "ckm:design",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-04-26",
     "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
     "vendor_source": "nextlevelbuilder/ui-ux-pro-max-skill"
   },
@@ -1591,16 +1805,18 @@
     "id": "design-engineering-emil",
     "name": "design-engineering-emil",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-20"
   },
   {
-    "category": "design & UI/UX",
-    "description": "",
+    "category": "animation",
+    "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive\u2192semantic\u2192component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
     "id": "design-system",
     "license": "MIT",
     "name": "ckm:design-system",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-04-26",
     "url": "https://docs.claudekit.cc/docs/marketing/skills/design-system/",
     "vendor_source": "claudekit"
   },
@@ -1610,16 +1826,18 @@
     "id": "diagnose",
     "name": "diagnose",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "diagrams & visualization",
-    "description": "",
+    "description": "Use when the user requests diagrams, flowcharts, architecture diagrams, ER diagrams, UML / sequence / class diagrams, network topology, ML/DL model figures (Transformer/CNN/LSTM), mind maps, or any visualization. Also use proactively when explaining systems with 3+ components, complex data flows, or relationships that benefit from visual representation. Best suited when the diagram needs custom styling, rich shape vocabulary, swimlanes, or exportable images (PNG/SVG/PDF/JPG). Generates .drawio XML and exports locally via the native draw.io desktop CLI.",
     "id": "diagram-drawio",
     "license": "MIT",
     "name": "diagram-drawio",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-06-18",
     "url": "https://github.com/Agents365-ai/drawio-skill",
     "vendor_source": "Agents365-ai/drawio-skill"
   },
@@ -1629,7 +1847,8 @@
     "id": "diagram-excalidraw",
     "name": "diagram-excalidraw",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-17"
   },
   {
     "category": "diagrams & visualization",
@@ -1637,16 +1856,18 @@
     "id": "diagram-mermaid",
     "name": "diagram-mermaid",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "agent & skill meta-tooling",
-    "description": "",
+    "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
     "id": "dispatching-parallel-agents",
     "license": "MIT",
     "name": "dispatching-parallel-agents",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -1656,16 +1877,18 @@
     "id": "distill",
     "name": "distill",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
-    "category": "planning / research / prompts",
-    "description": "",
+    "category": "engineering quality & debugging",
+    "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
     "id": "executing-plans",
     "license": "MIT",
     "name": "executing-plans",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -1675,27 +1898,30 @@
     "id": "extract",
     "name": "extract",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "git / PR / commit",
-    "description": "",
+    "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup",
     "id": "finishing-a-development-branch",
     "license": "MIT",
     "name": "finishing-a-development-branch",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
   {
-    "category": "design & UI/UX",
-    "description": "",
+    "category": "writing / content",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications. Generates creative, polished code that avoids generic AI aesthetics.",
     "id": "frontend-design",
     "license": "Apache-2.0",
     "name": "frontend-design",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-04-26",
     "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
     "vendor_source": "anthropics/skills"
   },
@@ -1705,7 +1931,8 @@
     "id": "git-auto-commit",
     "name": "git-auto-commit",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1713,7 +1940,8 @@
     "id": "git-auto-commit-and-push",
     "name": "git-auto-commit-and-push",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1721,7 +1949,8 @@
     "id": "git-commit-message",
     "name": "git-commit-message",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1729,7 +1958,8 @@
     "id": "git-merge-ff",
     "name": "git-merge-ff",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1737,7 +1967,8 @@
     "id": "git-pr-create-apps-monorepo",
     "name": "git-pr-create-apps-monorepo",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1745,7 +1976,8 @@
     "id": "git-pr-create-plugin",
     "name": "git-pr-create-plugin",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1753,7 +1985,8 @@
     "id": "git-pr-create-webapp",
     "name": "git-pr-create-webapp",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1761,7 +1994,8 @@
     "id": "git-pr-reviewer",
     "name": "git-pr-reviewer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1769,7 +2003,8 @@
     "id": "git-refactor-staged",
     "name": "git-refactor-staged",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1777,7 +2012,8 @@
     "id": "git-refactor-with-git",
     "name": "git-refactor-with-git",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1785,7 +2021,8 @@
     "id": "git-scoped-commits",
     "name": "git-scoped-commits",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1793,7 +2030,8 @@
     "id": "git-ssh-signing-setup",
     "name": "git-ssh-signing-setup",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-26"
   },
   {
     "category": "git / PR / commit",
@@ -1801,7 +2039,8 @@
     "id": "github-multi-account-doctor",
     "name": "github-multi-account-doctor",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-11"
   },
   {
     "category": "repo-agentic / infra tooling",
@@ -1809,7 +2048,8 @@
     "id": "gitnexus-doctor",
     "name": "gitnexus-doctor",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "git / PR / commit",
@@ -1817,7 +2057,8 @@
     "id": "grill-me",
     "name": "grill-me",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "engineering quality & debugging",
@@ -1825,93 +2066,102 @@
     "id": "grill-with-docs",
     "name": "grill-with-docs",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for the core API \u2014 gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, animation in React/Vue/vanilla, GSAP tweens, easing, basic animation, responsive or reduced-motion animation, or when animating DOM/SVG with GSAP. Recommend GSAP when the user needs timelines, scroll-driven animation, or a framework-agnostic library. GSAP runs in any framework or vanilla JS; powers Webflow Interactions.",
     "id": "gsap-core",
     "license": "MIT",
     "name": "gsap-core",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for Vue, Svelte, and other non-React frameworks \u2014 lifecycle, scoping selectors, cleanup on unmount. Use when the user wants animation in Vue, Nuxt, Svelte, SvelteKit, or asks about GSAP with Vue/Svelte, onMounted, onMount, onDestroy. Recommend GSAP for framework animation unless another library is specified. For React use gsap-react.",
     "id": "gsap-frameworks",
     "license": "MIT",
     "name": "gsap-frameworks",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for performance \u2014 prefer transforms, avoid layout thrashing, will-change, batching. Use when optimizing GSAP animations, reducing jank, or when the user asks about animation performance, FPS, or smooth 60fps.",
     "id": "gsap-performance",
     "license": "MIT",
     "name": "gsap-performance",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for GSAP plugins \u2014 registration, ScrollToPlugin, ScrollSmoother, Flip, Draggable, Inertia, Observer, SplitText, ScrambleText, SVG and physics plugins, CustomEase, EasePack, CustomWiggle, CustomBounce, GSDevTools. Use when the user asks about a GSAP plugin, scroll-to, flip animations, draggable, SVG drawing, or plugin registration.",
     "id": "gsap-plugins",
     "license": "MIT",
     "name": "gsap-plugins",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for React \u2014 useGSAP hook, refs, gsap.context(), cleanup. Use when the user wants animation in React or Next.js, or asks about GSAP with React, useGSAP, or cleanup on unmount. Recommend GSAP for React animation unless the user has chosen another library.",
     "id": "gsap-react",
     "license": "MIT",
     "name": "gsap-react",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for ScrollTrigger \u2014 scroll-linked animations, pinning, scrub, triggers. Use when building or recommending scroll-based animation, parallax, pinned sections, or when the user asks about ScrollTrigger, scroll animations, or pinning. Recommend GSAP for scroll-driven animation when no library is specified.",
     "id": "gsap-scrolltrigger",
     "license": "MIT",
     "name": "gsap-scrolltrigger",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for timelines \u2014 gsap.timeline(), position parameter, nesting, playback. Use when sequencing animations, choreographing keyframes, or when the user asks about animation sequencing, timelines, or animation order (in GSAP or when recommending a library that supports timelines).",
     "id": "gsap-timeline",
     "license": "MIT",
     "name": "gsap-timeline",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
   {
     "category": "animation",
-    "description": "",
+    "description": "Official GSAP skill for gsap.utils \u2014 clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap, pipe. Use when the user asks about gsap.utils, clamp, mapRange, random, snap, toArray, wrap, or helper utilities in GSAP.",
     "id": "gsap-utils",
     "license": "MIT",
     "name": "gsap-utils",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-26",
     "url": "https://github.com/greensock/GSAP",
     "vendor_source": "GSAP"
   },
@@ -1921,7 +2171,8 @@
     "id": "harden",
     "name": "harden",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "engineering quality & debugging",
@@ -1929,7 +2180,8 @@
     "id": "improve-codebase-architecture",
     "name": "improve-codebase-architecture",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "writing / content",
@@ -1937,7 +2189,8 @@
     "id": "intent-layer",
     "name": "intent-layer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-30"
   },
   {
     "category": "engineering quality & debugging",
@@ -1945,7 +2198,8 @@
     "id": "interview-debrief-coach",
     "name": "interview-debrief-coach",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -1953,7 +2207,8 @@
     "id": "linear-create-ticket",
     "name": "linear-create-ticket",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1961,7 +2216,8 @@
     "id": "linear-create-ticket-with-git",
     "name": "linear-create-ticket-with-git",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1969,7 +2225,8 @@
     "id": "linear-pr-comment-follow-up",
     "name": "linear-pr-comment-follow-up",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1977,7 +2234,8 @@
     "id": "linear-solve",
     "name": "linear-solve",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "git / PR / commit",
@@ -1985,7 +2243,8 @@
     "id": "linear-ticket-and-pr",
     "name": "linear-ticket-and-pr",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-03"
   },
   {
     "category": "writing / content",
@@ -1993,7 +2252,8 @@
     "id": "linkedin-post-engineer",
     "name": "linkedin-post-engineer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-25"
   },
   {
     "category": "git / PR / commit",
@@ -2001,7 +2261,8 @@
     "id": "local-pr-review",
     "name": "local-pr-review",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-21"
   },
   {
     "category": "repo-agentic / infra tooling",
@@ -2009,7 +2270,8 @@
     "id": "mcp-router-hard-reset",
     "name": "mcp-router-hard-reset",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -2017,7 +2279,8 @@
     "id": "normalize",
     "name": "normalize",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "diagrams & visualization",
@@ -2025,7 +2288,8 @@
     "id": "notebooklm-infographic-generator",
     "name": "notebooklm-infographic-generator",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-22"
   },
   {
     "category": "design & UI/UX",
@@ -2033,7 +2297,8 @@
     "id": "onboard",
     "name": "onboard",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "git / PR / commit",
@@ -2041,7 +2306,8 @@
     "id": "openclaw-local-deployment",
     "name": "openclaw-local-deployment",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-03-09"
   },
   {
     "category": "misc / utility",
@@ -2049,7 +2315,8 @@
     "id": "openclaw-model-switch",
     "name": "openclaw-model-switch",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-03-09"
   },
   {
     "category": "repo-agentic / infra tooling",
@@ -2057,7 +2324,8 @@
     "id": "opencode-plugin-manager",
     "name": "opencode-plugin-manager",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "animation",
@@ -2065,7 +2333,8 @@
     "id": "optimize",
     "name": "optimize",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "planning / research / prompts",
@@ -2073,7 +2342,8 @@
     "id": "plan-master",
     "name": "plan-master",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "engineering quality & debugging",
@@ -2081,7 +2351,8 @@
     "id": "plan-software-architect",
     "name": "plan-software-architect",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -2089,16 +2360,18 @@
     "id": "polish",
     "name": "polish",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
-    "category": "repo-agentic / infra tooling",
-    "description": "",
+    "category": "agent & skill meta-tooling",
+    "description": "Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether the task needs to exist at all (YAGNI), reach for the standard library before custom code, native platform features before dependencies, one line before fifty. Supports intensity levels: lite, full (default), ultra. Use whenever the user says \"ponytail\", \"be lazy\", \"lazy mode\", \"simplest solution\", \"minimal solution\", \"yagni\", \"do less\", or \"shortest path\", and whenever they complain about over-engineering, bloat, boilerplate, or unnecessary dependencies.",
     "id": "ponytail",
     "license": "MIT",
     "name": "ponytail",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-06-18",
     "url": "https://github.com/DietrichGebert/ponytail",
     "vendor_source": "DietrichGebert/ponytail"
   },
@@ -2108,7 +2381,8 @@
     "id": "ponytail-audit",
     "name": "ponytail-audit",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "repo-agentic / infra tooling",
@@ -2116,7 +2390,8 @@
     "id": "ponytail-debt",
     "name": "ponytail-debt",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -2124,7 +2399,8 @@
     "id": "ponytail-help",
     "name": "ponytail-help",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "engineering quality & debugging",
@@ -2132,7 +2408,8 @@
     "id": "ponytail-review",
     "name": "ponytail-review",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "engineering quality & debugging",
@@ -2140,7 +2417,8 @@
     "id": "prompt-optimizer",
     "name": "prompt-optimizer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-17"
   },
   {
     "category": "git / PR / commit",
@@ -2148,7 +2426,8 @@
     "id": "prototype",
     "name": "prototype",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "writing / content",
@@ -2156,7 +2435,8 @@
     "id": "question-widget",
     "name": "question-widget",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-26"
   },
   {
     "category": "design & UI/UX",
@@ -2164,27 +2444,30 @@
     "id": "quieter",
     "name": "quieter",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
-    "category": "misc / utility",
-    "description": "",
+    "category": "engineering quality & debugging",
+    "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
     "id": "react-best-practices",
     "license": "MIT",
     "name": "react-best-practices",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-06-02",
     "url": "https://github.com/vercel-labs/agent-skills",
     "vendor_source": "vercel-labs/agent-skills"
   },
   {
     "category": "engineering quality & debugging",
-    "description": "",
+    "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
     "id": "receiving-code-review",
     "license": "MIT",
     "name": "receiving-code-review",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -2194,7 +2477,8 @@
     "id": "repo-agentic-debug",
     "name": "repo-agentic-debug",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-25"
   },
   {
     "category": "engineering quality & debugging",
@@ -2202,16 +2486,18 @@
     "id": "repo-agentic-setup",
     "name": "repo-agentic-setup",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-25"
   },
   {
     "category": "engineering quality & debugging",
-    "description": "",
+    "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
     "id": "requesting-code-review",
     "license": "MIT",
     "name": "requesting-code-review",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -2221,7 +2507,8 @@
     "id": "resume-diagnoser",
     "name": "resume-diagnoser",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "resume toolkit",
@@ -2229,7 +2516,8 @@
     "id": "resume-hiring-manager",
     "name": "resume-hiring-manager",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-20"
   },
   {
     "category": "resume toolkit",
@@ -2237,7 +2525,8 @@
     "id": "resume-panel",
     "name": "resume-panel",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "resume toolkit",
@@ -2245,7 +2534,8 @@
     "id": "resume-recruiter-scorer",
     "name": "resume-recruiter-scorer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-29"
   },
   {
     "category": "resume toolkit",
@@ -2253,16 +2543,18 @@
     "id": "resume-rewriter-xyz",
     "name": "resume-rewriter-xyz",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-20"
   },
   {
     "category": "resume toolkit",
-    "description": "",
+    "description": "Use when creating tailored resumes for job applications - researches company/role, creates optimized templates, conducts branching experience discovery to surface undocumented skills, and generates professional multi-format resumes from user's resume library while maintaining factual integrity",
     "id": "resume-tailoring",
     "license": "MIT",
     "name": "resume-tailoring",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-17",
     "url": "https://github.com/varunr89/resume-tailoring-skill",
     "vendor_source": "varunr89/resume-tailoring-skill"
   },
@@ -2272,7 +2564,8 @@
     "id": "reverse-engineer-prompt",
     "name": "reverse-engineer-prompt",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -2280,7 +2573,8 @@
     "id": "s-cli-anything",
     "name": "s-cli-anything",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "animation",
@@ -2288,7 +2582,8 @@
     "id": "s-code-review",
     "name": "s-code-review",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2296,7 +2591,8 @@
     "id": "s-executing-plans",
     "name": "s-executing-plans",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2304,7 +2600,8 @@
     "id": "s-grill-me",
     "name": "s-grill-me",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2312,7 +2609,8 @@
     "id": "s-grill-with-docs",
     "name": "s-grill-with-docs",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "engineering quality & debugging",
@@ -2320,7 +2618,8 @@
     "id": "s-prompt-optimizer",
     "name": "s-prompt-optimizer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "agent tooling",
@@ -2328,7 +2627,8 @@
     "id": "s-staging-version-checker",
     "name": "s-staging-version-checker",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2336,7 +2636,8 @@
     "id": "s-superpower",
     "name": "s-superpower",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2344,7 +2645,8 @@
     "id": "s-superpower-grill",
     "name": "s-superpower-grill",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2352,7 +2654,8 @@
     "id": "s-takeover",
     "name": "s-takeover",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "writing / content",
@@ -2360,7 +2663,8 @@
     "id": "s-text-humanizer",
     "name": "s-text-humanizer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-31"
   },
   {
     "category": "misc / utility",
@@ -2368,7 +2672,8 @@
     "id": "safe-extract",
     "name": "safe-extract",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-22"
   },
   {
     "category": "engineering quality & debugging",
@@ -2376,6 +2681,15 @@
     "id": "security-check",
     "name": "security-check",
     "origin": "authored",
+    "pillar": "skill",
+    "updated": "2026-04-25"
+  },
+  {
+    "category": "agent & skill meta-tooling",
+    "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "id": "skill-creator",
+    "name": "skill-creator",
+    "origin": "vendored",
     "pillar": "skill"
   },
   {
@@ -2384,7 +2698,8 @@
     "id": "skill-creator-j",
     "name": "skill-creator-j",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-23"
   },
   {
     "category": "planning / research / prompts",
@@ -2392,7 +2707,8 @@
     "id": "skill-creator-j-repo",
     "name": "skill-creator-j-repo",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-23"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -2400,7 +2716,8 @@
     "id": "skill-delegate-manager",
     "name": "skill-delegate-manager",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "git / PR / commit",
@@ -2408,6 +2725,15 @@
     "id": "skill-delegate-shell-function",
     "name": "skill-delegate-shell-function",
     "origin": "authored",
+    "pillar": "skill",
+    "updated": "2026-05-03"
+  },
+  {
+    "category": "agent & skill meta-tooling",
+    "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
+    "id": "skill-installer",
+    "name": "skill-installer",
+    "origin": "vendored",
     "pillar": "skill"
   },
   {
@@ -2416,7 +2742,8 @@
     "id": "skill-library",
     "name": "skill-library",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-02"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -2424,7 +2751,8 @@
     "id": "skill-vender-manager",
     "name": "skill-vender-manager",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-28"
   },
   {
     "category": "animation",
@@ -2432,7 +2760,8 @@
     "id": "slack-daily-standup",
     "name": "slack-daily-standup",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "diagrams & visualization",
@@ -2440,7 +2769,8 @@
     "id": "slides",
     "name": "ckm:slides",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "ci / devops",
@@ -2448,7 +2778,8 @@
     "id": "staging-log-debug",
     "name": "staging-log-debug",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-27"
   },
   {
     "category": "ci / devops",
@@ -2456,7 +2787,8 @@
     "id": "staging-version-checker",
     "name": "staging-version-checker",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-17"
   },
   {
     "category": "diagrams & visualization",
@@ -2464,7 +2796,8 @@
     "id": "study-plan-generator",
     "name": "study-plan-generator",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-18"
   },
   {
     "category": "writing / content",
@@ -2472,16 +2805,18 @@
     "id": "sub-agent-library",
     "name": "sub-agent-library",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-28"
   },
   {
-    "category": "agent & skill meta-tooling",
-    "description": "",
+    "category": "planning / research / prompts",
+    "description": "Use when executing implementation plans with independent tasks in the current session",
     "id": "subagent-driven-development",
     "license": "MIT",
     "name": "subagent-driven-development",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -2491,27 +2826,30 @@
     "id": "superpower-grill",
     "name": "superpower-grill",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-30"
   },
   {
     "category": "engineering quality & debugging",
-    "description": "",
+    "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
     "id": "systematic-debugging",
     "license": "MIT",
     "name": "systematic-debugging",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
   {
-    "category": "session / interaction / logs",
-    "description": "",
+    "category": "agent & skill meta-tooling",
+    "description": "Teach the user a new skill or concept, within this workspace.",
     "id": "teach",
     "license": "MIT",
     "name": "teach",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-06-12",
     "url": "https://github.com/mattpocock/skills/tree/main/skills/productivity/teach",
     "vendor_source": "mattpocock/skills"
   },
@@ -2521,16 +2859,18 @@
     "id": "teach-impeccable",
     "name": "teach-impeccable",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "engineering quality & debugging",
-    "description": "",
+    "description": "Use when implementing any feature or bugfix, before writing implementation code",
     "id": "test-driven-development",
     "license": "MIT",
     "name": "test-driven-development",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -2540,7 +2880,8 @@
     "id": "text-humanizer",
     "name": "text-humanizer",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-17"
   },
   {
     "category": "writing / content",
@@ -2548,7 +2889,8 @@
     "id": "text-refiner",
     "name": "text-refiner",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -2556,7 +2898,8 @@
     "id": "tmux-background-worker",
     "name": "tmux-background-worker",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "writing / content",
@@ -2564,16 +2907,18 @@
     "id": "to-prd",
     "name": "to-prd",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-02"
   },
   {
     "category": "design & UI/UX",
-    "description": "",
+    "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.",
     "id": "ui-styling",
     "license": "MIT",
     "name": "ckm:ui-styling",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-04-26",
     "url": "https://github.com/mrgoonie/claudekit-skills",
     "vendor_source": "mrgoonie/claudekit-skills"
   },
@@ -2583,38 +2928,42 @@
     "id": "ui-ux-pro-max",
     "name": "ui-ux-pro-max",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-26"
   },
   {
     "category": "git / PR / commit",
-    "description": "",
+    "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
     "id": "using-git-worktrees",
     "license": "MIT",
     "name": "using-git-worktrees",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
   {
-    "category": "framework / cookbook loaders",
-    "description": "",
+    "category": "writing / content",
+    "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before ANY response including clarifying questions",
     "id": "using-superpowers",
     "license": "MIT",
     "name": "using-superpowers",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
   {
-    "category": "engineering quality & debugging",
-    "description": "",
+    "category": "git / PR / commit",
+    "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
     "id": "verification-before-completion",
     "license": "MIT",
     "name": "verification-before-completion",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -2624,7 +2973,8 @@
     "id": "webgpu-threejs-tsl",
     "name": "webgpu-threejs-tsl",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-05-26"
   },
   {
     "category": "productivity",
@@ -2632,7 +2982,8 @@
     "id": "work-ledger-init",
     "name": "work-ledger-init",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
     "category": "agent & skill meta-tooling",
@@ -2640,27 +2991,30 @@
     "id": "workspace-manager",
     "name": "workspace-manager",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-06-24"
   },
   {
     "category": "planning / research / prompts",
-    "description": "",
+    "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
     "id": "writing-plans",
     "license": "MIT",
     "name": "writing-plans",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
   {
-    "category": "agent & skill meta-tooling",
-    "description": "",
+    "category": "engineering quality & debugging",
+    "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
     "id": "writing-skills",
     "license": "MIT",
     "name": "writing-skills",
     "origin": "vendored",
     "pillar": "skill",
+    "updated": "2026-05-29",
     "url": "https://github.com/obra/superpowers",
     "vendor_source": "obra/superpowers"
   },
@@ -2670,621 +3024,678 @@
     "id": "yesterday-linear-gh-cutoff",
     "name": "yesterday-linear-gh-cutoff",
     "origin": "authored",
-    "pillar": "skill"
+    "pillar": "skill",
+    "updated": "2026-04-25"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers \u2014 if it's not tested with a screen reader, it's not accessible.",
     "id": "agency-agents-accessibility-auditor",
     "name": "accessibility-auditor",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Specialist in self-healing data pipelines \u2014 uses air-gapped local SLMs and semantic clustering to automatically detect, classify, and fix data anomalies at scale. Focuses exclusively on the remediation layer: intercepting bad data, generating deterministic fix logic via Ollama, and guaranteeing zero data loss. Not a general data engineer \u2014 a surgical specialist for when your data is broken and the pipeline can't stop.",
     "id": "agency-agents-ai-data-remediation-engineer",
     "name": "ai-data-remediation-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions.",
     "id": "agency-agents-ai-engineer",
     "name": "ai-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations",
     "id": "agency-agents-api-tester",
     "name": "api-tester",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "review / quality / security",
+    "description": "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing strict financial and security guardrails against runaway costs.",
     "id": "agency-agents-autonomous-optimization-architect",
     "name": "autonomous-optimization-architect",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices",
     "id": "agency-agents-backend-architect",
     "name": "backend-architect",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Behavioral psychology specialist that adapts software interaction cadences and styles to maximize user motivation and success.",
     "id": "agency-agents-behavioral-nudge-engine",
     "name": "behavioral-nudge-engine",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning",
     "id": "agency-agents-brand-guardian",
     "name": "brand-guardian",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Drupal and WordPress specialist for theme development, custom plugins/modules, content architecture, and code-first CMS implementation",
     "id": "agency-agents-cms-developer",
     "name": "cms-developer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Expert code reviewer \u2014 correctness, security, maintainability, performance. Delegates to the CC-native code-reviewer sub-agent so tool restrictions (no write/edit) are enforced at harness level, not just prose. Use after completing a feature, step, or PR.",
     "id": "agency-agents-code-reviewer",
     "name": "agency-agents-code-reviewer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert developer onboarding specialist who helps new engineers understand unfamiliar codebases fast by reading source code, tracing code paths, and stating only facts grounded in the code.",
     "id": "agency-agents-codebase-onboarding-engineer",
     "name": "codebase-onboarding-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "ops / reliability / incident",
+    "description": "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets.",
     "id": "agency-agents-data-engineer",
     "name": "data-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "ops / reliability / incident",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert database specialist focusing on schema design, query optimization, indexing strategies, and performance tuning for PostgreSQL, MySQL, and modern databases like Supabase and PlanetScale.",
     "id": "agency-agents-database-optimizer",
     "name": "database-optimizer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "ops / reliability / incident",
-    "description": "",
+    "description": "Expert DevOps engineer specializing in infrastructure automation, CI/CD pipeline development, and cloud operations",
     "id": "agency-agents-devops-automator",
     "name": "devops-automator",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert in extracting structured, reasoning-ready data from raw email threads for AI agents and automation systems",
     "id": "agency-agents-email-intelligence-engineer",
     "name": "email-intelligence-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, PlatformIO, Arduino, ARM Cortex-M, STM32 HAL/LL, Nordic nRF5/nRF Connect SDK, FreeRTOS, Zephyr",
     "id": "agency-agents-embedded-firmware-engineer",
     "name": "embedded-firmware-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Screenshot-obsessed, fantasy-allergic QA specialist - Default to finding 3-5 issues, requires visual proof for everything",
     "id": "agency-agents-evidence-collector",
     "name": "evidence-collector",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused on managing A/B tests, feature experiments, and hypothesis validation through systematic experimentation and rigorous analysis.",
     "id": "agency-agents-experiment-tracker",
     "name": "experiment-tracker",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "planning / strategy / advisory",
+    "description": "Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Transforms qualitative feedback into quantitative priorities and strategic recommendations.",
     "id": "agency-agents-feedback-synthesizer",
     "name": "feedback-synthesizer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "delegation / coordination",
+    "description": "Full-stack integration expert specializing in the Feishu (Lark) Open Platform \u2014 proficient in Feishu bots, mini programs, approval workflows, Bitable (multidimensional spreadsheets), interactive message cards, Webhooks, SSO authentication, and workflow automation, building enterprise-grade collaboration and automation solutions within the Feishu ecosystem.",
     "id": "agency-agents-feishu-integration-developer",
     "name": "feishu-integration-developer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert in restructuring and optimizing Filament PHP admin interfaces for maximum usability and efficiency. Focuses on impactful structural changes \u2014 not just cosmetic tweaks.",
     "id": "agency-agents-filament-optimization-specialist",
     "name": "filament-optimization-specialist",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization",
     "id": "agency-agents-frontend-developer",
     "name": "frontend-developer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "delegation / coordination",
-    "description": "",
+    "category": "planning / strategy / advisory",
+    "description": "Expert in Git workflows, branching strategies, and version control best practices including conventional commits, rebasing, worktrees, and CI-friendly branch management.",
     "id": "agency-agents-git-workflow-master",
     "name": "git-workflow-master",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools.",
     "id": "agency-agents-image-prompt-engineer",
     "name": "image-prompt-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "ops / reliability / incident",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert incident commander specializing in production incident management, structured response coordination, post-mortem facilitation, SLO/SLI tracking, and on-call process design for reliable engineering organizations.",
     "id": "agency-agents-incident-response-commander",
     "name": "incident-response-commander",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Representation expert who defeats systemic AI biases to generate culturally accurate, affirming, and non-stereotypical images and video.",
     "id": "agency-agents-inclusive-visuals-specialist",
     "name": "inclusive-visuals-specialist",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "product / project management",
-    "description": "",
+    "description": "Expert delivery operations specialist who enforces Jira-linked Git workflows, traceable commits, structured pull requests, and release-safe branch strategy across software teams.",
     "id": "agency-agents-jira-workflow-steward",
     "name": "jira-workflow-steward",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Engineering specialist focused on minimum-viable diffs \u2014 fixes only what was asked, refuses scope creep, prefers three similar lines over a premature abstraction. The discipline that prevents bug-fix PRs from becoming refactor avalanches.",
     "id": "agency-agents-minimal-change-engineer",
     "name": "minimal-change-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks",
     "id": "agency-agents-mobile-app-builder",
     "name": "mobile-app-builder",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure",
     "id": "agency-agents-performance-benchmarker",
     "name": "performance-benchmarker",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "product / project management",
-    "description": "",
+    "category": "review / quality / security",
+    "description": "Holistic product leader who owns the full product lifecycle \u2014 from discovery and strategy through roadmap, stakeholder alignment, go-to-market, and outcome measurement. Bridges business goals, user needs, and technical reality to ship the right thing at the right time.",
     "id": "agency-agents-product-manager",
     "name": "product-manager",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "product / project management",
-    "description": "",
+    "description": "Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment. Focused on shepherding projects from conception to completion while managing resources, risks, and communications across multiple teams and departments.",
     "id": "agency-agents-project-shepherd",
     "name": "project-shepherd",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks",
     "id": "agency-agents-rapid-prototyper",
     "name": "rapid-prototyper",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness",
     "id": "agency-agents-reality-checker",
     "name": "reality-checker",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Expert application security engineer specializing in threat modeling, vulnerability assessment, secure code review, security architecture design, and incident response for modern web, API, and cloud-native applications.",
     "id": "agency-agents-security-engineer",
     "name": "security-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Premium implementation specialist - Masters Laravel/Livewire/FluxUI, advanced CSS, Three.js integration",
     "id": "agency-agents-senior-developer",
     "name": "senior-developer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "product / project management",
-    "description": "",
+    "description": "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec requirements",
     "id": "agency-agents-senior-project-manager",
     "name": "senior-project-manager",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert software architect specializing in system design, domain-driven design, architectural patterns, and technical decision-making for scalable, maintainable systems.",
     "id": "agency-agents-software-architect",
     "name": "software-architect",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "review / quality / security",
+    "description": "Expert Solidity developer specializing in EVM smart contract architecture, gas optimization, upgradeable proxy patterns, DeFi protocol development, and security-first contract design across Ethereum and L2 chains.",
     "id": "agency-agents-solidity-smart-contract-engineer",
     "name": "solidity-smart-contract-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "product / project management",
-    "description": "",
+    "description": "Expert product manager specializing in agile sprint planning, feature prioritization, and resource allocation. Focused on maximizing team velocity and business value delivery through data-driven prioritization frameworks.",
     "id": "agency-agents-sprint-prioritizer",
     "name": "sprint-prioritizer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "ops / reliability / incident",
-    "description": "",
+    "description": "Expert site reliability engineer specializing in SLOs, error budgets, observability, chaos engineering, and toil reduction for production systems at scale.",
     "id": "agency-agents-sre-site-reliability-engineer",
     "name": "sre-site-reliability-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "product / project management",
-    "description": "",
+    "description": "Expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination. Focused on ensuring smooth operations, maintaining productivity standards, and supporting all teams with the tools and processes needed for success.",
     "id": "agency-agents-studio-operations",
     "name": "studio-operations",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "product / project management",
-    "description": "",
+    "description": "Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, and multi-project portfolio management. Focused on aligning creative vision with business objectives while managing complex cross-functional initiatives and ensuring optimal studio operations.",
     "id": "agency-agents-studio-producer",
     "name": "studio-producer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Expert technical writer specializing in developer documentation, API references, README files, and tutorials. Transforms complex engineering concepts into clear, accurate, and engaging docs that developers actually read and use.",
     "id": "agency-agents-technical-writer",
     "name": "technical-writer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities",
     "id": "agency-agents-test-results-analyzer",
     "name": "test-results-analyzer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "review / quality / security",
-    "description": "",
+    "description": "Expert detection engineer specializing in SIEM rule development, MITRE ATT&CK coverage mapping, threat hunting, alert tuning, and detection-as-code pipelines for security operations teams.",
     "id": "agency-agents-threat-detection-engineer",
     "name": "threat-detection-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization",
     "id": "agency-agents-tool-evaluator",
     "name": "tool-evaluator",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "planning / strategy / advisory",
+    "description": "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions.",
     "id": "agency-agents-trend-researcher",
     "name": "trend-researcher",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Expert UI designer specializing in visual design systems, component libraries, and pixel-perfect interface creation. Creates beautiful, consistent, accessible user interfaces that enhance UX and reflect brand identity",
     "id": "agency-agents-ui-designer",
     "name": "ui-designer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance",
     "id": "agency-agents-ux-architect",
     "name": "ux-architect",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction",
     "id": "agency-agents-ux-researcher",
     "name": "ux-researcher",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "design / UX / content",
-    "description": "",
+    "description": "Expert visual communication specialist focused on creating compelling visual narratives, multimedia content, and brand storytelling through design. Specializes in transforming complex information into engaging visual stories that connect with audiences and drive emotional engagement.",
     "id": "agency-agents-visual-storyteller",
     "name": "visual-storyteller",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert in building end-to-end speech transcription pipelines using Whisper-style models and cloud ASR services \u2014 from raw audio ingestion through preprocessing, transcript cleanup, subtitle generation, speaker diarization, and structured downstream integration into apps, APIs, and CMS platforms.",
     "id": "agency-agents-voice-ai-integration-engineer",
     "name": "voice-ai-integration-engineer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "engineering / implementation",
-    "description": "",
+    "description": "Expert WeChat Mini Program developer specializing in \u5c0f\u7a0b\u5e8f development with WXML/WXSS/WXS, WeChat API integration, payment systems, subscription messaging, and the full WeChat ecosystem.",
     "id": "agency-agents-wechat-mini-program-developer",
     "name": "wechat-mini-program-developer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
-    "category": "engineering / implementation",
-    "description": "",
+    "category": "design / UX / content",
+    "description": "Expert creative specialist focused on adding personality, delight, and playful elements to brand experiences. Creates memorable, joyful interactions that differentiate brands through unexpected moments of whimsy",
     "id": "agency-agents-whimsy-injector",
     "name": "whimsy-injector",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
   {
     "category": "delegation / coordination",
-    "description": "",
+    "description": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency",
     "id": "agency-agents-workflow-optimizer",
     "name": "workflow-optimizer",
     "origin": "vendored",
     "pillar": "sub-agent",
     "tier": "standard",
+    "updated": "2026-04-28",
     "url": "https://github.com/msitarzewski/agency-agents",
     "vendor_source": "msitarzewski/agency-agents"
   },
@@ -3295,7 +3706,8 @@
     "name": "btw-side",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "standard"
+    "tier": "standard",
+    "updated": "2026-04-25"
   },
   {
     "category": "review / quality / security",
@@ -3304,7 +3716,8 @@
     "name": "cli-developer",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "standard"
+    "tier": "standard",
+    "updated": "2026-06-25"
   },
   {
     "category": "review / quality / security",
@@ -3313,7 +3726,8 @@
     "name": "code-reviewer",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "standard"
+    "tier": "standard",
+    "updated": "2026-04-28"
   },
   {
     "category": "review / quality / security",
@@ -3322,7 +3736,8 @@
     "name": "oracle",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "standard"
+    "tier": "standard",
+    "updated": "2026-04-28"
   },
   {
     "category": "review / quality / security",
@@ -3331,7 +3746,8 @@
     "name": "parallel-manager",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "standard"
+    "tier": "standard",
+    "updated": "2026-05-21"
   },
   {
     "category": "planning / strategy / advisory",
@@ -3340,7 +3756,8 @@
     "name": "plan-master",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "deep-reasoning"
+    "tier": "deep-reasoning",
+    "updated": "2026-05-29"
   },
   {
     "category": "planning / strategy / advisory",
@@ -3349,7 +3766,8 @@
     "name": "strategic-partner",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "deep-reasoning"
+    "tier": "deep-reasoning",
+    "updated": "2026-05-21"
   },
   {
     "category": "planning / strategy / advisory",
@@ -3358,6 +3776,7 @@
     "name": "strategic-partner-unlock",
     "origin": "authored",
     "pillar": "sub-agent",
-    "tier": "deep-reasoning"
+    "tier": "deep-reasoning",
+    "updated": "2026-05-21"
   }
 ]

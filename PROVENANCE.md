@@ -2,7 +2,7 @@
 
 ## How this repository is produced
 
-`agent-tools-indexing` is **generated**, never hand-edited. A publisher in the private source
+`agent-tools-index` is **generated**, never hand-edited. A publisher in the private source
 repository extracts an allowlisted set of metadata fields, sanitizes them, renders the catalog and
 narrative, and runs a fail-closed leak scan over the entire output. A manually-triggered CI job
 runs the publisher and, only after a human approval step, pushes the result here.

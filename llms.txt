@@ -1,4 +1,4 @@
-# agent-tools-indexing
+# agent-tools-index
 
 > A public, redacted index of a private, machine-agnostic and agent-agnostic agent-tooling
 > monorepo: reusable skills, sub-agents, CLIs, hooks, host integrations, and architecture

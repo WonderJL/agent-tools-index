@@ -1,5 +1,5 @@
 {
-  "projectTitle": "agent-tools-indexing",
+  "projectTitle": "agent-tools-index",
   "description": "Public, redacted index of a private agent-tooling monorepo: skills, sub-agents, CLIs, hooks, hosts, and architecture decisions.",
   "folders": ["docs", "manifest"],
   "excludeFolders": [],

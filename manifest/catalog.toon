@@ -1,4 +1,4 @@
-rows[385]{pillar,id,name,category,origin,license}:
+rows[389]{pillar,id,name,category,origin,license}:
   adr,2026-05-04-zsh-alias-loader-design,Zsh alias loader — design,spec,authored,
   adr,2026-05-09-cli-anything-agent-first-help-design,CLI-Anything Agent-First Help & Version Contract — Design,spec,authored,
   adr,2026-05-11-cli-ai-usage-design,`cli-ai-usage` — Design Spec,spec,authored,
@@ -42,11 +42,11 @@ rows[385]{pillar,id,name,category,origin,license}:
   adr,2026-06-26-cli-full-vpn-wrapper-doctor-design,cli-full-vpn-wrapper `doctor` — connectivity probe design,spec,authored,
   adr,2026-06-26-git-smart-multi-account-clone-design,Design — `cli-git-smart` + `git-clone-smart`,spec,authored,
   adr,2026-06-27-cli-full-vpn-wrapper-reset-interactive-design,cli-full-vpn-wrapper `reset` + interactive profile selection — design,spec,authored,
-  adr,2026-06-28-agent-tools-indexing-public-projection-design,agent-tools-indexing — public projection of the private agent-tools monorepo,spec,authored,
+  adr,2026-06-28-agent-tools-index-public-projection-design,agent-tools-index — public projection of a private agent-tooling monorepo,spec,authored,
   adr,2026-06-28-vendor-worktree-manager-and-strip-telemetry-design,Truly-vendor a worktree manager from source and strip its analytics telemetry,spec,authored,
   adr,ADR-0001-integration-architecture,ADR-0001: Integration Architecture for `agent-tools`,foundational / architecture,authored,
   adr,ADR-0002-repo-agentic-setup-storage-model,ADR-0002: Repo agentic-setup writes into the target repo  with `.agents/` as a localized source of truth,repo-agentic setup,authored,
-  adr,ADR-0003-canonical-intent-per-host-adapter,ADR-0003: Canonical intent + per-host adapters for format-divergent concerns,foundational / architecture,authored,
+  adr,ADR-0003-canonical-intent-per-host-adapter,ADR-0003: Canonical intent + per-host adapters for format-divergent concerns,repo-agentic setup,authored,
   adr,ADR-0004-recommender-skill-render-cli-split,ADR-0004: Recommender (LLM skill) and Render (deterministic CLI) are split,CLI tool design,authored,
   adr,ADR-0005-observability-debug-layer,ADR-0005: Observability and debug via harness-transcript review  not a logging hook,foundational / architecture,authored,
   adr,ADR-0006-ai-crew-session-bus,ADR-0006: ai-crew — a harness-agnostic agent session bus,multi-agent orchestration,authored,
@@ -90,6 +90,7 @@ rows[385]{pillar,id,name,category,origin,license}:
   cli,markitdown-ocr-llm,cli-markitdown-ocr-llm,doc / OCR / conversion,authored,
   cli,mermaid-agent,cli-mermaid-agent,diagram / media / render,authored,
   cli,notebooklm,cli-notebooklm,doc / OCR / conversion,authored,
+  cli,notebooklm-py,cli-notebooklm-py,doc / OCR / conversion,authored,
   cli,notebooklm-watermark-remover,cli-notebooklm-watermark-remover,doc / OCR / conversion,authored,
   cli,obsidian,cli-obsidian,productivity / SaaS,authored,
   cli,opencode-manager,cli-opencode-manager,ai / agent orchestration,authored,
@@ -115,7 +116,7 @@ rows[385]{pillar,id,name,category,origin,license}:
   host,no-mistakes,no-mistakes,cross-cutting (routing / gate),authored,
   host,openclaw,openclaw,integration / tool pin,authored,
   host,opencode,opencode,agent CLI drivers,authored,
-  host,rtk,rtk,integration / tool pin,authored,
+  host,rtk,rtk,agent CLI drivers,authored,
   host,shell,shell,agent CLI drivers,authored,
   host,worktree-manager,worktree-manager,host,authored,
   integration,agents-md-core,agents-md-core,first-party core,authored,
@@ -135,7 +136,7 @@ rows[385]{pillar,id,name,category,origin,license}:
   kit,node-typescript,Node / TypeScript (backend),base,authored,
   kit,python,Python (backend),base,authored,
   kit,rust,Rust (backend),base,authored,
-  schema,agent-tools-catalog.schema.json,agent-tools-indexing catalog,schema,authored,
+  schema,agent-tools-catalog.schema.json,agent-tools-index catalog,schema,authored,
   schema,integration.schema.json,integration.yaml,schema,authored,
   schema,work-ledger/export-review.schema.json,Work Ledger Export Review Decision,schema,authored,
   schema,work-ledger/public-export.schema.json,Work Ledger Public Export,schema,authored,
@@ -155,7 +156,7 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,ai-handover,ai-handover,writing / content,authored,
   skill,ai-handover-prompt,ai-handover-prompt,writing / content,authored,
   skill,ai-html-chat,ai-html-chat,engineering quality & debugging,authored,
-  skill,ai-improve,ai-improve,misc / utility,vendored,MIT
+  skill,ai-improve,ai-improve,engineering quality & debugging,vendored,MIT
   skill,ai-repo-eval,ai-repo-eval,engineering quality & debugging,authored,
   skill,ai-request-duration-tracker,ai-request-duration-tracker,misc / utility,authored,
   skill,ai-result-rating,ai-result-rating,writing / content,authored,
@@ -164,13 +165,14 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,animate,animate,animation,authored,
   skill,ansanabria-skills-recharts,ansanabria-skills-recharts,diagrams & visualization,authored,
   skill,audit,audit,design & UI/UX,authored,
-  skill,banner-design,ckm:banner-design,design & UI/UX,vendored,MIT
+  skill,banner-design,ckm:banner-design,writing / content,vendored,MIT
   skill,bolder,bolder,design & UI/UX,authored,
-  skill,brainstorming,brainstorming,planning / research / prompts,vendored,MIT
+  skill,brainstorming,brainstorming,design & UI/UX,vendored,MIT
   skill,brand,ckm:brand,writing / content,authored,
   skill,caveman,caveman,session / interaction / logs,authored,
   skill,chrome-devtools-axi,chrome-devtools-axi,engineering quality & debugging,authored,
   skill,clarify,clarify,writing / content,authored,
+  skill,cli-anything,cli-anything,engineering quality & debugging,authored,
   skill,cli-anything-agent-tools,cli-anything-agent-tools,writing / content,authored,
   skill,code-doc-features-and-files,code-doc-features-and-files,agent & skill meta-tooling,authored,
   skill,code-feature-scoped-commit-porter,code-feature-scoped-commit-porter,git / PR / commit,authored,
@@ -194,19 +196,19 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,debate-analyzer,debate-analyzer,writing / content,authored,
   skill,deep-research,deep-research,engineering quality & debugging,authored,
   skill,delight,delight,misc / utility,authored,
-  skill,design,ckm:design,design & UI/UX,vendored,MIT
+  skill,design,ckm:design,diagrams & visualization,vendored,MIT
   skill,design-engineering-emil,design-engineering-emil,animation,authored,
-  skill,design-system,ckm:design-system,design & UI/UX,vendored,MIT
+  skill,design-system,ckm:design-system,animation,vendored,MIT
   skill,diagnose,diagnose,engineering quality & debugging,authored,
   skill,diagram-drawio,diagram-drawio,diagrams & visualization,vendored,MIT
   skill,diagram-excalidraw,diagram-excalidraw,diagrams & visualization,authored,
   skill,diagram-mermaid,diagram-mermaid,diagrams & visualization,authored,
   skill,dispatching-parallel-agents,dispatching-parallel-agents,agent & skill meta-tooling,vendored,MIT
   skill,distill,distill,writing / content,authored,
-  skill,executing-plans,executing-plans,planning / research / prompts,vendored,MIT
+  skill,executing-plans,executing-plans,engineering quality & debugging,vendored,MIT
   skill,extract,extract,design & UI/UX,authored,
   skill,finishing-a-development-branch,finishing-a-development-branch,git / PR / commit,vendored,MIT
-  skill,frontend-design,frontend-design,design & UI/UX,vendored,Apache-2.0
+  skill,frontend-design,frontend-design,writing / content,vendored,Apache-2.0
   skill,git-auto-commit,git-auto-commit,git / PR / commit,authored,
   skill,git-auto-commit-and-push,git-auto-commit-and-push,git / PR / commit,authored,
   skill,git-commit-message,git-commit-message,git / PR / commit,authored,
@@ -253,7 +255,7 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,plan-master,plan-master,planning / research / prompts,authored,
   skill,plan-software-architect,plan-software-architect,engineering quality & debugging,authored,
   skill,polish,polish,writing / content,authored,
-  skill,ponytail,ponytail,repo-agentic / infra tooling,vendored,MIT
+  skill,ponytail,ponytail,agent & skill meta-tooling,vendored,MIT
   skill,ponytail-audit,ponytail-audit,engineering quality & debugging,authored,
   skill,ponytail-debt,ponytail-debt,repo-agentic / infra tooling,authored,
   skill,ponytail-help,ponytail-help,agent & skill meta-tooling,authored,
@@ -262,7 +264,7 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,prototype,prototype,git / PR / commit,authored,
   skill,question-widget,question-widget,writing / content,authored,
   skill,quieter,quieter,design & UI/UX,authored,
-  skill,react-best-practices,react-best-practices,misc / utility,vendored,MIT
+  skill,react-best-practices,react-best-practices,engineering quality & debugging,vendored,MIT
   skill,receiving-code-review,receiving-code-review,engineering quality & debugging,vendored,MIT
   skill,repo-agentic-debug,repo-agentic-debug,engineering quality & debugging,authored,
   skill,repo-agentic-setup,repo-agentic-setup,engineering quality & debugging,authored,
@@ -287,10 +289,12 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,s-text-humanizer,s-text-humanizer,writing / content,authored,
   skill,safe-extract,safe-extract,misc / utility,authored,
   skill,security-check,security-check,engineering quality & debugging,authored,
+  skill,skill-creator,skill-creator,agent & skill meta-tooling,vendored,
   skill,skill-creator-j,skill-creator-j,git / PR / commit,authored,
   skill,skill-creator-j-repo,skill-creator-j-repo,planning / research / prompts,authored,
   skill,skill-delegate-manager,skill-delegate-manager,agent & skill meta-tooling,authored,
   skill,skill-delegate-shell-function,skill-delegate-shell-function,git / PR / commit,authored,
+  skill,skill-installer,skill-installer,agent & skill meta-tooling,vendored,
   skill,skill-library,skill-library,git / PR / commit,authored,
   skill,skill-vender-manager,skill-vender-manager,agent & skill meta-tooling,authored,
   skill,slack-daily-standup,slack-daily-standup,animation,authored,
@@ -299,10 +303,10 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,staging-version-checker,staging-version-checker,ci / devops,authored,
   skill,study-plan-generator,study-plan-generator,diagrams & visualization,authored,
   skill,sub-agent-library,sub-agent-library,writing / content,authored,
-  skill,subagent-driven-development,subagent-driven-development,agent & skill meta-tooling,vendored,MIT
+  skill,subagent-driven-development,subagent-driven-development,planning / research / prompts,vendored,MIT
   skill,superpower-grill,superpower-grill,engineering quality & debugging,authored,
   skill,systematic-debugging,systematic-debugging,engineering quality & debugging,vendored,MIT
-  skill,teach,teach,session / interaction / logs,vendored,MIT
+  skill,teach,teach,agent & skill meta-tooling,vendored,MIT
   skill,teach-impeccable,teach-impeccable,writing / content,authored,
   skill,test-driven-development,test-driven-development,engineering quality & debugging,vendored,MIT
   skill,text-humanizer,text-humanizer,writing / content,authored,
@@ -312,53 +316,53 @@ rows[385]{pillar,id,name,category,origin,license}:
   skill,ui-styling,ckm:ui-styling,design & UI/UX,vendored,MIT
   skill,ui-ux-pro-max,ui-ux-pro-max,animation,authored,
   skill,using-git-worktrees,using-git-worktrees,git / PR / commit,vendored,MIT
-  skill,using-superpowers,using-superpowers,framework / cookbook loaders,vendored,MIT
-  skill,verification-before-completion,verification-before-completion,engineering quality & debugging,vendored,MIT
+  skill,using-superpowers,using-superpowers,writing / content,vendored,MIT
+  skill,verification-before-completion,verification-before-completion,git / PR / commit,vendored,MIT
   skill,webgpu-threejs-tsl,webgpu-threejs-tsl,animation,authored,
   skill,work-ledger-init,work-ledger-init,productivity,authored,
   skill,workspace-manager,workspace-manager,agent & skill meta-tooling,authored,
   skill,writing-plans,writing-plans,planning / research / prompts,vendored,MIT
-  skill,writing-skills,writing-skills,agent & skill meta-tooling,vendored,MIT
+  skill,writing-skills,writing-skills,engineering quality & debugging,vendored,MIT
   skill,yesterday-linear-gh-cutoff,yesterday-linear-gh-cutoff,git / PR / commit,authored,
-  sub-agent,agency-agents-accessibility-auditor,accessibility-auditor,engineering / implementation,vendored,
+  sub-agent,agency-agents-accessibility-auditor,accessibility-auditor,design / UX / content,vendored,
   sub-agent,agency-agents-ai-data-remediation-engineer,ai-data-remediation-engineer,engineering / implementation,vendored,
   sub-agent,agency-agents-ai-engineer,ai-engineer,engineering / implementation,vendored,
   sub-agent,agency-agents-api-tester,api-tester,engineering / implementation,vendored,
-  sub-agent,agency-agents-autonomous-optimization-architect,autonomous-optimization-architect,engineering / implementation,vendored,
-  sub-agent,agency-agents-backend-architect,backend-architect,engineering / implementation,vendored,
+  sub-agent,agency-agents-autonomous-optimization-architect,autonomous-optimization-architect,review / quality / security,vendored,
+  sub-agent,agency-agents-backend-architect,backend-architect,design / UX / content,vendored,
   sub-agent,agency-agents-behavioral-nudge-engine,behavioral-nudge-engine,engineering / implementation,vendored,
   sub-agent,agency-agents-brand-guardian,brand-guardian,design / UX / content,vendored,
-  sub-agent,agency-agents-cms-developer,cms-developer,engineering / implementation,vendored,
+  sub-agent,agency-agents-cms-developer,cms-developer,design / UX / content,vendored,
   sub-agent,agency-agents-code-reviewer,agency-agents-code-reviewer,review / quality / security,vendored,
   sub-agent,agency-agents-codebase-onboarding-engineer,codebase-onboarding-engineer,engineering / implementation,vendored,
-  sub-agent,agency-agents-data-engineer,data-engineer,engineering / implementation,vendored,
-  sub-agent,agency-agents-database-optimizer,database-optimizer,ops / reliability / incident,vendored,
+  sub-agent,agency-agents-data-engineer,data-engineer,ops / reliability / incident,vendored,
+  sub-agent,agency-agents-database-optimizer,database-optimizer,design / UX / content,vendored,
   sub-agent,agency-agents-devops-automator,devops-automator,ops / reliability / incident,vendored,
   sub-agent,agency-agents-email-intelligence-engineer,email-intelligence-engineer,engineering / implementation,vendored,
   sub-agent,agency-agents-embedded-firmware-engineer,embedded-firmware-engineer,engineering / implementation,vendored,
   sub-agent,agency-agents-evidence-collector,evidence-collector,review / quality / security,vendored,
-  sub-agent,agency-agents-experiment-tracker,experiment-tracker,engineering / implementation,vendored,
-  sub-agent,agency-agents-feedback-synthesizer,feedback-synthesizer,engineering / implementation,vendored,
-  sub-agent,agency-agents-feishu-integration-developer,feishu-integration-developer,engineering / implementation,vendored,
+  sub-agent,agency-agents-experiment-tracker,experiment-tracker,design / UX / content,vendored,
+  sub-agent,agency-agents-feedback-synthesizer,feedback-synthesizer,planning / strategy / advisory,vendored,
+  sub-agent,agency-agents-feishu-integration-developer,feishu-integration-developer,delegation / coordination,vendored,
   sub-agent,agency-agents-filament-optimization-specialist,filament-optimization-specialist,engineering / implementation,vendored,
-  sub-agent,agency-agents-frontend-developer,frontend-developer,engineering / implementation,vendored,
-  sub-agent,agency-agents-git-workflow-master,git-workflow-master,delegation / coordination,vendored,
-  sub-agent,agency-agents-image-prompt-engineer,image-prompt-engineer,engineering / implementation,vendored,
-  sub-agent,agency-agents-incident-response-commander,incident-response-commander,ops / reliability / incident,vendored,
+  sub-agent,agency-agents-frontend-developer,frontend-developer,design / UX / content,vendored,
+  sub-agent,agency-agents-git-workflow-master,git-workflow-master,planning / strategy / advisory,vendored,
+  sub-agent,agency-agents-image-prompt-engineer,image-prompt-engineer,design / UX / content,vendored,
+  sub-agent,agency-agents-incident-response-commander,incident-response-commander,design / UX / content,vendored,
   sub-agent,agency-agents-inclusive-visuals-specialist,inclusive-visuals-specialist,design / UX / content,vendored,
   sub-agent,agency-agents-jira-workflow-steward,jira-workflow-steward,product / project management,vendored,
   sub-agent,agency-agents-minimal-change-engineer,minimal-change-engineer,engineering / implementation,vendored,
   sub-agent,agency-agents-mobile-app-builder,mobile-app-builder,engineering / implementation,vendored,
   sub-agent,agency-agents-performance-benchmarker,performance-benchmarker,review / quality / security,vendored,
-  sub-agent,agency-agents-product-manager,product-manager,product / project management,vendored,
+  sub-agent,agency-agents-product-manager,product-manager,review / quality / security,vendored,
   sub-agent,agency-agents-project-shepherd,project-shepherd,product / project management,vendored,
   sub-agent,agency-agents-rapid-prototyper,rapid-prototyper,engineering / implementation,vendored,
   sub-agent,agency-agents-reality-checker,reality-checker,review / quality / security,vendored,
   sub-agent,agency-agents-security-engineer,security-engineer,review / quality / security,vendored,
   sub-agent,agency-agents-senior-developer,senior-developer,engineering / implementation,vendored,
   sub-agent,agency-agents-senior-project-manager,senior-project-manager,product / project management,vendored,
-  sub-agent,agency-agents-software-architect,software-architect,engineering / implementation,vendored,
-  sub-agent,agency-agents-solidity-smart-contract-engineer,solidity-smart-contract-engineer,engineering / implementation,vendored,
+  sub-agent,agency-agents-software-architect,software-architect,design / UX / content,vendored,
+  sub-agent,agency-agents-solidity-smart-contract-engineer,solidity-smart-contract-engineer,review / quality / security,vendored,
   sub-agent,agency-agents-sprint-prioritizer,sprint-prioritizer,product / project management,vendored,
   sub-agent,agency-agents-sre-site-reliability-engineer,sre-site-reliability-engineer,ops / reliability / incident,vendored,
   sub-agent,agency-agents-studio-operations,studio-operations,product / project management,vendored,
@@ -367,14 +371,14 @@ rows[385]{pillar,id,name,category,origin,license}:
   sub-agent,agency-agents-test-results-analyzer,test-results-analyzer,review / quality / security,vendored,
   sub-agent,agency-agents-threat-detection-engineer,threat-detection-engineer,review / quality / security,vendored,
   sub-agent,agency-agents-tool-evaluator,tool-evaluator,engineering / implementation,vendored,
-  sub-agent,agency-agents-trend-researcher,trend-researcher,engineering / implementation,vendored,
+  sub-agent,agency-agents-trend-researcher,trend-researcher,planning / strategy / advisory,vendored,
   sub-agent,agency-agents-ui-designer,ui-designer,design / UX / content,vendored,
   sub-agent,agency-agents-ux-architect,ux-architect,design / UX / content,vendored,
   sub-agent,agency-agents-ux-researcher,ux-researcher,design / UX / content,vendored,
   sub-agent,agency-agents-visual-storyteller,visual-storyteller,design / UX / content,vendored,
   sub-agent,agency-agents-voice-ai-integration-engineer,voice-ai-integration-engineer,engineering / implementation,vendored,
   sub-agent,agency-agents-wechat-mini-program-developer,wechat-mini-program-developer,engineering / implementation,vendored,
-  sub-agent,agency-agents-whimsy-injector,whimsy-injector,engineering / implementation,vendored,
+  sub-agent,agency-agents-whimsy-injector,whimsy-injector,design / UX / content,vendored,
   sub-agent,agency-agents-workflow-optimizer,workflow-optimizer,delegation / coordination,vendored,
   sub-agent,btw-side,btw-side,delegation / coordination,authored,
   sub-agent,cli-developer,cli-developer,review / quality / security,authored,

@@ -44,7 +44,7 @@
 - adr: `2026-06-26-cli-full-vpn-wrapper-doctor-design`
 - adr: `2026-06-26-git-smart-multi-account-clone-design`
 - adr: `2026-06-27-cli-full-vpn-wrapper-reset-interactive-design`
-- adr: `2026-06-28-agent-tools-indexing-public-projection-design`
+- adr: `2026-06-28-agent-tools-index-public-projection-design`
 - adr: `2026-06-28-vendor-worktree-manager-and-strip-telemetry-design`
 - adr: `ADR-0001-integration-architecture`
 - adr: `ADR-0002-repo-agentic-setup-storage-model`
@@ -92,6 +92,7 @@
 - cli: `markitdown-ocr-llm`
 - cli: `mermaid-agent`
 - cli: `notebooklm`
+- cli: `notebooklm-py`
 - cli: `notebooklm-watermark-remover`
 - cli: `obsidian`
 - cli: `opencode-manager`
@@ -173,6 +174,7 @@
 - skill: `caveman`
 - skill: `chrome-devtools-axi`
 - skill: `clarify`
+- skill: `cli-anything`
 - skill: `cli-anything-agent-tools`
 - skill: `code-doc-features-and-files`
 - skill: `code-feature-scoped-commit-porter`
@@ -289,10 +291,12 @@
 - skill: `s-text-humanizer`
 - skill: `safe-extract`
 - skill: `security-check`
+- skill: `skill-creator`
 - skill: `skill-creator-j`
 - skill: `skill-creator-j-repo`
 - skill: `skill-delegate-manager`
 - skill: `skill-delegate-shell-function`
+- skill: `skill-installer`
 - skill: `skill-library`
 - skill: `skill-vender-manager`
 - skill: `slack-daily-standup`
