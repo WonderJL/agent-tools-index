@@ -2,7 +2,7 @@
 
 _Generated — do not edit by hand. Flat, retrieval-friendly mirror of [CATALOG.md](../CATALOG.md): one bullet per item, no collapsible sections, no HTML tables._
 
-387 publishable items across 9 pillars. Authored by the owner unless tagged vendored.
+390 publishable items across 9 pillars. Authored by the owner unless tagged vendored.
 
 ## skill
 
@@ -243,6 +243,7 @@ _Generated — do not edit by hand. Flat, retrieval-friendly mirror of [CATALOG.
 ### cli · doc / OCR / conversion
 - **cli-markitdown-ocr-llm** — Converts documents to Markdown with LLM-powered OCR via MarkItDown, checking provider setup first and supporting pluggable hosted or local vision-model providers. _(updated 2026-06-29)_
 - **cli-notebooklm** — Agent-first wrapper over the native NotebookLM CLI that applies reusable, attributed prompt-style presets to generate styled slide decks and infographics; everything but generation runs offline. _(updated 2026-06-29)_
+- **cli-notebooklm-py** — Unofficial Python library for automating Google NotebookLM _(updated 2026-05-12)_
 - **cli-notebooklm-watermark-remover** — CLI wrapper that removes the bottom-right NotebookLM watermark from PDFs, PPTX decks, and images you own, orchestrating a pinned third-party remover in an isolated venv with no CV deps of its own. _(updated 2026-06-29)_
 - **cli-safe-extract** — Two-phase, default-deny safe archive extraction (inspect → manifest → promote) _(updated 2026-06-24)_
 
@@ -420,6 +421,8 @@ _Generated — do not edit by hand. Flat, retrieval-friendly mirror of [CATALOG.
 
 ## vendored (curated, not authored)
 
+- **skill-creator** — Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.
+- **skill-installer** — Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).
 - **diagram-drawio** — Use when the user requests diagrams, flowcharts, architecture diagrams, ER diagrams, UML / sequence / class diagrams, network topology, ML/DL model figures (Transformer/CNN/LSTM), mind maps, or any visualization. Also use proactively when explaining systems with 3+ components, complex data flows, or relationships that benefit from visual representation. Best suited when the diagram needs custom styling, rich shape vocabulary, swimlanes, or exportable images (PNG/SVG/PDF/JPG). Generates .drawio XML and exports locally via the native draw.io desktop CLI. _(Agents365-ai/drawio-skill · MIT)_ <https://github.com/Agents365-ai/drawio-skill>
 - **ponytail** — Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether the task needs to exist at all (YAGNI), reach for the standard library before custom code, native platform features before dependencies, one line before fifty. Supports intensity levels: lite, full (default), ultra. Use whenever the user says "ponytail", "be lazy", "lazy mode", "simplest solution", "minimal solution", "yagni", "do less", or "shortest path", and whenever they complain about over-engineering, bloat, boilerplate, or unnecessary dependencies. _(DietrichGebert/ponytail · MIT)_ <https://github.com/DietrichGebert/ponytail>
 - **gsap-core** — Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, animation in React/Vue/vanilla, GSAP tweens, easing, basic animation, responsive or reduced-motion animation, or when animating DOM/SVG with GSAP. Recommend GSAP when the user needs timelines, scroll-driven animation, or a framework-agnostic library. GSAP runs in any framework or vanilla JS; powers Webflow Interactions. _(GSAP · MIT)_ <https://github.com/greensock/GSAP>

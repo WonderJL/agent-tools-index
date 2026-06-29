@@ -1,4 +1,4 @@
-rows[387]{pillar,id,name,category,origin,license}:
+rows[390]{pillar,id,name,category,origin,license}:
   adr,2026-05-04-zsh-alias-loader-design,Zsh alias loader — design,spec,authored,
   adr,2026-05-09-cli-anything-agent-first-help-design,CLI-Anything Agent-First Help & Version Contract — Design,spec,authored,
   adr,2026-05-11-cli-ai-usage-design,`cli-ai-usage` — Design Spec,spec,authored,
@@ -91,6 +91,7 @@ rows[387]{pillar,id,name,category,origin,license}:
   cli,markitdown-ocr-llm,cli-markitdown-ocr-llm,doc / OCR / conversion,authored,
   cli,mermaid-agent,cli-mermaid-agent,diagram / media / render,authored,
   cli,notebooklm,cli-notebooklm,doc / OCR / conversion,authored,
+  cli,notebooklm-py,cli-notebooklm-py,doc / OCR / conversion,authored,
   cli,notebooklm-watermark-remover,cli-notebooklm-watermark-remover,doc / OCR / conversion,authored,
   cli,obsidian,cli-obsidian,productivity / SaaS,authored,
   cli,opencode-manager,cli-opencode-manager,ai / agent orchestration,authored,
@@ -289,10 +290,12 @@ rows[387]{pillar,id,name,category,origin,license}:
   skill,s-text-humanizer,s-text-humanizer,writing / content,authored,
   skill,safe-extract,safe-extract,misc / utility,authored,
   skill,security-check,security-check,engineering quality & debugging,authored,
+  skill,skill-creator,skill-creator,agent & skill meta-tooling,vendored,
   skill,skill-creator-j,skill-creator-j,git / PR / commit,authored,
   skill,skill-creator-j-repo,skill-creator-j-repo,planning / research / prompts,authored,
   skill,skill-delegate-manager,skill-delegate-manager,agent & skill meta-tooling,authored,
   skill,skill-delegate-shell-function,skill-delegate-shell-function,git / PR / commit,authored,
+  skill,skill-installer,skill-installer,agent & skill meta-tooling,vendored,
   skill,skill-library,skill-library,git / PR / commit,authored,
   skill,skill-vender-manager,skill-vender-manager,agent & skill meta-tooling,authored,
   skill,slack-daily-standup,slack-daily-standup,animation,authored,

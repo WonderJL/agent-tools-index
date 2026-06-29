@@ -6,8 +6,8 @@
     "withheld": 0
   },
   "cli": {
-    "authored": 49,
-    "published": 49,
+    "authored": 50,
+    "published": 50,
     "vendored": 0,
     "withheld": 0
   },
@@ -43,8 +43,8 @@
   },
   "skill": {
     "authored": 147,
-    "published": 180,
-    "vendored": 33,
+    "published": 182,
+    "vendored": 35,
     "withheld": 3
   },
   "sub-agent": {

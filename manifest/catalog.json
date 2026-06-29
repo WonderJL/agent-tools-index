@@ -835,6 +835,15 @@
   },
   {
     "category": "doc / OCR / conversion",
+    "description": "Unofficial Python library for automating Google NotebookLM",
+    "id": "notebooklm-py",
+    "name": "cli-notebooklm-py",
+    "origin": "authored",
+    "pillar": "cli",
+    "updated": "2026-05-12"
+  },
+  {
+    "category": "doc / OCR / conversion",
     "description": "CLI wrapper that removes the bottom-right NotebookLM watermark from PDFs, PPTX decks, and images you own, orchestrating a pinned third-party remover in an isolated venv with no CV deps of its own.",
     "id": "notebooklm-watermark-remover",
     "name": "cli-notebooklm-watermark-remover",
@@ -2685,6 +2694,14 @@
     "updated": "2026-04-25"
   },
   {
+    "category": "agent & skill meta-tooling",
+    "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
+    "id": "skill-creator",
+    "name": "skill-creator",
+    "origin": "vendored",
+    "pillar": "skill"
+  },
+  {
     "category": "git / PR / commit",
     "description": "Create and update agent skills programmatically with natural-language input parsing, interactive prompting, and automatic validation. Use to create a new skill (e.g., 'create a skill for PDF processing') or update an existing one.",
     "id": "skill-creator-j",
@@ -2719,6 +2736,14 @@
     "origin": "authored",
     "pillar": "skill",
     "updated": "2026-05-03"
+  },
+  {
+    "category": "agent & skill meta-tooling",
+    "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos).",
+    "id": "skill-installer",
+    "name": "skill-installer",
+    "origin": "vendored",
+    "pillar": "skill"
   },
   {
     "category": "git / PR / commit",

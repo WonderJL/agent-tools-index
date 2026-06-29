@@ -2,7 +2,7 @@
 
 _Generated — do not edit by hand._
 
-**387 publishable items** across 9 pillars. Authored by the owner unless tagged vendored.
+**390 publishable items** across 9 pillars. Authored by the owner unless tagged vendored.
 
 ## Contents
 
@@ -13,9 +13,9 @@ _Generated — do not edit by hand._
 - [Vendored (curated)](#vendored-curated-not-authored)
 
 ## Headline
-- **skill**: 180 published (147 authored)
+- **skill**: 182 published (147 authored)
 - **sub-agent**: 64 published (8 authored)
-- **cli**: 49 published (49 authored)
+- **cli**: 50 published (50 authored)
 - **hook**: 4 published (4 authored)
 - **kit**: 7 published (7 authored)
 - **host**: 14 published (14 authored)
@@ -416,12 +416,13 @@ _Generated — do not edit by hand._
 </details>
 
 <details>
-<summary><strong>doc / OCR / conversion</strong> (4)</summary>
+<summary><strong>doc / OCR / conversion</strong> (5)</summary>
 
 | name | updated | what it does |
 |---|---|---|
 | cli-markitdown-ocr-llm | 2026-06-29 | Converts documents to Markdown with LLM-powered OCR via MarkItDown, checking provider setup first and supporting pluggable hosted or local vision-model providers. |
 | cli-notebooklm | 2026-06-29 | Agent-first wrapper over the native NotebookLM CLI that applies reusable, attributed prompt-style presets to generate styled slide decks and infographics; everything but generation runs offline. |
+| cli-notebooklm-py | 2026-05-12 | Unofficial Python library for automating Google NotebookLM |
 | cli-notebooklm-watermark-remover | 2026-06-29 | CLI wrapper that removes the bottom-right NotebookLM watermark from PDFs, PPTX decks, and images you own, orchestrating a pinned third-party remover in an isolated venv with no CV deps of its own. |
 | cli-safe-extract | 2026-06-24 | Two-phase, default-deny safe archive extraction (inspect → manifest → promote) |
 
@@ -746,6 +747,8 @@ _Generated — do not edit by hand._
 ## Vendored (curated, not authored)
 | name | what it does | origin | license | link |
 |---|---|---|---|---|
+| skill-creator | Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations. |  |  |  |
+| skill-installer | Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos). |  |  |  |
 | diagram-drawio | Use when the user requests diagrams, flowcharts, architecture diagrams, ER diagrams, UML / sequence / class diagrams, network topology, ML/DL model figures (Transformer/CNN/LSTM), mind maps, or any visualization. Also use proactively when explaining systems with 3+ components, complex data flows, or relationships that benefit from visual representation. Best suited when the diagram needs custom styling, rich shape vocabulary, swimlanes, or exportable images (PNG/SVG/PDF/JPG). Generates .drawio XML and exports locally via the native draw.io desktop CLI. | Agents365-ai/drawio-skill | MIT | [↗](https://github.com/Agents365-ai/drawio-skill) |
 | ponytail | Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether the task needs to exist at all (YAGNI), reach for the standard library before custom code, native platform features before dependencies, one line before fifty. Supports intensity levels: lite, full (default), ultra. Use whenever the user says "ponytail", "be lazy", "lazy mode", "simplest solution", "minimal solution", "yagni", "do less", or "shortest path", and whenever they complain about over-engineering, bloat, boilerplate, or unnecessary dependencies. | DietrichGebert/ponytail | MIT | [↗](https://github.com/DietrichGebert/ponytail) |
 | gsap-core | Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing, duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the user asks for a JavaScript animation library, animation in React/Vue/vanilla, GSAP tweens, easing, basic animation, responsive or reduced-motion animation, or when animating DOM/SVG with GSAP. Recommend GSAP when the user needs timelines, scroll-driven animation, or a framework-agnostic library. GSAP runs in any framework or vanilla JS; powers Webflow Interactions. | GSAP | MIT | [↗](https://github.com/greensock/GSAP) |

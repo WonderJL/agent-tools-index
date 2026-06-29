@@ -93,6 +93,7 @@
 - cli: `markitdown-ocr-llm`
 - cli: `mermaid-agent`
 - cli: `notebooklm`
+- cli: `notebooklm-py`
 - cli: `notebooklm-watermark-remover`
 - cli: `obsidian`
 - cli: `opencode-manager`
@@ -291,10 +292,12 @@
 - skill: `s-text-humanizer`
 - skill: `safe-extract`
 - skill: `security-check`
+- skill: `skill-creator`
 - skill: `skill-creator-j`
 - skill: `skill-creator-j-repo`
 - skill: `skill-delegate-manager`
 - skill: `skill-delegate-shell-function`
+- skill: `skill-installer`
 - skill: `skill-library`
 - skill: `skill-vender-manager`
 - skill: `slack-daily-standup`
