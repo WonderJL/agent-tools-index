@@ -2,7 +2,7 @@
 
 _Generated — do not edit by hand. Flat, retrieval-friendly mirror of [CATALOG.md](../CATALOG.md): one bullet per item, no collapsible sections, no HTML tables._
 
-392 publishable items across 9 pillars. Authored by the owner unless tagged vendored.
+337 publishable items across 8 pillars. Authored by the owner unless tagged vendored.
 
 ## skill
 
@@ -353,73 +353,6 @@ _Generated — do not edit by hand. Flat, retrieval-friendly mirror of [CATALOG.
 - **Work Ledger Public Export** — Validates a privacy-scrubbed public record of a completed task, capturing effort metrics, quality and complexity bands, and approval status. _(updated 2026-06-29)_
 - **Work Ledger Session Receipt** — Defines the validated structure of a per-session AI coding activity record, capturing timing, token/cost usage, task type, complexity and quality scoring, privacy classification, and a publish-safety recommendation. _(updated 2026-06-29)_
 - **Work Ledger Work Item Report** — Defines a validated summary record that rolls up an AI coding task's sessions into title, complexity, effort, cost, quality, artifacts, and a share recommendation. _(updated 2026-06-29)_
-
-## adr
-
-### adr · CLI tool design
-- **ADR-0004: Recommender (LLM skill) and Render (deterministic CLI) are split** — Splits repo setup into an LLM skill that decides what to install and a deterministic CLI that renders it, ensuring idempotent, re-runnable config merges. _(updated 2026-06-29)_
-
-### adr · foundational / architecture
-- **ADR-0001: Integration Architecture for `agent-tools`** — Proposes a declarative, manifest-driven integration-package architecture with a phased lifecycle, receipts, and profiles for reproducible workstation setup across machines. _(updated 2026-06-29)_
-- **ADR-0005: Observability and debug via harness-transcript review, not a logging hook** — Decides to provide observability and debugging by reviewing each AI tool's existing local session log on demand at two depths, instead of a standing always-on logging hook. _(updated 2026-06-29)_
-
-### adr · multi-agent orchestration
-- **ADR-0006: ai-crew — a harness-agnostic agent session bus** — Decides on a harness-agnostic, loopback-only session bus that delegates prompts to labelled AI coding-agent workers and returns each result, reasoning, and token usage. _(updated 2026-06-29)_
-
-### adr · repo-agentic setup
-- **ADR-0002: Repo agentic-setup writes into the target repo, with `.agents/` as a localized source of truth** — Decides that agentic-development setup is committed into each target repo, with a portable source-of-truth folder rendering host-specific tool views, so config travels on clone. _(updated 2026-06-29)_
-- **ADR-0003: Canonical intent + per-host adapters for format-divergent concerns** — Keeps one provider-neutral source of truth for tool-divergent concerns (hooks, model routing), lowered to each platform via thin capability-gated adapters. _(updated 2026-06-29)_
-- **ADR-0007: Monorepo composition, precedence, routing merge, and hook path-scoping** — Defines how an agentic-setup tool handles monorepos: discovers per-package stacks, merges them with most-specific-wins precedence, and flattens routing and path-scoped hooks into repo-global host config. _(updated 2026-06-29)_
-
-### adr · spec
-- **2026-05-20-opencode-superpowers-slash-discoverability-design** — Adds curated repo-managed slash-command wrappers so a coding assistant's high-value workflow skills become discoverable in the command menu without forking or reinstalling the upstream framework. _(updated 2026-06-29)_
-- **2026-05-21-local-first-pr-review-index-design** — Designs a local-first PR review system that builds commit-pinned code indexes once, then runs parallel reviewer agents to produce one cited report, reusable in CI. _(updated 2026-06-29)_
-- **`cli-ai-usage` Login + Import Subcommands — Design Spec** — Adds OAuth PKCE browser login and same-machine credential import to a CLI for acquiring AI provider tokens, replacing manual paste while keeping automation intact. _(updated 2026-06-29)_
-- **`cli-ai-usage` — Design Spec** — Designs a cron-safe macOS CLI that tracks AI coding-provider usage across multiple accounts per provider, reporting per-account verdicts and a roll-up while auto-refreshing credentials non-interactively. _(updated 2026-06-29)_
-- **Add Oh My OpenAgent to ai-heavy** — Extends an AI-heavy machine-provisioning profile to bundle an extra agent-tooling integration by default, via configuration only, with no new installer logic. _(updated 2026-06-29)_
-- **Agent Onboarding Doctrine Design** — Defines a global operating doctrine for AI coding agents: improve the harness over one-off fixes, separate gating from execution, and escalate after three strikes. _(updated 2026-06-29)_
-- **Agent Tools Index — "Signal / Carbon Terminal" redesign (htmlsite port)** — Design spec. _(updated 2026-06-30)_
-- **agent-tools-index — public projection of a private agent-tooling monorepo** — Design for a deterministic, fail-closed generator that projects a private agent-tooling monorepo into a public, redacted capability index — defining the five-layer leak-safety stack, the allowlist-only extraction contract, and the denylist scrub. _(updated 2026-06-29)_
-- **AI repo-eval integration design** — Adds a third-party LLM-assisted security scanner as a mandatory gate in an automated repo-evaluation pipeline, with preflight checks for tooling and credentials. _(updated 2026-06-29)_
-- **ai-crew hardening round — design spec** — Hardens a multi-agent CLI orchestrator: loopback-only binding with opt-in remote, wait-for-idle before driving TUIs, bounded retries, and timeout process kills. _(updated 2026-06-29)_
-- **ai-crew multi-mode — `run` (one-shot exec) + Codex bus auto-completion** — Design for an AI-agent orchestration toolkit adding a stateless one-shot execution mode for headless batch fan-out plus session correlation so spawned workers auto-complete on a shared bus. _(updated 2026-06-29)_
-- **ai-crew spawn supervisor — design spec** — Redesigns a multi-agent orchestration system to drive each worker via a dedicated deterministic supervisor process, replacing a fragile loop that depended on agent cooperation. _(updated 2026-06-29)_
-- **ai-git-auto crew escalation ladder — design** — Designs a token-aware, two-axis escalation ladder that routes automated git tasks across model tiers and providers by difficulty, falling back to human-in-the-loop merge resolution. _(updated 2026-06-29)_
-- **AXI/TOON Fleet Migration — Design** — Standardizes ~37 agent-facing command-line tools on one token-efficient structured-output format, retiring legacy JSON flags via a shared vendored encoder. _(updated 2026-06-29)_
-- **cf-page-manager — Design** — Designs a thin command-line tool that deploys static sites or single HTML files to a managed edge hosting platform, wrapping the official CLI to handle projects, custom domains, and auth. _(updated 2026-06-29)_
-- **chrome-devtools-manager Adoption — Design** — Designs a layered adoption of an agent-ergonomic browser-automation CLI: one sync command installs and pins it, an on-demand skill makes it discoverable, and the underlying browser MCP stays router-owned. _(updated 2026-06-29)_
-- **Claude Interactive Delegate PRD** — An experimental sidecar provider that bridges an agentic coding CLI into an editor via terminal automation and transcript tailing, beside a reliable provider. _(updated 2026-06-29)_
-- **Claude OpenCode Bridge Reliability Design** — Reliability-focused hardening design for a local HTTP bridge that proxies one AI chat agent to another harness, clarifying module ownership and turning malformed requests and corrupted local state into clean errors while preserving streaming behavior. _(updated 2026-06-29)_
-- **Claude OpenCode Interactive Bridge Design** — Designs a stateful session bridge that carries one AI assistant's live interactive prompts (questions, choices, permissions) across an OpenAI-compatible boundary into another agent host. _(updated 2026-06-29)_
-- **CLI-Anything Agent-First Help & Version Contract — Design** — Defines a contract making agent-built command-line tools expose a standard version flag and emit compact machine-oriented help by default, with human help one flag away. _(updated 2026-06-29)_
-- **cli-full-vpn-wrapper `doctor` — connectivity probe design** — Designs a read-only diagnostic command that sends real traffic through a local VPN proxy and compares tunneled versus direct egress IPs to verify true connectivity. _(updated 2026-06-29)_
-- **cli-full-vpn-wrapper `reset` + interactive profile selection — design** — Adds one-command teardown plus interactive numbered-menu profile selection to a VPN proxy CLI, with confirmations and safe non-interactive automation fallback. _(updated 2026-06-29)_
-- **cli-full-vpn-wrapper — design** — Consolidates several proxy-protocol wrappers into one tool that routes a CLI through a per-process local proxy to a personal server, with named profiles. _(updated 2026-06-29)_
-- **cli-notebooklm Style Wrapper Design** — Designs a CLI wrapper adding reusable, attributed visual-style presets atop an AI document tool, letting an LLM pick styles from metadata to generate styled slide decks and infographics. _(updated 2026-06-29)_
-- **cli-proxy-wrapper — design** — Adds a CLI wrapper that routes AI coding agents through a local encrypted proxy, configured from a QR-code link, with the prior backend kept as a fallback. _(updated 2026-06-29)_
-- **cli-proxy-wrapper: macos-app subcommand — design** — Designs a CLI subcommand that launches a macOS desktop app through a shared local network proxy as a detached process, resolving the app bundle to its binary. _(updated 2026-06-29)_
-- **cli-takeover browse design** — Designs an interactive two-pane terminal UI to browse recent AI coding-assistant sessions and generate a structured handoff prompt so another agent can safely resume the work. _(updated 2026-06-29)_
-- **cli-takeover — Cross-app session takeover** — Designs a local-only CLI that lets a fresh AI coding assistant resume a quota-exhausted session from another tool by reading its on-disk transcript and priming a handoff. _(updated 2026-06-29)_
-- **DeepWiki context enhancement for `agent-tools-index`** — Improves DeepWiki/Context7 RAG quality on the code-free public index by rewriting thin descriptions at source, flattening the catalog for chunking, and seeding architecture prose. _(updated 2026-06-29)_
-- **Design — `.agents` source of truth, `.claude` → symlink** — Designates one source-of-truth directory for project-local agent skills and makes the parallel tool config directory a tracked symlink to it, preventing content drift. _(updated 2026-06-29)_
-- **Design — `cli-git-smart` + `git-clone-smart`** — Defines a CLI and shell alias that auto-rewrites canonical SSH clone URLs to the matching per-account host alias, letting multi-account setups clone with the right key. _(updated 2026-06-29)_
-- **Design — `cli-notebooklm-watermark-remover`** — Designs a thin, agent-invocable CLI wrapper that runs an external watermark-removal tool in an isolated environment, adding standard agent surfaces without heavy dependencies. _(updated 2026-06-29)_
-- **Design — Integrate `cli-notebooklm-watermark-remover` into the NotebookLM infographic flow** — Wires an optional watermark-removal CLI into an AI-generated infographic pipeline so owned visual assets ship clean, degrading gracefully and noting status when the tool is unavailable. _(updated 2026-06-29)_
-- **Design: OpenCode auto-install and local-only rendered aliases** — Design spec. _(updated 2026-06-30)_
-- **Design: proxy support in cli-codex and cli-cursor-agent** — Routes CLI subprocesses through a shared local HTTP proxy via inherited env vars, with an opt-out flag and graceful degradation when the proxy is absent. _(updated 2026-06-29)_
-- **MarkItDown OCR LLM Design** — Adds a CLI wrapper and installer extension that converts documents to Markdown with LLM-powered OCR, supporting pluggable hosted and local vision-model providers via an OpenAI-compatible client. _(updated 2026-06-29)_
-- **Oh My OpenAgent Integration Design** — Decides how to reproducibly vendor an external agent-skill bundle into a CLI coding tool: pinned versions, managed asset mirroring, opt-in profiles, and clean rollback. _(updated 2026-06-29)_
-- **OMO Opt-Out From sync-all and Manual Uninstall Design** — Makes an optional AI agent bundle no longer install by default in the standard sync flow, keeping it opt-in via a dedicated profile and adding a surgical manual uninstall path. _(updated 2026-06-29)_
-- **OpenCode Claude Delegate Provider Design** — Designs a local bridge that exposes a CLI-authenticated assistant as a native-feeling provider inside another agent tool, with per-conversation session continuity and inline streaming. _(updated 2026-06-29)_
-- **Power-machine sync tier — design** — Designs an opt-in "power machine" tier for a one-command machine-sync tool, layering workstation-only installs on top of the portable default run while staying idempotent and gracefully skipping unsupported platforms. _(updated 2026-06-29)_
-- **Repo Agentic-Setup - Step 4: `cli` + `data-ml` role overlays** — Adds CLI-tooling and data/ML role overlays to an agentic repo-setup system: role-specific agents, commands, routing, and diagnostics from stack signals. _(updated 2026-06-29)_
-- **Self-host the HTML-review render — kill runtime npx** — Hardens a browser-based HTML-review tool against supply-chain attacks by vendoring its render engine and installing locked, integrity-verified deps once, eliminating runtime fetches. _(updated 2026-06-29)_
-- **setup.sh decomposition into characterization-tested `lib/` modules** — Decomposes a 5,800-line setup script monolith into domain-grouped modules behind a thin dispatcher, guarded by characterization tests proving byte-identical behavior. _(updated 2026-06-29)_
-- **Step 6 - Routing resolution + mechanical-tier offload (design)** — Defines how task model-tier policies become per-host pins or advisory guidance files when generating AI coding-agent configs, routing mechanical work to deterministic CLIs. _(updated 2026-06-29)_
-- **sync-all Applies ai-heavy Integrations** — Fixes a multi-machine sync command to install every integration in the selected "heavy" profile instead of a single hardcoded one, honoring the profile contract. _(updated 2026-06-29)_
-- **Truly-vendor a worktree manager from source and strip its analytics telemetry** — Vendors third-party CLI tools from source for offline, registry-free builds and physically removes their usage-telemetry code instead of env opt-outs. _(updated 2026-06-29)_
-- **Workspace Manager — design** — Designs an orchestrator that spawns and supervises a crew of autonomous AI coding agents in isolated git worktrees, governing review, merge, and teardown. _(updated 2026-06-29)_
-- **Zsh alias loader — design** — Consolidates shell alias and function loading into a single git-tracked entrypoint, so updates propagate across machines via git pull. _(updated 2026-06-29)_
 
 ## vendored (curated, not authored)
 
