@@ -158,6 +158,20 @@ img, svg { max-width: 100%; height: auto; }
   letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3);
   background: var(--surface-2); padding: 13px 18px; border-bottom: 1px solid var(--border);
   white-space: nowrap;
+  position: sticky;
+  /* sits directly under the sticky controls bar (nav + measured controls height) */
+  top: calc(var(--nav-h) + var(--cat-ctrl-h, 120px));
+  z-index: 5;
+}
+.cat-table thead th:first-child { border-top-left-radius: var(--r-lg); }
+.cat-table thead th:last-child { border-top-right-radius: var(--r-lg); }
+/* Catalog table scroll wrapper: no vertical scroll container, so the sticky
+   header resolves against the page and hits the top (under the sticky nav).
+   Horizontal scroll returns only on narrow viewports where the table can't fit. */
+.cat-scroll { border-radius: var(--r-lg); }
+@media (max-width: 900px) {
+  .cat-scroll { overflow-x: auto; }
+  .cat-table thead th { position: static; }
 }
 .cat-table tbody td { padding: var(--rowpad, 14px) 18px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .cat-table tbody tr { transition: background-color var(--dur-1) var(--ease-std); }
@@ -186,7 +200,11 @@ img, svg { max-width: 100%; height: auto; }
 .schematic svg { width: 100%; height: auto; display: block; }
 .flow-label { font-family: var(--mono); font-size: 11px; fill: var(--ink-3); letter-spacing: 0.04em; }
 .flow-label.strong { fill: var(--ink); }
-.cat-controls { display: flex; flex-direction: column; gap: 18px; margin-bottom: var(--s5); }
+/* Sticky controls bar: the search + pills pin under the nav, and the table
+   header (.cat-table thead th) stacks flush beneath it. */
+.cat-controls { display: flex; flex-direction: column; gap: 18px; margin-bottom: var(--s5);
+  position: sticky; top: var(--nav-h); z-index: 6; background: var(--bg);
+  padding: var(--s4) 0 16px; border-bottom: 1px solid var(--border); }
 .cat-pills { display: flex; gap: 9px; flex-wrap: wrap; }
 
 @layer components {
@@ -230,6 +248,9 @@ img, svg { max-width: 100%; height: auto; }
   .btn-secondary:hover { background: var(--surface-2); border-color: var(--ink-3); }
   .btn-lg { height: 50px; font-size: 1rem; padding-inline: 24px; }
   .tag { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 4px 11px; white-space: nowrap; }
+  .name-stack { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; }
+  .vendor-tag { display: inline-flex; font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); background: transparent; border: 1px solid var(--border); border-radius: var(--r-sm); padding: 1px 5px; text-decoration: none; white-space: nowrap; }
+  .vendor-tag:hover { color: var(--ink-2); border-color: var(--border-strong); }
   .chip { display: inline-flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 11px; border-radius: var(--r-pill); border: 1px solid transparent; text-decoration: none; }
   .chip-pass { color: var(--pass-text); background: var(--pass-surface); border-color: var(--pass-border); }
   .dot { width: 8px; height: 8px; border-radius: var(--r-pill); flex: none; }
@@ -378,6 +399,7 @@ a.btn-secondary:hover { color: var(--ink); }
         <div class="hero-cta reveal">
           <a class="btn btn-primary btn-lg" href="#catalog">Browse the catalog</a>
           <a class="btn btn-secondary btn-lg" href="https://github.com/WonderJL/agent-tools-index" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          <a href="https://deepwiki.com/WonderJL/agent-tools-index" target="_blank" rel="noopener noreferrer"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" style="height:28px;vertical-align:middle"></a>
         </div>
         <div class="proof-strip reveal">
           <div class="proof"><div class="pt">Authored</div><div class="pd">One capability, written once in the private source.</div></div>
@@ -465,8 +487,8 @@ a.btn-secondary:hover { color: var(--ink); }
         <div class="cat-pills"><button class="chip cat-pill is-active" data-pillar="all"><span class="dot" style="background:var(--ink-3)"></span>all <span class="ct">337</span></button><button class="chip cat-pill" data-pillar="skill"><span class="dot" style="background:var(--accent)"></span>skill <span class="ct">182</span></button><button class="chip cat-pill" data-pillar="sub-agent"><span class="dot" style="background:var(--accent-line-2)"></span>sub-agent <span class="ct">64</span></button><button class="chip cat-pill" data-pillar="cli"><span class="dot" style="background:var(--pending-solid)"></span>cli <span class="ct">50</span></button><button class="chip cat-pill" data-pillar="hook"><span class="dot" style="background:var(--fail-solid)"></span>hook <span class="ct">4</span></button><button class="chip cat-pill" data-pillar="kit"><span class="dot" style="background:#2b7d5c"></span>kit <span class="ct">7</span></button><button class="chip cat-pill" data-pillar="host"><span class="dot" style="background:var(--ink-3)"></span>host <span class="ct">14</span></button><button class="chip cat-pill" data-pillar="integration"><span class="dot" style="background:var(--accent-text)"></span>integration <span class="ct">10</span></button><button class="chip cat-pill" data-pillar="schema"><span class="dot" style="background:var(--border-strong)"></span>schema <span class="ct">6</span></button></div>
       </div>
 
-      <div class="panel reveal" style="padding:0;overflow:hidden">
-        <div style="overflow-x:auto">
+      <div class="panel reveal" style="padding:0">
+        <div class="cat-scroll">
           <table class="cat-table">
             <thead>
               <tr><th>name</th><th>type</th><th>category</th><th>updated</th><th>what it does</th></tr>
@@ -598,10 +620,11 @@ a.btn-secondary:hover { color: var(--ink); }
       var detail = detailFor(r);
       var dot = PILLAR_DOT[r.pillar] || 'var(--ink-3)';
       var vend = r.origin === 'vendored'
-        ? ' <a class="tag" style="vertical-align:middle" href="' + esc(r.url || '#') + '" target="_blank" rel="noopener noreferrer">vendored</a>'
+        ? '<a class="vendor-tag" href="' + esc(r.url || '#') + '" target="_blank" rel="noopener noreferrer">vendored</a>'
         : '';
+      var nameCell = vend ? '<div class="name-stack">' + esc(r.name) + vend + '</div>' : esc(r.name);
       return '<tr>' +
-        '<td class="cat-name">' + esc(r.name) + vend + '</td>' +
+        '<td class="cat-name">' + nameCell + '</td>' +
         '<td><span class="tag"><span class="dot" style="background:' + dot + '"></span>' + esc(r.pillar) + '</span></td>' +
         '<td class="cat-cat">' + esc(r.category) + '</td>' +
         '<td class="cat-meta">' + esc(r.updated) + '</td>' +
@@ -623,6 +646,18 @@ a.btn-secondary:hover { color: var(--ink); }
   }
   search.addEventListener('input', draw);
   draw();
+
+  // ---- keep the sticky table header offset in sync with the (wrap-able)
+  // ---- controls bar height, so the thead stacks flush under it at any width.
+  (function () {
+    var ctrl = document.querySelector('.cat-controls');
+    if (!ctrl) return;
+    var root = document.documentElement;
+    function sync() { root.style.setProperty('--cat-ctrl-h', ctrl.offsetHeight + 'px'); }
+    sync();
+    if (window.ResizeObserver) { new ResizeObserver(sync).observe(ctrl); }
+    window.addEventListener('resize', sync);
+  })();
 })();
 </script>
 </body>
