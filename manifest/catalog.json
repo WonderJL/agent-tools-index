@@ -414,6 +414,24 @@
     "updated": "2026-06-29"
   },
   {
+    "category": "spec",
+    "description": "Agent Tools Index \u2014 \"Signal / Carbon Terminal\" redesign (htmlsite port)",
+    "id": "2026-06-30-agent-tools-index-signal-redesign-design",
+    "name": "Agent Tools Index \u2014 \"Signal / Carbon Terminal\" redesign (htmlsite port)",
+    "origin": "authored",
+    "pillar": "adr",
+    "updated": "2026-06-30"
+  },
+  {
+    "category": "spec",
+    "description": "Design: OpenCode auto-install and local-only rendered aliases",
+    "id": "2026-06-30-opencode-install-and-alias-local-generation-design",
+    "name": "Design: OpenCode auto-install and local-only rendered aliases",
+    "origin": "authored",
+    "pillar": "adr",
+    "updated": "2026-06-30"
+  },
+  {
     "category": "foundational / architecture",
     "description": "Proposes a declarative, manifest-driven integration-package architecture with a phased lifecycle, receipts, and profiles for reproducible workstation setup across machines.",
     "id": "ADR-0001-integration-architecture",
@@ -552,7 +570,7 @@
     "name": "cli-aliases",
     "origin": "authored",
     "pillar": "cli",
-    "updated": "2026-06-29"
+    "updated": "2026-06-30"
   },
   {
     "category": "diagram / media / render",

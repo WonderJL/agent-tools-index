@@ -2,7 +2,7 @@
 
 _Generated — do not edit by hand._
 
-**390 publishable items** across 9 pillars. Authored by the owner unless tagged vendored.
+**392 publishable items** across 9 pillars. Authored by the owner unless tagged vendored.
 
 ## Contents
 
@@ -21,7 +21,7 @@ _Generated — do not edit by hand._
 - **host**: 14 published (14 authored)
 - **integration**: 10 published (10 authored)
 - **schema**: 6 published (6 authored)
-- **adr**: 53 published (53 authored)
+- **adr**: 55 published (55 authored)
 
 ## Highlights
 | name | what it does |
@@ -433,7 +433,7 @@ _Generated — do not edit by hand._
 
 | name | updated | what it does |
 |---|---|---|
-| cli-aliases | 2026-06-29 | CLI-Anything central shell-alias manager for the toolkit: register, list, and sync command shortcuts. |
+| cli-aliases | 2026-06-30 | CLI-Anything central shell-alias manager for the toolkit: register, list, and sync command shortcuts. |
 | cli-git-smart | 2026-06-26 | Smart multi-account git clone: rewrite SSH host to per-account ssh-config alias |
 | cli-gnhf | 2026-06-29 | An agent-first CLI that runs an AI coding agent in an unattended commit-per-iteration git loop until a goal or limit is met, with quota-aware tiers deciding when to pause, resume, or stop. |
 | cli-local-pr-review | 2026-06-23 | Local-first PR review orchestration with GitNexus indexes |
@@ -691,7 +691,7 @@ _Generated — do not edit by hand._
 </details>
 
 <details>
-<summary><strong>spec</strong> (46)</summary>
+<summary><strong>spec</strong> (48)</summary>
 
 | name | updated | what it does |
 |---|---|---|
@@ -701,6 +701,7 @@ _Generated — do not edit by hand._
 | `cli-ai-usage` — Design Spec | 2026-06-29 | Designs a cron-safe macOS CLI that tracks AI coding-provider usage across multiple accounts per provider, reporting per-account verdicts and a roll-up while auto-refreshing credentials non-interactively. |
 | Add Oh My OpenAgent to ai-heavy | 2026-06-29 | Extends an AI-heavy machine-provisioning profile to bundle an extra agent-tooling integration by default, via configuration only, with no new installer logic. |
 | Agent Onboarding Doctrine Design | 2026-06-29 | Defines a global operating doctrine for AI coding agents: improve the harness over one-off fixes, separate gating from execution, and escalate after three strikes. |
+| Agent Tools Index — "Signal / Carbon Terminal" redesign (htmlsite port) | 2026-06-30 | Design spec. |
 | agent-tools-index — public projection of a private agent-tooling monorepo | 2026-06-29 | Design for a deterministic, fail-closed generator that projects a private agent-tooling monorepo into a public, redacted capability index — defining the five-layer leak-safety stack, the allowlist-only extraction contract, and the denylist scrub. |
 | AI repo-eval integration design | 2026-06-29 | Adds a third-party LLM-assisted security scanner as a mandatory gate in an automated repo-evaluation pipeline, with preflight checks for tooling and credentials. |
 | ai-crew hardening round — design spec | 2026-06-29 | Hardens a multi-agent CLI orchestrator: loopback-only binding with opt-in remote, wait-for-idle before driving TUIs, bounded retries, and timeout process kills. |
@@ -727,6 +728,7 @@ _Generated — do not edit by hand._
 | Design — `cli-git-smart` + `git-clone-smart` | 2026-06-29 | Defines a CLI and shell alias that auto-rewrites canonical SSH clone URLs to the matching per-account host alias, letting multi-account setups clone with the right key. |
 | Design — `cli-notebooklm-watermark-remover` | 2026-06-29 | Designs a thin, agent-invocable CLI wrapper that runs an external watermark-removal tool in an isolated environment, adding standard agent surfaces without heavy dependencies. |
 | Design — Integrate `cli-notebooklm-watermark-remover` into the NotebookLM infographic flow | 2026-06-29 | Wires an optional watermark-removal CLI into an AI-generated infographic pipeline so owned visual assets ship clean, degrading gracefully and noting status when the tool is unavailable. |
+| Design: OpenCode auto-install and local-only rendered aliases | 2026-06-30 | Design spec. |
 | Design: proxy support in cli-codex and cli-cursor-agent | 2026-06-29 | Routes CLI subprocesses through a shared local HTTP proxy via inherited env vars, with an opt-out flag and graceful degradation when the proxy is absent. |
 | MarkItDown OCR LLM Design | 2026-06-29 | Adds a CLI wrapper and installer extension that converts documents to Markdown with LLM-powered OCR, supporting pluggable hosted and local vision-model providers via an OpenAI-compatible client. |
 | Oh My OpenAgent Integration Design | 2026-06-29 | Decides how to reproducibly vendor an external agent-skill bundle into a CLI coding tool: pinned versions, managed asset mirroring, opt-in profiles, and clean rollback. |

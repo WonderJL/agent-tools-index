@@ -47,6 +47,8 @@
 - adr: `2026-06-28-agent-tools-index-public-projection-design`
 - adr: `2026-06-28-vendor-worktree-manager-and-strip-telemetry-design`
 - adr: `2026-06-29-deepwiki-context-enhancement-design`
+- adr: `2026-06-30-agent-tools-index-signal-redesign-design`
+- adr: `2026-06-30-opencode-install-and-alias-local-generation-design`
 - adr: `ADR-0001-integration-architecture`
 - adr: `ADR-0002-repo-agentic-setup-storage-model`
 - adr: `ADR-0003-canonical-intent-per-host-adapter`

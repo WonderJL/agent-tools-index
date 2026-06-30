@@ -1,4 +1,4 @@
-rows[390]{pillar,id,name,category,origin,license}:
+rows[392]{pillar,id,name,category,origin,license}:
   adr,2026-05-04-zsh-alias-loader-design,Zsh alias loader — design,spec,authored,
   adr,2026-05-09-cli-anything-agent-first-help-design,CLI-Anything Agent-First Help & Version Contract — Design,spec,authored,
   adr,2026-05-11-cli-ai-usage-design,`cli-ai-usage` — Design Spec,spec,authored,
@@ -45,6 +45,8 @@ rows[390]{pillar,id,name,category,origin,license}:
   adr,2026-06-28-agent-tools-index-public-projection-design,agent-tools-index — public projection of a private agent-tooling monorepo,spec,authored,
   adr,2026-06-28-vendor-worktree-manager-and-strip-telemetry-design,Truly-vendor a worktree manager from source and strip its analytics telemetry,spec,authored,
   adr,2026-06-29-deepwiki-context-enhancement-design,DeepWiki context enhancement for `agent-tools-index`,spec,authored,
+  adr,2026-06-30-agent-tools-index-signal-redesign-design,Agent Tools Index — "Signal / Carbon Terminal" redesign (htmlsite port),spec,authored,
+  adr,2026-06-30-opencode-install-and-alias-local-generation-design,Design: OpenCode auto-install and local-only rendered aliases,spec,authored,
   adr,ADR-0001-integration-architecture,ADR-0001: Integration Architecture for `agent-tools`,foundational / architecture,authored,
   adr,ADR-0002-repo-agentic-setup-storage-model,ADR-0002: Repo agentic-setup writes into the target repo  with `.agents/` as a localized source of truth,repo-agentic setup,authored,
   adr,ADR-0003-canonical-intent-per-host-adapter,ADR-0003: Canonical intent + per-host adapters for format-divergent concerns,repo-agentic setup,authored,
